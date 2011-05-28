@@ -34,30 +34,18 @@
 		{% endblock %}
 
   </head>
-  {% filter typogrify %}
 	<body>
     <div id="menu">
       <div id="container">
         <ul id="main">
           <li>
-          <a href="{{site.listing_url}}" class="home">CANAPE</a>
+          <a href="{{site.listing_url}}" class="home">canapé</a>
           </li>
           {% for module in modules %}
           <li>
-          <a href="{{site.url|add:'/'|add:module}}"{% ifequal page.module.name module %} class="selected" {% endifequal %}>{{module|upper}}</a>
+          <a href="{{site.url|add:'/'|add:module}}"{% ifequal page.module.name module %} class="selected" {% endifequal %}>{{module}}</a>
           </li>
           {% endfor %}
-        </ul>
-        <ul id="projects">
-          <li>PROJECTS
-          <ul>
-            {% for module in projects %}
-            <li>
-            <a href="{{site.url|add:'/projects/'|add:module}}"{% ifequal page.module.name module %} class="selected" {% endifequal %}>{{module|upper}}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          </li>
         </ul>
       </div>
     </div>
@@ -68,7 +56,6 @@
       </div>
     </div>
   </body>
-  {% endfilter %}
 </html>
 
 {% endblock %}

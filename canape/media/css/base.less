@@ -1,46 +1,17 @@
-@default-font: "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif; 
-@c-background: #2f2f2f;
-@c-font: #e1e1e1;
-@c-font-highlight: #fff;
-@c-link-background-highlight: #d78900;
-@c-link-background: #666;
-
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: @default-font;
-  line-height:1.4em;
   margin: 50px 20px 0 20px;
-  font-size: 12pt;
-  background-color: @c-background;
-  color: @c-font;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
 }
 
 a {
   text-decoration: none;
-  padding: 0px 3px 0px 1px;
-}
-
-a:link, a:active, a:visited {
-  color: @c-font;
-  background-color: @c-link-background;
-}
-
-a:hover {
-  color: @c-font-highlight;
-  background-color: @c-link-background-highlight;
-}
-
-a.home {
-  /*font-size: 1.3em;*/
-  /*background-color: @c-background;*/
-}
-
-a.selected {
-  background-color: @c-link-background-highlight;
+  color: #888;
 }
 
 #menu {
@@ -51,8 +22,8 @@ a.selected {
   left: 0;
   position: fixed;
   height: 100%;
-  padding-top: 30px;
   padding-left: 20px;
+  padding-top: 50px;
 
   ul {
     list-style: none;
@@ -61,36 +32,27 @@ a.selected {
   li {
     margin-top: 2px;
   }
-
-  #main {
-    margin-top: 30px;
-  }
-
-  #projects {
-    margin-top: 30px;
-  }
 }
 
 .container {
   padding: 5px 5px 25px 5px;
 }
 
-#introduction {
-  font-size: 5em;
-  line-height: .6em;
-  width: 200px;
-}
-
 p {
   margin: 0 0 9px 0;
 }
 
-
 #content {
   height: 100%;
-  margin: 0px 0 0 265px;
+  margin: 0px 0 0 215px;
   top: 0;
-  font-size: 1.1em;
-  line-height: 1.4em;
+  font-size: 1.4em;
+  text-align: justify;
+
+  #post-content {
+    width: 500px;
+  }
 }
+
+
 

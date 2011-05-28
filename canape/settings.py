@@ -73,8 +73,7 @@ SITE_POST_PROCESSORS = {
 
 CONTEXT = {
     'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
-    'modules': ['about','research','journal'],
-    'projects': ['the_rickshaw_redemption'],
+    'modules': ['about','research','journal','the_rickshaw_redemption'],
 }
 
 FILTER = {
