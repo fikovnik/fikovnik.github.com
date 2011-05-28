@@ -11,10 +11,10 @@ TMP_DIR = here('deploy_tmp')
 BACKUPS_DIR = here('backups')
 BACKUP = False
 
-SITE_ROOT = "/"
-SITE_WWW_URL = "http://www.yoursite.com"
-SITE_NAME = "Your Site"
-SITE_AUTHOR = "Your Name"
+SITE_ROOT = "/projects/canape"
+SITE_WWW_URL = "http://www.fikovnik.org"
+SITE_NAME = "canape;"
+SITE_AUTHOR = "Filip Krikava"
 
 #URL Configuration
 GENERATE_ABSOLUTE_FS_URLS = False
@@ -32,8 +32,7 @@ GENERATE_CLEAN_URLS = False
 
 # A list of filenames (without extensions) that will be considered listing
 # pages for their enclosing folders.
-# LISTING_PAGE_NAMES = ['index']
-LISTING_PAGE_NAMES = ['listing', 'index', 'default']
+LISTING_PAGE_NAMES = ['index']
 
 # Determines whether or not to append a trailing slash to generated urls when
 # clean urls are enabled.
@@ -52,39 +51,15 @@ APPEND_SLASH = False
 
 MEDIA_PROCESSORS = {
     '*':{
-        '.css':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.CSSmin',),
-        '.ccss':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.CleverCSS',
-                'hydeengine.media_processors.CSSmin',),
-        '.sass':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.SASS',
-                'hydeengine.media_processors.CSSmin',),
-        '.less':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.LessCSS',
-                'hydeengine.media_processors.CSSmin',),
-        '.styl':('hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.Stylus',
-                'hydeengine.media_processors.CSSmin',),
-        '.hss':(
-                'hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.HSS',
+        '.less':('hydeengine.media_processors.LessCSS',
                 'hydeengine.media_processors.CSSmin',),
         '.js':(
                 'hydeengine.media_processors.TemplateProcessor',
                 'hydeengine.media_processors.JSmin',),
-        '.coffee':(
-                'hydeengine.media_processors.TemplateProcessor',
-                'hydeengine.media_processors.CoffeeScript',
-                'hydeengine.media_processors.JSmin',)
     }
 }
 
 CONTENT_PROCESSORS = {
-    'prerendered/': {
-        '*.*' :
-            ('hydeengine.content_processors.PassthroughProcessor',)
-            }
 }
 
 SITE_POST_PROCESSORS = {
@@ -97,7 +72,9 @@ SITE_POST_PROCESSORS = {
 }
 
 CONTEXT = {
-    'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS
+    'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
+    'modules': ['about','research','journal'],
+    'projects': ['the_rickshaw_redemption'],
 }
 
 FILTER = {
@@ -131,6 +108,8 @@ CLOSURE_COMPRILER = None
 # project page at http://ncannasse.fr/projects/hss
 #HSS_PATH = "./lib/hss-1.0-osx"
 HSS_PATH = None # if you don't want to use HSS
+
+LESS_CSS_PATH = '/Users/krikava/Development/js/node_modules/less/bin/lessc'
 
 #Django settings
 

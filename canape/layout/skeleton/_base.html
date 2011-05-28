@@ -1,5 +1,4 @@
 {% extends "skeleton/_root.html" %}
-
 {% block all %}
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -8,57 +7,68 @@
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
 	<head>
-
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 		<title>
 			{% block title %}
-			{{site.name}} : {{page.module.name}} : {{page.title}}
+			canapé : {{page.module.name}} : {{page.title}}
 			{% endblock %}
 		</title>
 
 		{% block feeds %}
-
 		<link href="{{site.url}}/blog/atom.xml" rel="alternate" title="{{site.name}}" type="application/atom+xml"/>
-
 		{% endblock %}
 
 		{% block css %}
-
 		<link rel="stylesheet" href="{{site.url}}/media/css/base.css" type="text/css" media="screen" charset="utf-8">
-
-		{% block extra_css %}
-		{% endblock %}
-		
+		{% block extra_css %} {% endblock %}
 		{% endblock %}
 		
 		{% block js %}
-
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-
-		{% block extra_js %}
-		{% endblock %}
-		
+		{% block extra_js %} {% endblock %}
 		{% endblock %}
 
-	</head>
-
+  </head>
+  {% filter typogrify %}
 	<body>
+    <div id="menu">
+      <div id="container">
+        <ul id="main">
+          <li>
+          <a href="{{site.listing_url}}" class="home">CANAPE</a>
+          </li>
+          {% for module in modules %}
+          <li>
+          <a href="{{site.url|add:'/'|add:module}}"{% ifequal page.module.name module %} class="selected" {% endifequal %}>{{module|upper}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <ul id="projects">
+          <li>PROJECTS
+          <ul>
+            {% for module in projects %}
+            <li>
+            <a href="{{site.url|add:'/projects/'|add:module}}"{% ifequal page.module.name module %} class="selected" {% endifequal %}>{{module|upper}}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-		<div id="site">	
-
-			{% include "skeleton/_header.html" %}
-
-			{% block content %}{% endblock %}
-
-			{% include "skeleton/_footer.html" %}
-
-		</div>
-
-	</body>
-
+    <div id="content">
+      <div id="container">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </body>
+  {% endfilter %}
 </html>
 
 {% endblock %}

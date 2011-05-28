@@ -1,0 +1,220 @@
+[28/May/2011:16:13:17] ENGINE Bus STARTING
+[28/May/2011:16:13:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:13:17] ENGINE Serving on localhost:8080
+[28/May/2011:16:13:17] ENGINE Bus STARTED
+[28/May/2011:16:13:42] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:13:42] ENGINE Bus STOPPING
+[28/May/2011:16:13:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:13:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:13:43] ENGINE Bus STOPPED
+[28/May/2011:16:13:43] ENGINE Bus EXITING
+[28/May/2011:16:13:43] ENGINE Bus EXITED
+[28/May/2011:16:13:43] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:16:53] ENGINE Bus STARTING
+[28/May/2011:16:16:53] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:16:54] ENGINE Serving on localhost:8080
+[28/May/2011:16:16:54] ENGINE Bus STARTED
+[28/May/2011:16:17:43] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:17:43] ENGINE Bus STOPPING
+[28/May/2011:16:17:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:17:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:17:43] ENGINE Bus STOPPED
+[28/May/2011:16:17:43] ENGINE Bus EXITING
+[28/May/2011:16:17:43] ENGINE Bus EXITED
+[28/May/2011:16:17:43] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:33:11] ENGINE Bus STARTING
+[28/May/2011:16:33:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:33:11] ENGINE Serving on localhost:8080
+[28/May/2011:16:33:11] ENGINE Bus STARTED
+[28/May/2011:16:33:25] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:33:25] ENGINE Bus STOPPING
+[28/May/2011:16:33:28] ENGINE Bus STARTING
+[28/May/2011:16:33:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:33:28] ENGINE Serving on localhost:8080
+[28/May/2011:16:33:28] ENGINE Bus STARTED
+[28/May/2011:16:33:31] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:33:31] ENGINE Bus STOPPING
+[28/May/2011:16:33:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:33:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:33:31] ENGINE Bus STOPPED
+[28/May/2011:16:33:31] ENGINE Bus EXITING
+[28/May/2011:16:33:31] ENGINE Bus EXITED
+[28/May/2011:16:33:31] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:33:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:33:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:33:31] ENGINE Bus STOPPED
+[28/May/2011:16:33:31] ENGINE Bus EXITING
+[28/May/2011:16:33:31] ENGINE Bus EXITED
+[28/May/2011:16:33:31] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:35:25] ENGINE Bus STARTING
+[28/May/2011:16:35:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:35:26] ENGINE Serving on localhost:8080
+[28/May/2011:16:35:26] ENGINE Bus STARTED
+[28/May/2011:16:35:48] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:35:48] ENGINE Bus STOPPING
+[28/May/2011:16:35:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:35:50] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:35:50] ENGINE Bus STOPPED
+[28/May/2011:16:35:50] ENGINE Bus EXITING
+[28/May/2011:16:35:50] ENGINE Bus EXITED
+[28/May/2011:16:35:50] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:36:25] ENGINE Bus STARTING
+[28/May/2011:16:36:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:36:25] ENGINE Serving on localhost:8080
+[28/May/2011:16:36:25] ENGINE Bus STARTED
+[28/May/2011:16:38:38] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:38:38] ENGINE Bus STOPPING
+[28/May/2011:16:38:38] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:38:38] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:38:38] ENGINE Bus STOPPED
+[28/May/2011:16:38:38] ENGINE Bus EXITING
+[28/May/2011:16:38:38] ENGINE Bus EXITED
+[28/May/2011:16:38:38] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:39:06] ENGINE Bus STARTING
+[28/May/2011:16:39:06] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:39:06] ENGINE Serving on localhost:8080
+[28/May/2011:16:39:06] ENGINE Bus STARTED
+[28/May/2011:16:39:22] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:39:22] ENGINE Bus STOPPING
+[28/May/2011:16:39:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:39:24] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:39:24] ENGINE Bus STOPPED
+[28/May/2011:16:39:24] ENGINE Bus EXITING
+[28/May/2011:16:39:24] ENGINE Bus EXITED
+[28/May/2011:16:39:24] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:39:29] ENGINE Bus STARTING
+[28/May/2011:16:39:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:39:29] ENGINE Serving on localhost:8080
+[28/May/2011:16:39:29] ENGINE Bus STARTED
+[28/May/2011:16:39:43] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:39:43] ENGINE Bus STOPPING
+[28/May/2011:16:39:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:39:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:39:43] ENGINE Bus STOPPED
+[28/May/2011:16:39:43] ENGINE Bus EXITING
+[28/May/2011:16:39:43] ENGINE Bus EXITED
+[28/May/2011:16:39:43] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:44:08] ENGINE Bus STARTING
+[28/May/2011:16:44:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:44:08] ENGINE Serving on localhost:8080
+[28/May/2011:16:44:08] ENGINE Bus STARTED
+[28/May/2011:16:45:21] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:16:45:21] ENGINE Bus STOPPING
+[28/May/2011:16:45:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:16:45:21] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:16:45:21] ENGINE Bus STOPPED
+[28/May/2011:16:45:21] ENGINE Bus EXITING
+[28/May/2011:16:45:21] ENGINE Bus EXITED
+[28/May/2011:16:45:21] ENGINE Waiting for child threads to terminate...
+[28/May/2011:16:45:24] ENGINE Bus STARTING
+[28/May/2011:16:45:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:16:45:24] ENGINE Serving on localhost:8080
+[28/May/2011:16:45:24] ENGINE Bus STARTED
+[28/May/2011:17:37:39] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:17:37:40] ENGINE Bus STOPPING
+[28/May/2011:17:37:40] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:17:37:40] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:17:37:40] ENGINE Bus STOPPED
+[28/May/2011:17:37:40] ENGINE Bus EXITING
+[28/May/2011:17:37:40] ENGINE Bus EXITED
+[28/May/2011:17:37:40] ENGINE Waiting for child threads to terminate...
+[28/May/2011:17:37:46] ENGINE Bus STARTING
+[28/May/2011:17:37:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:17:37:46] ENGINE Serving on localhost:8080
+[28/May/2011:17:37:46] ENGINE Bus STARTED
+[28/May/2011:17:41:24] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:17:41:24] ENGINE Bus STOPPING
+[28/May/2011:17:41:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:17:41:24] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:17:41:24] ENGINE Bus STOPPED
+[28/May/2011:17:41:24] ENGINE Bus EXITING
+[28/May/2011:17:41:24] ENGINE Bus EXITED
+[28/May/2011:17:41:24] ENGINE Waiting for child threads to terminate...
+[28/May/2011:17:41:27] ENGINE Bus STARTING
+[28/May/2011:17:41:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:17:41:27] ENGINE Serving on localhost:8080
+[28/May/2011:17:41:27] ENGINE Bus STARTED
+[28/May/2011:17:47:56] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:17:47:56] ENGINE Bus STOPPING
+[28/May/2011:17:47:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:17:47:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:17:47:56] ENGINE Bus STOPPED
+[28/May/2011:17:47:56] ENGINE Bus EXITING
+[28/May/2011:17:47:57] ENGINE Bus EXITED
+[28/May/2011:17:47:57] ENGINE Waiting for child threads to terminate...
+[28/May/2011:17:48:03] ENGINE Bus STARTING
+[28/May/2011:17:48:03] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:17:48:03] ENGINE Serving on localhost:8080
+[28/May/2011:17:48:03] ENGINE Bus STARTED
+[28/May/2011:17:56:28] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:17:56:28] ENGINE Bus STOPPING
+[28/May/2011:17:56:28] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:17:56:28] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:17:56:28] ENGINE Bus STOPPED
+[28/May/2011:17:56:28] ENGINE Bus EXITING
+[28/May/2011:17:56:28] ENGINE Bus EXITED
+[28/May/2011:17:56:28] ENGINE Waiting for child threads to terminate...
+[28/May/2011:17:56:32] ENGINE Bus STARTING
+[28/May/2011:17:56:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:17:56:32] ENGINE Serving on localhost:8080
+[28/May/2011:17:56:32] ENGINE Bus STARTED
+[28/May/2011:18:12:37] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:18:12:37] ENGINE Bus STOPPING
+[28/May/2011:18:12:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:18:12:42] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:18:12:42] ENGINE Bus STOPPED
+[28/May/2011:18:12:42] ENGINE Bus EXITING
+[28/May/2011:18:12:42] ENGINE Bus EXITED
+[28/May/2011:18:12:42] ENGINE Waiting for child threads to terminate...
+[28/May/2011:18:12:49] ENGINE Bus STARTING
+[28/May/2011:18:12:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:18:12:49] ENGINE Serving on localhost:8080
+[28/May/2011:18:12:49] ENGINE Bus STARTED
+[28/May/2011:18:13:15] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:18:13:15] ENGINE Bus STOPPING
+[28/May/2011:18:13:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:18:13:21] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:18:13:21] ENGINE Bus STOPPED
+[28/May/2011:18:13:21] ENGINE Bus EXITING
+[28/May/2011:18:13:21] ENGINE Bus EXITED
+[28/May/2011:18:13:21] ENGINE Waiting for child threads to terminate...
+[28/May/2011:18:13:57] ENGINE Bus STARTING
+[28/May/2011:18:13:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:18:13:57] ENGINE Serving on localhost:8080
+[28/May/2011:18:13:57] ENGINE Bus STARTED
+[28/May/2011:18:20:21] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:18:20:21] ENGINE Bus STOPPING
+[28/May/2011:18:20:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:18:20:21] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:18:20:21] ENGINE Bus STOPPED
+[28/May/2011:18:20:21] ENGINE Bus EXITING
+[28/May/2011:18:20:21] ENGINE Bus EXITED
+[28/May/2011:18:20:21] ENGINE Waiting for child threads to terminate...
+[28/May/2011:18:21:11] ENGINE Bus STARTING
+[28/May/2011:18:21:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:18:21:11] ENGINE Serving on localhost:8080
+[28/May/2011:18:21:11] ENGINE Bus STARTED
+[28/May/2011:18:21:26] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:18:21:26] ENGINE Bus STOPPING
+[28/May/2011:18:21:30] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:18:21:30] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:18:21:30] ENGINE Bus STOPPED
+[28/May/2011:18:21:30] ENGINE Bus EXITING
+[28/May/2011:18:21:30] ENGINE Bus EXITED
+[28/May/2011:18:21:30] ENGINE Waiting for child threads to terminate...
+[28/May/2011:18:21:32] ENGINE Bus STARTING
+[28/May/2011:18:21:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:18:21:32] ENGINE Serving on localhost:8080
+[28/May/2011:18:21:32] ENGINE Bus STARTED
+[28/May/2011:18:59:24] ENGINE Keyboard Interrupt: shutting down bus
+[28/May/2011:18:59:24] ENGINE Bus STOPPING
+[28/May/2011:18:59:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('localhost', 8080)) shut down
+[28/May/2011:18:59:25] ENGINE Stopped thread '_TimeoutMonitor'.
+[28/May/2011:18:59:25] ENGINE Bus STOPPED
+[28/May/2011:18:59:25] ENGINE Bus EXITING
+[28/May/2011:18:59:25] ENGINE Bus EXITED
+[28/May/2011:18:59:25] ENGINE Waiting for child threads to terminate...
+[28/May/2011:18:59:28] ENGINE Bus STARTING
+[28/May/2011:18:59:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[28/May/2011:18:59:28] ENGINE Serving on localhost:8080
+[28/May/2011:18:59:28] ENGINE Bus STARTED
