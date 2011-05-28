@@ -1,2 +1,3 @@
 canape/deploy
 *.pyc
+canape/deploy_tmp
