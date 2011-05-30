@@ -1,6 +1,12 @@
-{% extends "skeleton/_listing.html" %}
+{% extends "_staticpage.html" %}
 
-{%hyde
-    title: "Blog"
+{% hyde
+    title: "Journal"
     exclude: True
 %}
+
+{% block page-content %}
+
+{% include "skeleton/_listing.html" %}
+
+{% endblock %}

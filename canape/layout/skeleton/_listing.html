@@ -1,16 +1,21 @@
-{% extends "skeleton/_body.html"%}
-
-{% block content_header %}
-{% endblock %}
-
-{% block content_body %}
-
-<div class="page-listing">
-	{% for node in page.node.walk %}
-		{% include "skeleton/_innerlisting.html" %}
-	{% endfor %}
-</div>
-
-<div class="clear"></div>
-
+{% block content %}
+  <div id="listing">
+    <ol>
+      {% for node in page.node.walk %}
+          {% for list_page in node.pages %}
+            {% ifnotequal list_page node.listing_page %}
+              {% if not list_page.exclude %}
+              <li>
+              <a class="listing-title" href="{{ list_page.url }}">
+              {% with list_page.name_without_extension|remove_date_prefix|unslugify as default_title %}
+              {{ list_page.title|default_if_none:default_title|safe|lower }}
+              {% endwith %}
+              </a>
+              [<span class="listing-date">{{ list_page.created|date:"F j, Y"|lower }}</span>]
+              {% endif %}
+            {% endifnotequal %}
+          {% endfor %}
+      {% endfor %}
+    </ol>
+  </div>
 {% endblock %}

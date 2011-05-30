@@ -10,9 +10,10 @@ TMP_DIR = here('deploy_tmp')
 
 BACKUPS_DIR = here('backups')
 BACKUP = False
+DEBUG = True
 
-SITE_ROOT = "/projects/canape"
-SITE_WWW_URL = "http://www.fikovnik.org"
+SITE_ROOT = "/canape"
+SITE_WWW_URL = "http://www.fikovnik.net"
 SITE_NAME = "canape;"
 SITE_AUTHOR = "Filip Krikava"
 
@@ -36,7 +37,7 @@ LISTING_PAGE_NAMES = ['index']
 
 # Determines whether or not to append a trailing slash to generated urls when
 # clean urls are enabled.
-APPEND_SLASH = False
+APPEND_SLASH = True
 
 # {folder : extension : (processors)}
 # The processors are run in the given order and are chained.
@@ -73,7 +74,7 @@ SITE_POST_PROCESSORS = {
 
 CONTEXT = {
     'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
-    'modules': ['about','research','journal','the_rickshaw_redemption'],
+    'projects': ['the_rickshaw_redemption'],
 }
 
 FILTER = {
