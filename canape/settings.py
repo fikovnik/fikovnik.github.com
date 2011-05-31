@@ -74,7 +74,7 @@ SITE_POST_PROCESSORS = {
 
 CONTEXT = {
     'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
-    'projects': ['the_rickshaw_redemption'],
+    #'projects': ['the_rickshaw_redemption'],
 }
 
 FILTER = {
