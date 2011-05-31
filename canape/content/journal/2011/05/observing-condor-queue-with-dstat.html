@@ -1,0 +1,51 @@
+{% extends "_post.html" %}
+
+{% hyde
+    title: "Observing Condor queue with dstat"
+    created: 2011-05-31 12:00:00
+%}
+
+{% block article %}
+
+For the experiments I do currently I need to observe the behavior of the
+[Condor][condor] schedd queue while executing large workflows. What I did usually was
+to use a script that would just periodically execute `condor_q`, parse its
+output and write that into a file:
+
+    :::bash
+    #!/bin/sh
+
+    while /bin/true; do
+      TS=`date +"%d.%m.%Y-%H:%M:%S"`
+      CQ=`condor_q | sed '$!d' | cut -f 3 -d ' '`
+
+      echo $TS $CQ
+      sleep 1
+    done
+
+This works well, but I usually need to correlate this with some other stats
+gathered like memory or system load. I use [dstat][] for getting these metrics.
+It has a nice feature to export output to csv file which can be easily read by
+[gnuplot][]. It uses a nice plugin architecture so I decided to write a
+[plugin][condor-queue-dstat] to get the queue stats. It has been merged to the
+latest master branch of dstat.
+
+The usage is simple, just add `--condor-queue` flag to dstat:
+
+    :::console
+    $ dstat --condor-queue
+    ------condor-queue-----
+     jobs  idle runni  held
+        5     3     2     0
+        5     3     2     0
+        4     2     2     0
+        3     1     2     0
+
+It requires to have `CONDOR_CONFIG` environment variable set and obviously condor
+running. It connects only to the local queue.
+
+[dstat]: https://github.com/dagwieers/dstat
+[condor]: http://www.cs.wisc.edu/condor/
+[condor-queue-dstat]: https://github.com/dagwieers/dstat/blob/master/plugins/dstat_condor_queue.py
+
+{% endblock %}
