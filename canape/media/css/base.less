@@ -1,4 +1,7 @@
 @menu-size: 14em;
+@content-font-size: 1.2em;
+@page-content-p-spacing: 1.2em 0 1.2em 0;
+@content-width: 33em;
 
 * {
   margin: 0;
@@ -48,7 +51,6 @@ a:hover {
 }
 
 p {
-  margin: 0 0 1.2em 0;
 }
 
 #listing {
@@ -58,6 +60,7 @@ p {
 
   li {
     margin-top: .4em;
+    font-size: @content-font-size;
   }
 
   .listing-date {
@@ -77,31 +80,47 @@ p {
 }
 
 #title {
+  width: @content-width;
+  font-size: 1.4em;
+
   h1 {
     font-size: 1.8em;
+    line-height: .8em;
   }
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 1.5em;
 }
 
 #page-content {
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: @content-font-size;
+  line-height: 1.4em;
   text-align: justify;
 
   #content-text {
-    width: 30em;
-    border-top: 1px solid #bbb;
+    width: @content-width;
 
     h1 {
       font-size: 1.5em;
     }
 
     h2 {
-      font-size: 1.3em;
+      font-size: 1.2em;
+      margin: @page-content-p-spacing;
+    }
+
+    ul {
+      list-style-position: inside;
+      list-style-type: disc;
+    }
+
+    li {
+      margin-top: .3em;
+      text-align: left;
     }
   }
 
   p {
-    margin-top: 1.5em;
+    margin: @page-content-p-spacing;
   }
 
   #content-footer {
