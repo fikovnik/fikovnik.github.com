@@ -8,9 +8,9 @@
 {% block article %}
 
 For the experiments I do currently I need to observe the behavior of the
-[Condor][condor] schedd queue while executing large workflows. What I did usually was
-to use a script that would just periodically execute `condor_q`, parse its
-output and write that into a file:
+[Condor][condor] schedd queue while executing large workflows. What I did
+usually was to use a script that would just periodically execute `condor_q` and
+together with a timestamp writes the info into a file:
 
     :::bash
     #!/bin/sh
@@ -23,12 +23,14 @@ output and write that into a file:
       sleep 1
     done
 
-This works well, but I usually need to correlate this with some other stats
-gathered like memory or system load. I use [dstat][] for getting these metrics.
-It has a nice feature to export output to csv file which can be easily read by
-[gnuplot][]. It uses a nice plugin architecture so I decided to write a
-[plugin][condor-queue-dstat] to get the queue stats. It has been merged to the
-latest master branch of dstat.
+This works well, however, I usually need to correlate it with some other stats
+like memory usage, system load, etc. I like to use [dstat][] for getting these
+system information. It has a nice feature to export output to csv file which
+can be easily read by [gnuplot][]. The problem is that one has to somehow link
+the two different outputs and that can be a bit cumbersome as the execution
+time of `condor_q` varies with larger number of jobs. Since dstat uses nice
+plugin architecture, I decided to write a [plugin][condor-queue-dstat] that
+will grab the queue info.
 
 The usage is simple, just add `--condor-queue` flag to dstat:
 
@@ -41,11 +43,16 @@ The usage is simple, just add `--condor-queue` flag to dstat:
         4     2     2     0
         3     1     2     0
 
-It requires to have `CONDOR_CONFIG` environment variable set and obviously condor
-running. It connects only to the local queue.
+It requires to have `CONDOR_CONFIG` environment variable set and obviously
+condor running. It will try to find to read the config file(s) and expand the
+`BIN_DIR` variable to find path to the `condor_q`. Note, that it connects only
+to the local queue. The plugin has been merged to the latest master branch of
+dstat.
+
 
 [dstat]: https://github.com/dagwieers/dstat
 [condor]: http://www.cs.wisc.edu/condor/
+[gnuplot]: http://www.gnuplot.info/
 [condor-queue-dstat]: https://github.com/dagwieers/dstat/blob/master/plugins/dstat_condor_queue.py
 
 {% endblock %}
