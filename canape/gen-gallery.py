@@ -41,8 +41,8 @@ def main():
 
         exif = get_exif(im)
         date = datetime.strptime(exif['DateTimeOriginal'], '%Y:%m:%d %H:%M:%S')
-        photos.append((fname, thumb_fname, exif['ImageDescription'],
-            thumb_size[0], thumb_size[1], date))
+        desc = exif['ImageDescription'] if 'ImageDescription' in exif else ''
+        photos.append((fname, thumb_fname, desc, thumb_size[0], thumb_size[1], date))
 
     photos.sort(key=lambda p: p[5])
 

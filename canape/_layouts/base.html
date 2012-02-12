@@ -47,6 +47,16 @@
              </ul>
            </div>
            <div class="container">
+             <h1>galleries</h1>
+             <ul id="galleries">
+               {% for gallery in site.galleries %}
+               <li>
+               <a href="{{ site.baseurl }}/galleries/{{ gallery.name }}">{{ gallery.title }}</a>
+               </li>
+               {% endfor %}
+             </ul>
+           </div>
+           <div class="container">
              <h1>projects</h1>
              <ul id="projects">
                {% for project in site.projects %}

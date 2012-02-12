@@ -21,6 +21,17 @@ sections:
 - name: journal
   title: journal
 
+galleries:
+
+- name: book1
+  title: Book 1
+
+- name: book2
+  title: Book 2
+
+- name: book3
+  title: Book 3
+
 projects:
 
 - name: the-rickshaw-run-2009
