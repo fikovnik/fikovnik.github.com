@@ -1,6 +1,6 @@
 ---
-title: Observing Condor Queue with `dstat`
-layout: post
+  title: Observing Condor Queue with `dstat`
+  layout: post
 ---
 
 For the experiments I do currently I need to observe the behavior of the

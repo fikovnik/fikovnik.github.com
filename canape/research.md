@@ -3,29 +3,27 @@
   layout: default
 ---
 
-I am pursuing a PhD under [Philippe Collet][philippe] and [Johan
-Montagnat][johan] supervision in the [MODALIS][] team in the join [CNRS][]
-[I3S][] laboratory [University of Nice][UNS]. My current research deals with
-self-adaptive software systems with the focus towards large scale distributed
-computing mainly Grids. I am looking into architectural and control models of
-various parts of these systems.
+Currently, I'm a PhD candidate at [French National Centre for Scientific
+Research][CNRS] in a computer science lab [I3S][] working on model driven architectures
+and engineering of feedback control systems under the supervision of [Philippe
+Collet][philippe] and [Johan Montagnat][johan].
 
-I'm part of the [ANR][] Self-Adaptive very Large disTributed sYstems ([SALTY][]) project. 
+The main aim for my research is to provide a tooled approach that would assist
+researches and engineers in designing, implementing and validating feedback
+control for computing systems. The idea is to provide a platform for rapid
+prototyping for such systems. One of the main use cases I am using for
+validating this approach is modeling adaptive behavior in Condor distributed
+batch system. I am working on an adaptive workflow execution, in this case
+maintaining high-throughput while preventing system overload.
 
-For the keyword oriented ones:
-
-* Autonomic Computing,
-* Grid Computing,
-* Self-Adaptive and Self-Organizing Software Systems,
-* Applied Control Theory in Computing Systems,
-* Distributed Computing,
-* Service and Component Oriented Architectures,
-* Model-Driven Engineering.
+My work is part of the [ANR][] Self-Adaptive very Large disTributed sYstems ([SALTY][]) project. 
 
 ## Activities 
 
-* Collaboration with University of Wisconsin-Madison on the [Condor project][condor].
-* Lecturing in Super Computing and Distributed Systems Camp - [SC-CAMP][] (2010, 2011).
+* Collaboration with University of Wisconsin-Madison on the [Condor project][condor]
+* Lecturing in Super Computing and Distributed Systems Camp - [SC-CAMP][]
+  * 2010 - Self Adaptive Very Large Distributed System 
+  * 2011 - An Introduction to High-Throughput Computing, Condor in Action
 
 ## Publications 
 * F. Křikava, P. Collet, _A Reflective Model for Architecting Feedback Control Systems_, In proceedings of the 23rd International Conference on Software Engineering and Knowledge Engineering (SEKE 2011), Miami, USA, July 2011, IEEE.
@@ -33,7 +31,8 @@ For the keyword oriented ones:
 * P. Collet, F. Krikava, J. Montagnat, M. Blay-Fornarino, and D. Manset, _Issues And Scenarios For Self-Managing Grid Middleware_, Proceeding of the 2nd workshop on Grids meets autonomic computing GMAC 2010, Washington, USA, June 2010 ACM Press.
 
 ## Teaching 
-* Winter 2010/2011: Introduction to Programming using Python (both M2 Hydroprotech and M2 EuroAquae)
+* 2010/2011: Introduction to Programming using Python (both M2 Hydroprotech and M2 EuroAquae)
+* 2011/2012: Introduction to Programming using Python (both M2 Hydroprotech and M2 EuroAquae)
 
 ## Contact: 
 
@@ -46,7 +45,6 @@ Polytech Nice Sophia
 930 Route des Colles, BP 145  
 F-06903 Sophia Antipolis Cedex  
 France
-
 
 [philippe]: http://www.i3s.unice.fr/~collet/
 [johan]: http://www.i3s.unice.fr/~johan/

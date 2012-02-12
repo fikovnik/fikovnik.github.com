@@ -1,11 +1,14 @@
 title: canapé
 host: http://fikovnik.net
-url: /canape
-baseurl: /canape
 
 pygments: true
 markdown: kramdown
 permalink: pretty
+
+exclude:
+
+- canape.sh
+- gen-gallery.py 
 
 sections:
 
@@ -20,5 +23,5 @@ sections:
 
 projects:
 
-- name: therickshawrun2009
+- name: the-rickshaw-run-2009
   title: the rickshaw run 2009

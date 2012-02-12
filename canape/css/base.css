@@ -1,91 +1,120 @@
+---
+---
 * {
   margin:0;
   padding:0;
   border:none;
 }
-
+/**/
 body {
-  margin:2em 2em 0 2em;
-  font-size: 62.5%; /* Resets 1em to 10px */
-  font-family:'Lucida Grande', Verdana, Arial, Sans-Serif;
-  background-color:#f8f8f8;
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background: #d5d6d7 url('{{ site.baseurl }}/images/kubrickbgcolor.jpg');
+	color: #333;
 }
 
 a:hover {
-	color: #147;
-	text-decoration:underline;
+    color: #147;
+    text-decoration:underline;
 }
-
+ 
 a {
-	color: #06c;
-	text-decoration:none;
-}
-
-#menu {
-  width:11em;
-  overflow:hidden;
-  top:0;
-  bottom:0;
-  left:0;
-  position:fixed;
-  height:100%;
-  padding-left:2em;
-  padding-top:2.15em;
-
-  font-size:0.9em;
-  color:#444444;
-  background-color:#f8f8f8;
-}
-
-#menu ul {
-  list-style:none;
-}
-
-#menu li {
-  margin-top:.4em;
-}
-
-#menu ul li:before {
-	content: "\00BB \0020";
-}
-
-#menu h1 {
-	font-size: 1.2em;
-	font-weight: bold;
-  margin-bottom:1.5em;
-}
-
-.container {
-  padding:.7em .7em 2.2em .7em;
-}
-
-#content {
-  height:100%;
-  margin:0 0 0 11em;
-  top:0;
-  width:40em;
+    color: #06c;
+    text-decoration:none;
 }
 
 #header {
-  margin-bottom:1.5em;
+	background: url('{{ site.baseurl }}/images/header.jpg') no-repeat bottom center;
+	height: 17px; 
+	width: 759px;
+	}
+
+#page {
+  background: url("{{ site.baseurl }}/images/kubrickbgwide.jpg") repeat-y top;
+	margin: 20px auto;
+	padding: 0;
+	width: 760px;
+	}
+
+#content {
+  padding: 10px 0 20px 0;
+	margin: 3em 0 0 150px;
+	width: 450px;
 }
 
-#header h1.title {
-  font-size:1.6em;
-  font-family:'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
-  font-weight:normal;
+#content .title {
+  margin-bottom: 1.25em;
 }
 
-#header h1.date {
+#content .title h1 {
+	font-size: 1.6em;
+  margin-bottom: 1.25em;
+	font-weight: normal;
+}
+
+#content .title .date {
   font-size: 0.9em;
-  line-height: 1.5em;
   color: #777;
 }
 
+#footer {
+	background: #e7e7e7 url('{{ site.baseurl }}/images/kubrickfooter.jpg') no-repeat top; 
+	border: none;
+  padding: 0;
+	margin: 0 auto;
+  margin-top: 100px;
+	width: 760px;
+}
+
+#footer .copyright {
+  margin-top: 10px;
+	padding: 20px 0;
+  text-align: center;
+  clear: both;
+}
+
+#menu {
+  font-size:0.9em;
+  color:#444444;
+  margin: 5px 0 0 150px;
+	width: 450px;
+  border-top: 1px solid #999;
+}
+ 
+#menu ul {
+  list-style:none;
+}
+ 
+#menu li {
+  margin-top:0.4em;
+}
+ 
+#menu ul li:before {
+    content: "\00BB \0020";
+}
+ 
+#menu h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom:1em;
+}
+ 
+#menu .container {
+    margin-top:1em;
+    float:left;
+    width:12em;
+}
+
 #article {
+	margin: 0 0 10px;
+	text-align: justify;
   font-size:1.05em;
   line-height:1.4em;
-  text-align:justify;
+}
+
+#article p {
+	font-size: 1.05em;
+	line-height: 1.4em;
 }
 
 #article #journal-listing ul {
@@ -131,6 +160,27 @@ a {
 
 #article p {
   margin:0em 0 1.2em 0;
+}
+
+#article .gallery {
+}
+
+#article .gallery .photo {
+  background-color:#222;
+  padding:5px;
+  width:545px;
+  margin-bottom:25px;
+  text-align: center;
+}
+
+#article .gallery .photo img {
+  border:2px solid #eee;
+}
+
+#article .gallery .label {
+  font-size:0.9em;
+  color:#e7e7e7;
+  width:100%;
 }
 
 #article code {

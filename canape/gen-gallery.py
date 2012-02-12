@@ -2,45 +2,66 @@
 
 from PIL import Image
 from PIL.ExifTags import TAGS
+from datetime import datetime
 
 import os
+import glob
 import sys
 
-def get_exif(fn):
+def get_exif(im):
     ret = {}
-    i = Image.open(fn)
-    info = i._getexif()
+    info = im._getexif()
     for tag, value in info.items():
         decoded = TAGS.get(tag, tag)
         ret[decoded] = value
 
-    ret['Size'] = i.size
+    ret['Size'] = im.size
 
     return ret
 
 
 def main():
 
-    dname = sys.argv[1]
+    thumb_dir = "thumbs"
+    m = 540.0
 
-    fields = ('FileName', 'ImageDescription', 'DateTimeOriginal', 'Size')
+    if not os.path.isdir(thumb_dir):
+        os.mkdir(thumb_dir)
 
     photos = []
-    width = 0
-    for fname in os.listdir(dname):
-        exif = get_exif(os.path.join(dname, fname))
-        info = ("'%s'" % fname,
-                "'%s'" % exif['ImageDescription'],
-                "'%s'" % exif['DateTimeOriginal'],
-                str(exif['Size'][0]),
-                str(exif['Size'][1]))
+    for fname in glob.glob("*.jpg"):
+        im = Image.open(fname)
+        im_w, im_h = im.size
+        thumb_size = (int(m), int(im_h*(m/im_w))) if im_w > im_h else (int(im_w*(m/im_h)),int(m))
+        im.thumbnail(thumb_size, Image.ANTIALIAS)
 
-        photos.append("    [%s]" % ',\n     '.join(info))
-        width += exif['Size'][0]
+        thumb_fname = os.path.join(thumb_dir, os.path.splitext(fname)[0] +
+                ".thumbnail.jpg")
+        im.save(thumb_fname)
 
-    print '    photos: [\n%s\n    ]' % (',\n'.join(photos))
-    print '    width: %d' % width
+        exif = get_exif(im)
+        date = datetime.strptime(exif['DateTimeOriginal'], '%Y:%m:%d %H:%M:%S')
+        photos.append((fname, thumb_fname, exif['ImageDescription'],
+            thumb_size[0], thumb_size[1], date))
 
+    photos.sort(key=lambda p: p[5])
+
+    print '''
+---
+  title: <TITLE>
+  layout: post
+  imagedir: /images/projects/<PROJECT>
+  photos:'''
+
+    for photo in photos:
+        print '  - url: %s' % photo[0]
+        print '    thumbnail: %s' % photo[1]
+        print '    label: %s' % photo[2]
+        print '    width: %s' % photo[3]
+        print '    height: %s' % photo[4]
+
+    print '---'
+    print ''
 
 if __name__ == '__main__':
     main()

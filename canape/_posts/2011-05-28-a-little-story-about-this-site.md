@@ -1,6 +1,6 @@
 ---
-A Little Story About This Site
-layout: post
+  title: A Little Story About This Site
+  layout: post
 ---
 
 I have already tried a few times to setup some a personal site where I could

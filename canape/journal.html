@@ -8,7 +8,7 @@ layout: default
     {% for post in site.posts %}
     <li>
         <span class="arrow">&raquo;</span>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <a class="title" href="#" title="{{ post.content | number_of_words }} words"
             style="width:{{ post.content | number_of_words | divided_by:8 | plus: 10 }}px;">&nbsp;</a>
         <div class="date">{{ post.date | date_to_string }}</div>
