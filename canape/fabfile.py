@@ -7,7 +7,7 @@ def publish():
     generate()
     username = _keychain_get_username(account)
     password = _keychain_get_password(account)
-    local('ftpsync.pl _site/ ftp://%s:%s@%s' % (username, password, target))
+    local('ftpsync.pl -s _site/ ftp://%s:%s@%s' % (username, password, target))
 
 def generate():
     local('jekyll')
