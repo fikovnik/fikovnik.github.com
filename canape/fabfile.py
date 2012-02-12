@@ -10,7 +10,7 @@ def publish():
     local('ftpsync.pl -s _site/ ftp://%s:%s@%s' % (username, password, target))
 
 def generate():
-    local('jekyll')
+    local('jekyll --base-url=/canape')
 
 def localserver():
     local('jekyll --auto --server --base-url=/canape')
