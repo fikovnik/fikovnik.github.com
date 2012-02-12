@@ -1,10 +1,7 @@
-{% extends "_staticpage.html" %}
-
-{%hyde
-    title: "About"
-%}
-
-{% block article %}
+---
+  title: About
+  layout: default
+---
 
 I’m from Czech republic, currently living in south of France where I’m pursuing
 a PhD in computer science. If you are interested you can have a look at my
@@ -30,5 +27,3 @@ me](mailto:krikava___gmail___com) or find me on [GitHub][], [Twitter][],
 This site should server as a collection of things that interests me. The little
 story behind is summed in a short post
 [here]({{site.url}}/journal/2011/05/a-little-story-about-this-site.html).
-
-{% endblock %}

@@ -1,14 +1,11 @@
-{% extends "_staticpage.html" %}
-
-{%hyde
-    title: "Research"
-%}
-
-{% block article %}
+---
+  title: Research
+  layout: default
+---
 
 I am pursuing a PhD under [Philippe Collet][philippe] and [Johan
 Montagnat][johan] supervision in the [MODALIS][] team in the join [CNRS][]
-[I3S][] laboratory [University of Nice][UNICE]. My current research deals with
+[I3S][] laboratory [University of Nice][UNS]. My current research deals with
 self-adaptive software systems with the focus towards large scale distributed
 computing mainly Grids. I am looking into architectural and control models of
 various parts of these systems.
@@ -60,6 +57,4 @@ France
 [SALTY]: https://salty.unice.fr/
 [Condor]: http://www.cs.wisc.edu/condor/
 [SC-CAMP]: http://www.sc-camp.org/
-[UNICE]: http://www.unice.fr/
-
-{% endblock %}
+[UNS]: http://www.unice.fr/

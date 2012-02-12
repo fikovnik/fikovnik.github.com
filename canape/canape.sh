@@ -24,6 +24,12 @@ function local()
 
 }
 
+function server()
+{
+  echo "Running server"  
+  hyde -s $site_home -w -k
+}
+
 function generate()
 {
 
@@ -62,6 +68,9 @@ case "$1" in
 clean)	
     clean
 	  ;;
+server)
+    server  
+    ;;
 local)
     local  
     ;;
@@ -72,7 +81,7 @@ publish)
     publish
     ;;
 *)	
-    echo "Usage: $0 {clean|local|publish|generate}"
+    echo "Usage: $0 {clean|server|local|publish|generate}"
     exit 2
     ;;
 esac

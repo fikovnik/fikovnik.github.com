@@ -1,0 +1,24 @@
+title: canapé
+host: http://fikovnik.net
+url: /canape
+baseurl: /canape
+
+pygments: true
+markdown: kramdown
+permalink: pretty
+
+sections:
+
+- name: about
+  title: about
+
+- name: research
+  title: research
+
+- name: journal
+  title: journal
+
+projects:
+
+- name: therickshawrun2009
+  title: the rickshaw run 2009

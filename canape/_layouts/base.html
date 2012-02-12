@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>{{ page.title }}</title>
+
+		<link rel="stylesheet" href="{{site.url}}/css/base.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="{{site.url}}/css/pygments.css" type="text/css" media="screen" charset="utf-8">
+		
+		<script src="htttp://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23996205-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+	<body>
+    <div id="menu">
+      <div class="container">
+        <h1>à la carte</h1>
+        <ul id="main">
+          <li>
+          <a href="{{site.url}}/index.html">canapé</a>
+          </li>
+          {% for section in site.sections %}
+          <li>
+          <a href="{{site.url}}/{{ section.name }}">{{ section.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <br />
+        <h1>projects</h1>
+        <ul id="projects">
+          {% for project in site.projects %}
+          <li>
+          <a href="{{site.url}}/projects/{{ project.name }}">{{ project.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div id="content">
+      {{ content }}
+    </div>
+
+  </body>
+</html>

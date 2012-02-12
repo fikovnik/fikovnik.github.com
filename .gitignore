@@ -2,3 +2,4 @@ canape/deploy
 *.pyc
 canape/deploy_tmp
 /canape/site.log
+canape/_site/

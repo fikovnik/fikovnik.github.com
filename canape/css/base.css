@@ -1,0 +1,161 @@
+* {
+  margin:0;
+  padding:0;
+  border:none;
+}
+
+body {
+  margin:2em 2em 0 2em;
+  font-size: 62.5%; /* Resets 1em to 10px */
+  font-family:'Lucida Grande', Verdana, Arial, Sans-Serif;
+  background-color:#f8f8f8;
+}
+
+a:hover {
+	color: #147;
+	text-decoration:underline;
+}
+
+a {
+	color: #06c;
+	text-decoration:none;
+}
+
+#menu {
+  width:11em;
+  overflow:hidden;
+  top:0;
+  bottom:0;
+  left:0;
+  position:fixed;
+  height:100%;
+  padding-left:2em;
+  padding-top:2.15em;
+
+  font-size:0.9em;
+  color:#444444;
+  background-color:#f8f8f8;
+}
+
+#menu ul {
+  list-style:none;
+}
+
+#menu li {
+  margin-top:.4em;
+}
+
+#menu ul li:before {
+	content: "\00BB \0020";
+}
+
+#menu h1 {
+	font-size: 1.2em;
+	font-weight: bold;
+  margin-bottom:1.5em;
+}
+
+.container {
+  padding:.7em .7em 2.2em .7em;
+}
+
+#content {
+  height:100%;
+  margin:0 0 0 11em;
+  top:0;
+  width:40em;
+}
+
+#header {
+  margin-bottom:1.5em;
+}
+
+#header h1.title {
+  font-size:1.6em;
+  font-family:'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  font-weight:normal;
+}
+
+#header h1.date {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #777;
+}
+
+#article {
+  font-size:1.05em;
+  line-height:1.4em;
+  text-align:justify;
+}
+
+#article #journal-listing ul {
+  margin:0;
+  list-style-type:none;
+  list-style-position:outside;
+}
+
+#article #journal-listing li div.date {
+  font-size:0.8em;
+  line-height:1.5em;
+  color:#777;
+}
+
+#article #journal-listing li a.title {
+  margin-right:.5em;
+}
+
+#article h1 {
+  font-size:1.3em;
+}
+
+#article h2 {
+  font-size:1.1em;
+  margin:1em 0 1em 0;
+}
+
+#article ul {
+  list-style-position:outside;
+  list-style-type:disc;
+  margin-left:1.5em;
+}
+
+#article ol { 
+  list-style-position:outside; 
+  margin-left:1.5em;
+}
+
+#article li {
+  margin-top:0.3em;
+  text-align:left;
+}
+
+#article p {
+  margin:0em 0 1.2em 0;
+}
+
+#article code {
+  font-size: 1.25em;
+} 
+
+#article #content-footer {
+  padding-top:1em;
+  font-style:italic;
+  font-size:.9em;
+}
+
+#article .highlight { 
+  margin-bottom: 1em;
+}
+
+#article .highlight {
+  overflow:scroll;
+  background-color:#eeeeee;
+  border:1px solid #dddddd;
+  line-height:1.5em;
+  color:#444444;
+  overflow:auto;
+  -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
