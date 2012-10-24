@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>{{ page.title }}</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/pygments.css" type="text/css" media="screen" charset="utf-8">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+
+<title>{{ page.title }}</title>
+
+<link rel='stylesheet' href='/css/base.css' type='text/css' />
+ <link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen" charset="utf-8">
+
+<style type='text/css'>
+#menu { left: 0; float: left; }
+</style>
+
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -19,63 +26,58 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
      </script>
-   </head>
-   <body>
-     <body>
-       <div id="page">
-         <div id="header">
-         </div>
 
-         <div id="content">
-           {{ content }}
-         </div>
+<script type='text/javascript'>
+path = 'http://yeah.hmplus.net/files/gimgs/';
+ 
+$(document).ready(function()
+{
+  setTimeout('move_up()', 1);
+});
+</script>
 
-         <hr/>
 
-         <div id="menu">
-           <div class="container">
-             <h1>à la carte</h1>
-             <ul id="main">
-               <li>
-               <a href="{{ site.baseurl }}/index.html">canapé</a>
-               </li>
-               {% for section in site.sections %}
-               <li>
-               <a href="{{ site.baseurl }}/{{ section.name }}">{{ section.title }}</a>
-               </li>
-               {% endfor %}
-             </ul>
-           </div>
-           <div class="container">
-             <h1>galleries</h1>
-             <ul id="galleries">
-               {% for gallery in site.galleries %}
-               <li>
-               <a href="{{ site.baseurl }}/galleries/{{ gallery.name }}">{{ gallery.title }}</a>
-               </li>
-               {% endfor %}
-             </ul>
-           </div>
-           <div class="container">
-             <h1>projects</h1>
-             <ul id="projects">
-               {% for project in site.projects %}
-               <li>
-               <a href="{{ site.baseurl }}/projects/{{ project.name }}">{{ project.title }}</a>
-               </li>
-               {% endfor %}
-             </ul>
-           </div>
-         </div>
+</head>
 
-         <div id="footer">
-           <div class="copyright">
-             canapé 
-             <br/>
-             <br/>
-             &nbsp;
-           </div>
-         </div>
-       </div>
-     </body>
-   </html>
+<body>
+
+<div id='page'>
+
+<div id='top-section'>{{ site.title }}<br />{{ site.tagline }}</div>
+
+<div id='menu'>
+
+<ul>
+<li class='section-title'>à la carte</li>
+<li><a href="{{ site.baseurl }}/index.html">canapé</a></li>
+{% for section in site.sections %}
+<li><a href="{{ site.baseurl }}/{{ section.name }}">{{ section.title }}</a></li>
+{% endfor %}
+</ul>
+
+<ul>
+<li class='section-title'>galleries</li>
+{% for gallery in site.galleries %}
+<li><a href="{{ site.baseurl }}/galleries/{{ gallery.name }}">{{ gallery.title }}</a></li>
+{% endfor %}
+</ul>
+
+<ul>
+<li class='section-title'>projects</li>
+{% for project in site.projects %}
+<li><a href="{{ site.baseurl }}/projects/{{ project.name }}">{{ project.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+<div class='cl'><!-- --></div>
+
+<div id='content'>
+{{ content }}
+<div class='cl'><!-- --></div>
+
+<!-- end text and image -->
+
+</div>
+
+</html>

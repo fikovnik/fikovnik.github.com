@@ -2,6 +2,8 @@
   layout: default
 ---
 
+<h2>{{ page.description }}</h2>
+
 {% for photo in page.photos %}
   {% include gallery_item.html %}
 {% endfor %}

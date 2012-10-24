@@ -1,5 +1,6 @@
 ---
   title: Book One
+  description: People
   layout: gallery
   imagedir: /images/galleries/book1
   photos:

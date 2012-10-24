@@ -1,207 +1,214 @@
----
----
 * {
-  margin:0;
-  padding:0;
-  border:none;
+margin : 0;
+padding : 0;
 }
-/**/
+
 body {
-	font-size: 62.5%; /* Resets 1em to 10px */
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	background: #d5d6d7 url('{{ site.baseurl }}/images/kubrickbgcolor.jpg');
-	color: #333;
+  font-size: 62.5%; /* Resets 1em to 10px */
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+  background-color: #fafafa;
+  line-height : 1.2em;
 }
 
-a:hover {
-    color: #147;
-    text-decoration:underline;
-}
- 
-a {
-    color: #06c;
-    text-decoration:none;
+/* LINKS */
+
+a:link {
+  text-decoration: none;
+  background-color: #FFFF99;
+  color: black;
 }
 
-#header {
-	background: url('{{ site.baseurl }}/images/header.jpg') no-repeat bottom center;
-	height: 17px; 
-	width: 759px;
-	}
+a:active {
+  text-decoration: none;
+  background-color: #FFFF99;
+  color: black;
+}
 
-#page {
-  background: url("{{ site.baseurl }}/images/kubrickbgwide.jpg") repeat-y top;
-	margin: 20px auto;
-	padding: 0;
-	width: 760px;
-	}
+a:visited {
+  text-decoration: none;
+  background-color: #FFFF99;
+  color: black; }
+  
+a:hover { 
+  text-decoration: none;
+  background-color: #FFFF33;
+  color: black; }
+
+a img { border: none; }
+
+/* TOP */
+#top-section {
+  float: right;
+  font-weight: bold;
+  line-height : 2em;
+  text-align: right;
+}
+
+#page { 
+  margin-left: 5em;
+  margin-top: 2em;
+  width: 760px;
+}
+
+/* MENU */
+#menu {
+  float: left;
+}
+
+#menu ul {
+  float: left;
+  width: 7em;  /* the width of each column in the menu */
+  list-style-type: none;
+  overflow: auto;
+  padding: 0px 0px 0px 0px;
+}
+
+#menu ul li.section-title {
+  color: black;
+  text-align: left;
+  width: auto;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 2px 0px;
+}
+
+
+#menu ul li {
+  text-align: left;
+  width: auto;
+  margin: 0px 0px 2px 0px;
+}
+
+#menu ul li.active {  
+  text-decoration: underline;
+}
+
+#menu ul a:link {
+  text-decoration: none;
+  color: black;
+}
+
+#menu ul a:active {
+  text-decoration: none;
+  color: black;
+}
+
+#menu ul a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#menu ul a:hover {
+  color: black;
+}
+
+/* MAIN CONTENT */
 
 #content {
-  padding: 10px 0 20px 0;
-	margin: 3em 0 0 150px;
-	width: 450px;
+  margin-top: 2em;
 }
 
-#content .title {
-  margin-bottom: 1.25em;
+/* End Main Content */
+
+/* Fonts / Typefaces */
+
+#content p {
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-top: 0.5em;
 }
 
-#content .title h1 {
-	font-size: 1.6em;
-  margin-bottom: 1.25em;
-	font-weight: normal;
-}
-
-#content .title .date {
-  font-size: 0.9em;
-  color: #777;
-}
-
-#footer {
-	background: #e7e7e7 url('{{ site.baseurl }}/images/kubrickfooter.jpg') no-repeat top; 
-	border: none;
-  padding: 0;
-	margin: 0 auto;
-  margin-top: 100px;
-	width: 760px;
-}
-
-#footer .copyright {
-  margin-top: 10px;
-	padding: 20px 0;
-  text-align: center;
-  clear: both;
-}
-
-#menu {
-  font-size:0.9em;
-  color:#444444;
-  margin: 5px 0 0 150px;
-	width: 450px;
-  border-top: 1px solid #999;
+#content ul {
+  list-style-position: outside;
+  list-style-type: circle;
+  margin-left: 1.5em;
 }
  
-#menu ul {
-  list-style:none;
-}
- 
-#menu li {
-  margin-top:0.4em;
-}
- 
-#menu ul li:before {
-    content: "\00BB \0020";
-}
- 
-#menu h1 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom:1em;
-}
- 
-#menu .container {
-    margin-top:1em;
-    float:left;
-    width:12em;
-}
-
-#article {
-	margin: 0 0 10px;
-	text-align: justify;
-  font-size:1.05em;
-  line-height:1.4em;
-}
-
-#article p {
-	font-size: 1.05em;
-	line-height: 1.4em;
-}
-
-#article #journal-listing ul {
-  margin:0;
-  list-style-type:none;
-  list-style-position:outside;
-}
-
-#article #journal-listing li div.date {
-  font-size:0.8em;
-  line-height:1.5em;
-  color:#777;
-}
-
-#article #journal-listing li a.title {
-  margin-right:.5em;
-}
-
-#article h1 {
-  font-size:1.3em;
-}
-
-#article h2 {
-  font-size:1.1em;
-  margin:1em 0 1em 0;
-}
-
-#article ul {
-  list-style-position:outside;
-  list-style-type:disc;
-  margin-left:1.5em;
-}
-
-#article ol { 
+#content ol { 
   list-style-position:outside; 
   margin-left:1.5em;
 }
-
-#article li {
-  margin-top:0.3em;
+ 
+#content li {
   text-align:left;
+  line-height: 2em;
 }
 
-#article p {
-  margin:0em 0 1.2em 0;
+#content a:link {
+  text-align: left;
+  padding: 0;
 }
 
-#article .gallery {
+h1 { 
+  letter-spacing: -20px;
+  line-height: 80%;
+  font-size: 1750%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding-bottom: 0.1em;
 }
 
-#article .gallery .photo {
+h2 {
+  font-size:750%;
+  line-height: 100%;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+}
+
+h3 {
+  font-size: 500%;
+  line-height: 100%;
+  letter-spacing: -5px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 0px 0px 10px 0px;
+}
+
+h4 {
+  font-size: 200%;
+}
+
+/* Gallery */
+
+#content .gallery {
+}
+ 
+#content .gallery .photo {
   background-color:#222;
   padding:5px;
   width:545px;
   margin-bottom:25px;
   text-align: center;
 }
-
-#article .gallery .photo img {
-  border:2px solid #eee;
+ 
+#content .gallery .photo img {
+  border:3px solid #eee;
 }
-
-#article .gallery .label {
-  font-size:0.9em;
+ 
+#content .gallery .label {
+  font-size:0.85em;
+  padding-top: 0.5em;
   color:#e7e7e7;
-  width:100%;
 }
 
-#article code {
-  font-size: 1.25em;
-} 
-
-#article #content-footer {
-  padding-top:1em;
-  font-style:italic;
-  font-size:.9em;
-}
-
-#article .highlight { 
-  margin-bottom: 1em;
-}
-
-#article .highlight {
+#content .highlight { 
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   overflow:scroll;
   background-color:#eeeeee;
   border:1px solid #dddddd;
-  line-height:1.5em;
+  line-height:1.2em;
+  font-size: 1.7em;
   color:#444444;
   overflow:auto;
   -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
@@ -209,3 +216,7 @@ a {
   -moz-border-radius:3px;
   border-radius:3px;
 }
+
+/* End Fonts / Typefaces */
+
+.cl { clear: left; }

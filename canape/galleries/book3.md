@@ -1,5 +1,6 @@
 ---
   title: Book Three
+  description: Traveling
   layout: gallery
   imagedir: /images/galleries/book3
   photos:

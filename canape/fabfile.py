@@ -13,7 +13,7 @@ def generate():
     local('jekyll --base-url=/canape')
 
 def localserver():
-    local('jekyll --auto --server --base-url=/canape')
+    local('jekyll --auto --server ')
 
 
 def _keychain_get_username(account):

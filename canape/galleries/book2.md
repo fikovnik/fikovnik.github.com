@@ -1,5 +1,6 @@
 ---
   title: Book Two
+  description: Mountains
   layout: gallery
   imagedir: /images/galleries/book2
   photos:
