@@ -25,13 +25,13 @@ sections:
 galleries:
 
 - name: book1
-  title: Book 1
+  title: book one 
 
 - name: book2
-  title: Book 2
+  title: book two
 
 - name: book3
-  title: Book 3
+  title: book three
 
 projects:
 

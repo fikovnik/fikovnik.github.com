@@ -1,5 +1,5 @@
 ---
-  title: Book 2
+  title: Book Two
   layout: gallery
   imagedir: /images/galleries/book2
   photos:

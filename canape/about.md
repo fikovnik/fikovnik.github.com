@@ -14,7 +14,7 @@ If you want to get in touch with me you can find me on [GitHub][], [Twitter][],
 Canapé is proudly powered by [Jekyll][] using an altered [Kubrik][] theme.
 
 [Jekyll]: https://github.com/mojombo/jekyll
-[Kubric]: http://theme.wordpress.com/themes/kubrick/
+[Kubrik]: http://theme.wordpress.com/themes/kubrick/
 [CNRS]: http://www.cnrs.fr/
 [I3S]: http://www.i3s.unice.fr/
 [MODALIS]: http://modalis.i3s.unice.fr/
