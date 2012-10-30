@@ -1,5 +1,5 @@
-canape/deploy
+deploy
 *.pyc
-canape/deploy_tmp
-/canape/site.log
-canape/_site/
+deploy_tmp
+site.log
+_site/
