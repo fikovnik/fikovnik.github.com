@@ -41,19 +41,6 @@ a img {
   border: none; 
 }
 
-a:link img {
-  background-color: #fafafa;
-}
-
-a:active img {
-  background-color: #fafafa;
-}
-
-a:visited img {
-  background-color: #fafafa;
-}
-
-
 /* TOP */
 #top-section {
   float: right;
@@ -226,6 +213,10 @@ a:visited img {
  
 #content .gallery .photo img {
   border:3px solid #eee;
+}
+
+#content .gallery a {
+ background-color: transparent;
 }
  
 #content .gallery .label {
