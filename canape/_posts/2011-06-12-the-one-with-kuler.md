@@ -5,39 +5,37 @@
 
 ## Introduction
 
-Last week I was working on poster for the [ICAC'11][] conference.  I'm
-far from being a graphical designer, but I really like designing
-posters. The scientific ones are not that much of a "fun", but still
-more enjoyable then just plain writing. I decided to use [OmniGraffle][]
-which together with [LaTeXiT][] I consider to be the turning point to
-switch to Mac (_if only other software was that useful._). After getting
-some inspiration from the [Scientific Poster Design][inspiration1]
-presentation by the Cornell University and plenty of other from my
-[favorite source][inspiration2] as well as plenty of comments from my
+Last week I was working on poster for the [ICAC'11][] conference.  I'm far from
+being a graphical designer, but I really like designing posters. The scientific
+ones are not that much of a "fun", but still more enjoyable then just plain
+writing. I decided to use [OmniGraffle][] which together with [LaTeXiT][] I
+consider to be the turning point to switch to Mac (if only other software was
+that useful). After getting some inspiration from the [Scientific Poster
+Design][inspiration1] presentation by the Cornell University and plenty of other
+from my [favorite source][inspiration2] as well as plenty of comments from my
 advisor I came up with this:
 
 ![Kuler]({{ site.baseurl }}/images/journal/the-one-with-kuler/original.png "Original")
 
-Yeah, the biggest problem is the color scheme, isn't it :) That one
-definitely had to be improved. A [color scheme][] is simply an aesthetic
-combination of colors that goes together nicely. There are quite a
-few ways how you create one, however, most of the time, some logical
-combination of colors from a [color wheel][] is used. I remembered that
-some time ago a friend of mine showed me a nice utility for creating
-such color schemes - a [color scheme designer][]. I started playing with
-it, but after a while I found three things:
+Yeah, the biggest problem is the color scheme, isn't it :) That one definitely
+had to be improved. A [color scheme][] is simply an aesthetic combination of
+colors that goes together nicely. There are quite a few ways how you create one,
+however, most of the time, some logical combination of colors from a [color
+wheel][] is used. I remembered that some time ago a friend of mine showed me a
+nice utility for creating such color schemes - a [color scheme designer][]. I
+started playing with it, but after a while I found three things:
 
 1. it is hard to come up with a good looking colors, 
 
-1. the harder it is to come up with good looking colors, the more
-painful my hand is from the constant clicking of changing colors, and 
+1. the harder it is to come up with good looking colors, the more painful my
+   hand is from the constant clicking of changing colors, and
 
-1. there is no way how one can easily type in the standard OSX color
-picker a hex color like `#ff1300`.
+1. there is no way how one can easily type in the standard OSX color picker a
+   hex color like `#ff1300`.
 
-I remember encountering the last problem already so I decided this time
-instead of converting hex to decimal, find some way how to do it easily
-(_on Mac there must be one, right?_).
+I remember encountering the last problem already so I decided this time instead
+of converting hex to decimal, find some way how to do it easily (_on Mac there
+must be one, right?_).
 
 ## Approach
 
@@ -48,18 +46,17 @@ importantly,I found something that looked that is designed for color schemes:
 [Mondrianum 2][].
 
 Mondrianum is a color picker that downloads color schemes from [Adobe Kuler][]
-and makes them accessible right from the color picker. Kuler is web
-application, well rather a platfom, for creating and more importantly sharing
-color schemes. You can list them sorted by popularity or rating so it looked
-like my first point just got solved.
+and makes them accessible right from the color picker. Kuler is web application,
+well rather a platfom, for creating and more importantly sharing color schemes.
+You can list them sorted by popularity or rating so it looked like my first
+point just got solved.
 
-The last thing that remains is the pain in the arm from the constant
-clicking (_after trying out few, the magic mouse proved not to be that
-magical after all_). What would be great is to have a way how to
-automatize this:
+The last thing that remains is the pain in the arm from the constant clicking
+(_after trying out few, the magic mouse proved not to be that magical after
+all_). What would be great is to have a way how to automatize this:
 
 1. annotate the shapes in OmniGraffle that should be filled with different
-colors,
+   colors,
 1. download one or more color scheme from Kuler, and
 1. apply each permutation of the scheme and export it to PDF.
 
@@ -67,19 +64,19 @@ Let's see if we can address it:
 
 1. To annotate shapes, one can use the note properties that can be found in the
    object inspector. A note can have data key/value pairs which are just
-strings. This be used to tag which shapes should have which colors:
+   strings. This be used to tag which shapes should have which colors:
 
 1. Kuler has a simple [API][kuler-api] in form of a RSS feed.
 
-1. OmniGraffle has quite an extensive AppleScript API. I have already written
-   an utility about exporting OmniGraffle canvases into PDF (and others) so the
-only things remaining was to find out how to get a [list of shapes][] with the
-notes and [change fill colors][].
+1. OmniGraffle has quite an extensive AppleScript API. I have already written an
+   utility about exporting OmniGraffle canvases into PDF (and others) so the
+   only things remaining was to find out how to get a [list of shapes][] with
+   the notes and [change fill colors][].
 
 ## Implementation
 
-Almost there, the last thing is to put all of this together. I don't
-like (know) AppleScript so I used Python [appscript][] library instead:
+Almost there, the last thing is to put all of this together. I don't like (know)
+AppleScript so I used Python [appscript][] library instead:
 
 Import appscript module:
 
@@ -117,9 +114,9 @@ Get shapes from the canvas:
     165
     {% endhighlight %}
 
-Now the variable `shapes` contains all the shapes, but in fact, we are
-only interested in the ones that contains the annotations. We can find
-these when we look at their `properties()`:
+Now the variable `shapes` contains all the shapes, but in fact, we are only
+interested in the ones that contains the annotations. We can find these when we
+look at their `properties()`:
 
     {% highlight python %}
     >>> shapes[0].properties()
@@ -147,11 +144,11 @@ So we filter all the shapes to include only the ones that have non empty
     (app(u'/Applications/OmniGraffle Professional 5.app').documents[u'poster.graffle'].canvases.ID(1).graphics.ID(11595), {u'bgcolor': u'color3'})
     {% endhighlight %}
 
-I also changed the data structure to contain a tuple with shape instance
-and the dictionary with the user data.
+I also changed the data structure to contain a tuple with shape instance and the
+dictionary with the user data.
 
-Now we need to get some Kuler theme. In order to simplify that I made a
-small module called [pykuler][]. It's usage is super simple:
+Now we need to get some Kuler theme. In order to simplify that I made a small
+module called [pykuler][]. It's usage is super simple:
 
     {% highlight python %}
     >>> from kuler import *
@@ -159,31 +156,29 @@ small module called [pykuler][]. It's usage is super simple:
     >>> theme = k.list().next()
     {% endhighlight %}
 
-The `k.list()` actually returns a generator, that's why the `next()`
-call.
+The `k.list()` actually returns a generator, that's why the `next()` call.
 
     {% highlight python %}
     >>> print theme
     Theme: 23615 (Tech Office)
     {% endhighlight %}
 
-The colors in a theme are stored as a tuple in the `colors` property. We
-need the 16 bit RGB representation for OmniGraffe:
+The colors in a theme are stored as a tuple in the `colors` property. We need
+the 16 bit RGB representation for OmniGraffe:
 
     {% highlight python %}
     >> theme.colors[0].asRGB16()
     (22784, 20992, 16640)
     {% endhighlight %}
 
-For convenience I will use this data structure for defining the colors
-tags - a dictionary containing a `Color` instance for each color tag:
+For convenience I will use this data structure for defining the colors tags - a
+dictionary containing a `Color` instance for each color tag:
 
     {% highlight python %}
     >>> colors = dict(zip(['color%d' % i for i in range(5)],theme.colors))
     {% endhighlight %}
 
-Finally, we just run a loop over all the shapes and style them
-approprietly: 
+Finally, we just run a loop over all the shapes and style them approprietly:
 
     {% highlight python %}
     >>> for shape, styles in shapes:
@@ -198,9 +193,8 @@ however, it obviously needs to run in a loop :)
 
 ## Experimental Results
 
-The complete code I used is available [here][final-code]. I liked the
-most [Tech Office][tech-office] so following is the result if you run the
-script like:
+The complete code I used is available [here][final-code]. I liked the most [Tech
+Office][tech-office] so following is the result if you run the script like:
 
     {% highlight sh %}
     ./style.py poster.graffle ICAC ****YOUR API KEY**** tech-office 23615
@@ -210,14 +204,13 @@ script like:
 
 ## Conclusion
 
-One approach of finding a good theme will be to just get say 50 most
-popular Kuler schemes, but that would take a while and generate too many
-PDFs (50 * 5! = 6000). Also my laptop was about to explode during the
-process. What is better is to just browse Kuler manually and only
-process the one that are to one's linking. I guess after going through
-6000 images it will be my head what will explode. The running time can
-be cut quite a lot using a simple heuristics like discarding
-permutations that have too dark color for various color tags.
+One approach of finding a good theme will be to just get say 50 most popular
+Kuler schemes, but that would take a while and generate too many PDFs (50 * 5! =
+6000). Also my laptop was about to explode during the process. What is better is
+to just browse Kuler manually and only process the one that are to one's
+linking. I guess after going through 6000 images it will be my head what will
+explode. The running time can be cut quite a lot using a simple heuristics like
+discarding permutations that have too dark color for various color tags.
 
 ## PS
 
