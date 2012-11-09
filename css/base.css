@@ -58,6 +58,7 @@ a img {
 /* MENU */
 #menu {
   float: left;
+  position: relative;
 }
 
 #menu ul {
