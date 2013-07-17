@@ -32,13 +32,6 @@ preventing system overload.
 
 This work is part of the [ANR][] funded Self-Adaptive very Large disTributed sYstems ([SALTY][]) project. 
 
-## Activities 
-
-* Collaboration with University of Wisconsin-Madison on the [Condor project][condor]
-* Lecturing in Super Computing and Distributed Systems Camp - [SC-CAMP][]
-  * 2010 - Self Adaptive Very Large Distributed System 
-  * 2011 - An Introduction to High-Throughput Computing, Condor in Action
-
 ## Publications
 
 * Filip Křikava, Philippe Collet. _On the Use of an Internal DSL for Enriching
@@ -67,11 +60,22 @@ This work is part of the [ANR][] funded Self-Adaptive very Large disTributed sYs
   2010 ACM Press.
 
 ## Teaching 
+* 2012/2013: Projet de développement (Licence 3 Informatique parcours MIAGE [Polytech Nice][])
+* 2012/2013: Software Engineering (M1 International at [Polytech Nice][])
+* 2011/2012: Introduction to Programming using Python (both M2 Hydroprotech and
 * 2010/2011: Introduction to Programming using Python (both M2 Hydroprotech and
   M2 EuroAquae at [Polytech Nice][])
-* 2011/2012: Introduction to Programming using Python (both M2 Hydroprotech and
   M2 EuroAquae at [Polytech Nice][])
-* 2012/2013: Software Engineering (M1 International at [Polytech Nice][])
+
+## Other Activities 
+
+* [Model Manipulation Using Embedded DSLs in Scala](http://www.slideshare.net/krikava/scala-workshop13) - Student talk given at [Scala Workshop 2013](http://lampwww.epfl.ch/~hmiller/scala2013/)
+* [Enriching EMF Models with Scala (quick overview)](http://www.slideshare.net/krikava/enriching-emf-models-with-scala) - Presentation given at Modeling Symposium at [EclipseCon'12 Europe](http://www.eclipsecon.org/europe2012/)
+* Lecturing in Super Computing and Distributed Systems Camp - [SC-CAMP][]
+  * 2010 - Self Adaptive Very Large Distributed System 
+  * 2011 - An Introduction to High-Throughput Computing, Condor in Action
+* Collaboration with University of Wisconsin-Madison on the [Condor project][condor]
+
 
 ## Contact 
 
