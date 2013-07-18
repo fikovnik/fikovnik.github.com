@@ -6,16 +6,13 @@
 ## From the city of Prague currently exiling in south of France where I'm pursuing a PhD in computer science. ##
 
 If you are interested you can have a look at my [research
-page][research]. The rest of the time (and there is not much of it to
-be sure) I try to do as much climbing and snowboarding as I can. Oh,
-and I also take some photos (here are some of them [I like][galleries]
+page](research.html). The rest of the time (and there is not much of it to
+be sure) I try to do some climbing and snowboarding. Oh,
+and I also take some photos (here are the few [I like](galleries.html)
 and [the rest][picassa]). If you want to get in touch with me you can
 find me on [GitHub][], [Twitter][], [Mendeley][] or [LinkedIn][] and
-like other people I also have a [resume][CV].  If non of these, well,
-I guess l'd ask you to leave.
+like other people I also have a [resume][CV].
 
-[research]: {{site.baseurl}}/research
-[galleries]: {{site.baseurl}}/galleries
 [picassa]: https://plus.google.com/photos/108299041717917438160/albums?hl=en_US
 [CNRS]: http://www.cnrs.fr/
 [I3S]: http://www.i3s.unice.fr/

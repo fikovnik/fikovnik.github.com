@@ -99,11 +99,6 @@
     label: Puerto Viejo, Costa Rica
     width: 540
     height: 360
-  - url: Photo-20.jpg
-    thumbnail: thumbs/Photo-20.thumbnail.jpg
-    label: 
-    width: 360
-    height: 540
   - url: Photo-21.jpg
     thumbnail: thumbs/Photo-21.thumbnail.jpg
     label: 

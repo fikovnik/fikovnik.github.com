@@ -15,7 +15,7 @@ Design][inspiration1] presentation by the Cornell University and plenty of other
 from my [favorite source][inspiration2] as well as plenty of comments from my
 advisor I came up with this:
 
-![Kuler]({{ site.baseurl }}/images/journal/the-one-with-kuler/original.png "Original")
+![Kuler](SASSRelatedWorkOverviewimages/journal/the-one-with-kuler/original.png "Original")
 
 Yeah, the biggest problem is the color scheme, isn't it :) That one definitely
 had to be improved. A [color scheme][] is simply an aesthetic combination of
@@ -187,7 +187,7 @@ Finally, we just run a loop over all the shapes and style them approprietly:
 
 OK, the good news is that is works as you can see below,
 
-![Kuler]({{ site.baseurl }}/images/journal/the-one-with-kuler/first-run.png "First run")
+![Kuler](SASSRelatedWorkOverviewimages/journal/the-one-with-kuler/first-run.png "First run")
 
 however, it obviously needs to run in a loop :)
 
@@ -200,7 +200,7 @@ Office][tech-office] so following is the result if you run the script like:
     ./style.py poster.graffle ICAC ****YOUR API KEY**** tech-office 23615
     {% endhighlight %}
 
-[![Kuler]({{ site.baseurl }}/images/journal/the-one-with-kuler/results.png "Results")](/canape/images/journal/the-one-with-kuler/results-big.png)
+[![Kuler](SASSRelatedWorkOverviewimages/journal/the-one-with-kuler/results.png "Results")](/canape/images/journal/the-one-with-kuler/results-big.png)
 
 ## Conclusion
 
@@ -216,11 +216,11 @@ discarding permutations that have too dark color for various color tags.
 
 This is the final version:
 
-![Kuler]({{ site.baseurl }}/images/journal/the-one-with-kuler/final.png "Finalist")
+![Kuler](SASSRelatedWorkOverviewimages/journal/the-one-with-kuler/final.png "Finalist")
 
 Happy kulering!
 
-![Kuler]({{ site.baseurl }}/images/journal/the-one-with-kuler/kuler.png "Kuler logo")
+![Kuler](SASSRelatedWorkOverviewimages/journal/the-one-with-kuler/kuler.png "Kuler logo")
 
 [ICAC'11]: http://www.cis.fiu.edu/conferences/icac2011/
 [pykuler]: https://github.com/fikovnik/pykuler

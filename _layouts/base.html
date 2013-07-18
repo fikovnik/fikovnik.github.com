@@ -49,23 +49,23 @@ $(document).ready(function()
 
 <ul>
 <li class='section-title'>à la carte</li>
-<li><a href="{{ site.baseurl }}/index.html">canapé</a></li>
+<li><a href="/index.html">canapé</a></li>
 {% for section in site.sections %}
-<li><a href="{{ site.baseurl }}/{{ section.name }}">{{ section.title }}</a></li>
+<li><a href="/{{ section.name }}.html">{{ section.title }}</a></li>
 {% endfor %}
 </ul>
 
 <ul>
 <li class='section-title'>galleries</li>
 {% for gallery in site.galleries %}
-<li><a href="{{ site.baseurl }}/galleries/{{ gallery.name }}">{{ gallery.title }}</a></li>
+<li><a href="/galleries/{{ gallery.name }}.html">{{ gallery.title }}</a></li>
 {% endfor %}
 </ul>
 
 <ul>
 <li class='section-title'>projects</li>
 {% for project in site.projects %}
-<li><a href="{{ site.baseurl }}/projects/{{ project.name }}">{{ project.title }}</a></li>
+<li><a href="/projects/{{ project.name }}.html">{{ project.title }}</a></li>
 {% endfor %}
 </ul>
 </div>
