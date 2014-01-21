@@ -4,19 +4,6 @@
 <html lang='en-us'>
 <head>
 	<meta charset='utf-8'>
-		{% if page.title == 'index' %}
-			{% assign counter = 0 %}
-			{% for exhibit in site.categories.exhibit %}
-				{% if exhibit.home == true and counter == 0 %}
-					{% assign counter = 1 %}
-					<title>{{exhibit.title}}</title>
-					<meta name='description' content="{{exhibit.content | truncate: 50 }}" />
-				{% endif %}
-			{%  endfor %}
-		{% else %}
-			<title>{{page.title}}</title>
-			<meta name='description' content="{{page.content | truncate: 50 }}" />
-		{% endif %}
 		<meta name='author' content="{{ site.author }}" />
 		<meta name='copyright' content="" />
 		<meta name='Robots' content="INDEX,FOLLOW" />
@@ -30,20 +17,20 @@
 				<div class='top'>
 					<p><strong><a href='/' style='color: black;'>{{ site.title }}</a></strong></p>
 				</div>
-				{% for section in site.categories.section %}
-					<ul class='section' id='section_{{ section.id }}'>
-						<li><span id='section_title_{{ section.id }}' class='section_title'>{{ section.title }}</span>
+				{% for section in site.sections %}
+					<ul class='section' id='section_{{ section.name }}'>
+						<li><span id='section_title_{{ section.name }}' class='section_title'></span>
+						<ul>
 						{% for exhibit in site.categories.exhibit %}
-							<ul>
-							{% if exhibit.section == section.title %}
+							{% if exhibit.section == section.name %}
 								<li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{exhibit.title}}</a></li>
 							{% endif %}
-							</ul>
 						{%  endfor %}
+						</ul>
 						</li>
 					</ul>
 				{%  endfor %}
-			</div>
+				</div>
 		</div>
 		{% if page.title == 'index' %}
 			{% assign counter = 0 %}

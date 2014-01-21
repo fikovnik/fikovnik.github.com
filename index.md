@@ -1,4 +1,4 @@
 ---
-  title: Hello
+  title: 
   layout: default
 ---
