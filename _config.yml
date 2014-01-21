@@ -52,7 +52,7 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-	  - name: "section"
+      - name: "section"
         field:
           element: "select"
           label: "Sections"
