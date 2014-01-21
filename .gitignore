@@ -3,3 +3,4 @@ deploy
 deploy_tmp
 site.log
 _site/
+.sass-cache

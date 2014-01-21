@@ -1,13 +1,15 @@
-title: canapé
-tagline: en début de la soirée
-host: http://fikovnik.net
+title: fikovnik.net
 
-pygments: true
-markdown: kramdown
-# permalink: pretty
+author: Filip Krikava
+
+twitter: fikovnik
+
+permalink: none
 
 exclude:
-
+- sass
+- config.rb
+- Gemfile
 - fabfile.py
 - fabfile.pyc
 - gen-gallery.py
@@ -15,28 +17,47 @@ exclude:
 - CNAME
 
 sections:
+- name: root
+  title: ""
 
-- name: about
-  title: about
+- name: projects
+  title: projects
 
-- name: research
-  title: research
 
-#- name: journal
-#  title: journal
-
-galleries:
-
-- name: book1
-  title: book one 
-
-- name: book2
-  title: book two
-
-- name: book3
-  title: book three
-
-projects:
-
-- name: the-rickshaw-run-2009
-  title: the rickshaw run 2009
+prose:
+  rooturl: "_posts/"
+  media: "media"
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "journal"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+    _posts/exhibit:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "journal"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
