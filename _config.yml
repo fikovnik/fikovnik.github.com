@@ -21,7 +21,8 @@ sections:
 
 
 prose:
-  rooturl: "_posts/"
+  rooturl: "_posts"
+  siteurl: "http://fikovnik.net/"
   media: "media"
   metadata:
     _posts:
