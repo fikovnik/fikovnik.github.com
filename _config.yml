@@ -4,16 +4,12 @@ author: Filip Krikava
 
 twitter: fikovnik
 
-permalink: none
+permalink: pretty
 
 exclude:
 - sass
 - config.rb
 - Gemfile
-- fabfile.py
-- fabfile.pyc
-- gen-gallery.py
-- gen-gallery.pyc
 - CNAME
 
 sections:
@@ -56,6 +52,15 @@ prose:
           element: "text"
           label: "Title"
           value: ""
+	  - name: "section"
+        field:
+          element: "select"
+          label: "Sections"
+          options:
+            - name: "Projects"
+              value: "projects"
+            - name: "Root"
+              value: "root"
       - name: "permalink"
         field:
           element: "text"
