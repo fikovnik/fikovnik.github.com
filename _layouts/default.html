@@ -15,15 +15,19 @@
 		<div id='index'>
 			<div class='container'>
 				<div class='top'>
-					<p><strong><a href='/' style='color: black;'>{{ site.title }}</a></strong></p>
+					<p>
+					  <strong><a href='/' style='color: black;'>{{site.title}}</a></strong>
+					  <br/>
+				    <a href="http://twitter.com/{{site.twitter}}/">@{{site.twitter}}</a>
+					</p>
 				</div>
 				{% for section in site.sections %}
-					<ul class='section' id='section_{{ section.name }}'>
-						<li><span id='section_title_{{ section.name }}' class='section_title'></span>
+					<ul class='section' id='section_{{section.name}}'>
+						<li><span id='section_title_{{section.name}}' class='section_title'></span>
 						<ul>
 						{% for exhibit in site.categories.exhibit %}
 							{% if exhibit.section == section.name %}
-								<li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{exhibit.title}}</a></li>
+								<li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{exhibit.title | upcase}}</a></li>
 							{% endif %}
 						{%  endfor %}
 						</ul>

@@ -106,7 +106,7 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
 #entries_wrapper { width: 800px; }
 #entries { width: 525px; float: left; }
 #entries .entry { }
-#entries .entry p { width: auto; }
+#entries .entry p { width: auto; text-align: justify; }
 #entries .entry .asset { margin-bottom: 9px; }
 #entries .entry .captioning .title { margin-bottom: 9px; }
 #entries .entry .captioning .caption { margin-bottom: 9px; }

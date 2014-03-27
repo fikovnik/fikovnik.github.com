@@ -1,4 +1,4 @@
-title: fikovnik.net
+title: Filip Křikava
 
 author: Filip Krikava
 
@@ -14,8 +14,7 @@ exclude:
 
 sections:
 - name: root
-  title: ""
-
+  title: "" 
 - name: projects
   title: projects
 

@@ -2,95 +2,33 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
+/*@import "compass/reset";*/
 /* the base.css file is for things that are less commonly changed */
 /* however, it is not unlikely you will want to change #index nav rules */
 /* example rules for styling via section */
 body.section-1 {
-  /* background-color: yellow; */
-}
+  /* background-color: yellow; */ }
 
 /* style via particular exhibit */
 /* styling via exhibit format */
 body.visual_index {
-  /* background: green; */
-}
+  /* background: green; */ }
 
 /* general styles - not recommended for change */
 strong, b {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 em, i {
-  font-style: italic;
-}
+  font-style: italic; }
 
 object {
-  display: block;
-}
+  display: block; }
 
 .once {
-  clear: left;
-}
+  clear: left; }
 
 .clL {
-  clear: left;
-}
+  clear: left; }
 
 /* this is to prevent some background colors on links in exhibits */
 /* do not change these */
@@ -98,8 +36,7 @@ object {
 #img-container a.thickbox,
 #img-container a.thumb-img,
 #img-container #d-col1 a {
-  background: transparent;
-}
+  background: transparent; }
 
 /* not recommended for change */
 #index {
@@ -109,13 +46,11 @@ object {
   left: 0;
   position: fixed;
   height: 100%;
-  z-index: 1;
-}
+  z-index: 1; }
 
 #exhibit {
   height: 100%;
-  top: 0;
-}
+  top: 0; }
 
 /* INDEX NAVIGATION/LINKS RULES */
 /* the following rules for index are not required */
@@ -125,8 +60,7 @@ object {
 #index ul.section span.section_title a {
   cursor: pointer;
   font-weight: normal;
-  /* font-size: 18px; */
-}
+  /* font-size: 18px; */ }
 
 /* styles for hovering section titles */
 /* active section titles */
@@ -134,8 +68,7 @@ object {
 #index ul.section span.subsection_title,
 #index ul.section span.subsection_title a {
   cursor: pointer;
-  /* font-weight: bold; */
-}
+  /* font-weight: bold; */ }
 
 /* sub-section titles hover */
 /* exhibit titles */
@@ -147,27 +80,22 @@ object {
 /* specific exhibit title */
 /* affect subsections container */
 #index ul.subsection {
-  /* padding-left: 18px; */
-}
+  /* padding-left: 18px; */ }
 
 /* top/bot divs - not really used but do exist */
 #index .top {
-  /* height: 36px; */
-}
+  /* height: 36px; */ }
 
 #exhibit .top {
-  display: none;
-}
+  display: none; }
 
 /* generic #img-container - but remember that exhibit formats can override these */
 #img-container .captioning .title {
-  /* font-size: 13px; */
-}
+  /* font-size: 13px; */ }
 
 #img-container .captioning .caption {
   /* font-size: 13px; */
-  text-align: left;
-}
+  text-align: left; }
 
 body {
   font-size: 13px;
@@ -175,46 +103,37 @@ body {
   background: #fff;
   color: #000;
   line-height: 1.3em;
-  /* font-weight: 300; */
-}
+  /* font-weight: 300; */ }
 
 /* link scheme */
 /* you can customize links further down the page too */
 a:link {
   text-decoration: none;
-  color: #000;
-}
+  color: #000; }
 
 a:active {
   text-decoration: none;
-  color: #00cc00;
-}
+  color: #00cc00; }
 
 a:visited {
   text-decoration: none;
-  color: #666;
-}
+  color: #666; }
 
 a:hover {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 a img {
-  border: none;
-}
+  border: none; }
 
 /* general styles */
 small {
-  font-size: 9px;
-}
+  font-size: 9px; }
 
 code {
-  font-family: monospace;
-}
+  font-family: monospace; }
 
 blockquote {
-  padding-left: 9px;
-}
+  padding-left: 9px; }
 
 /* headings */
 h1 {
@@ -222,42 +141,36 @@ h1 {
   margin-bottom: 1em;
   margin-top: 1em;
   font-weight: bold;
-  width: 550px;
-}
+  width: 550px; }
 
 h2 {
   font-size: 13px;
   margin-bottom: 1em;
   margin-top: 1em;
   font-weight: bold;
-  width: 550px;
-}
+  width: 550px; }
 
 h3 {
   font-size: 13px;
   margin-bottom: 1em;
   margin-top: 1em;
   font-weight: bold;
-  width: 550px;
-}
+  width: 550px; }
 
 h4 {
   font-size: 13px;
   margin-bottom: 1em;
-  margin-top: 1em;
-}
+  margin-top: 1em; }
 
 /* paragraph width */
 #index p {
   width: auto;
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
 #exhibit p, code, blockquote {
   width: 450px;
   margin-bottom: 1em;
-  /* line-height: 1.3em; */
-}
+  /* line-height: 1.3em; */ }
 
 /* list styling */
 #exhibit ul {
@@ -265,84 +178,70 @@ h4 {
   margin-bottom: 1.5em;
   margin-top: 1em;
   padding-left: 1em;
-  width: 450px;
-}
+  width: 450px; }
 
 #exhibit li {
   list-style-type: disc;
   margin-bottom: 0.5em;
-  margin-top: 0.5em;
-}
+  margin-top: 0.5em; }
 
 /* image styling */
 #exhibit img {
   border: 1px solid #ddd;
   margin-bottom: 1em;
-  margin-top: 1em;
-}
+  margin-top: 1em; }
 
 #exhibit img.sinBorde {
-  border: none;
-}
+  border: none; }
 
 /* highlighter style - maybe you want to change colors? */
 .highlight {
   background: #ccff00;
-  color: #000;
-}
+  color: #000; }
 
 /* never adjust the margin or padding here unless you seriously know what you are doing */
 /* think #index .container and #exhibit .container for only padding adjustments */
 #index {
   width: 215px;
   background: #fff;
-  /* line-height: 1.3em; */
-}
+  /* line-height: 1.3em; */ }
 
 #exhibit {
-  margin: 0 0 0 215px;
-}
+  margin: 0 0 0 215px; }
 
 /* styling the index */
 #index ul {
   list-style: none;
-  margin: 0;
-}
+  margin: 0; }
 
 #index ul.section {
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
 /* the follow rules for index are not required */
 /* they are mostly for complex customization */
 /* for tag display */
 #index ul#all_tags {
   list-style-type: none;
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
 #index ul#all_tags li {
   display: inline;
-  margin-right: 3px;
-}
+  margin-right: 3px; }
 
 /* active section title */
 #index span.active_section_title,
 #index span.active_section_title a {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 /* active exhibit title parts */
 li.active a:link, li a.active, li.active a:hover, li a.active, li.active a:active, li a.active,
 li.active a:visited, li a.active, li span.active, #index ul.section li.active a:link,
 #index ul.section li.active a:hover, #index ul.section li.active a:active, #index ul.section li.active a:visited {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 /* additional #index options */
 #index ul li .password a {
-  /* background: url(../img/locked.gif) right center no-repeat; padding-right: 18px; */
-}
+  /* background: url(../img/locked.gif) right center no-repeat; padding-right: 18px; */ }
 
 /* the "new" indicator */
 #index ul li sup {
@@ -350,105 +249,85 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
   font-weight: bold;
   text-transform: uppercase;
   font-size: 8px;
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 /* end styling for index */
 /* links styles only for the #index region */
 /* links styles only for the #exhibit region */
 #exhibit a:link {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 /* this is where you adjust your paddings for #index and #exhibit together */
 .container {
-  padding: 27px 9px 25px 27px;
-}
+  padding: 27px 9px 25px 27px; }
 
 /* this is where you pad them separately */
 /* blog parts */
 #entries_wrapper {
-  width: 800px;
-}
+  width: 800px; }
 
 #entries {
   width: 525px;
-  float: left;
-}
+  float: left; }
 
 #entries .entry p {
   width: auto;
-}
+  text-align: justify; }
 
 #entries .entry .asset {
-  margin-bottom: 9px;
-}
+  margin-bottom: 9px; }
 
 #entries .entry .captioning .title {
-  margin-bottom: 9px;
-}
+  margin-bottom: 9px; }
 
 #entries .entry .captioning .caption {
-  margin-bottom: 9px;
-}
+  margin-bottom: 9px; }
 
 #entries .entry_footer {
   margin-top: 12px;
   font-size: 11px;
-  color: #999;
-}
+  color: #999; }
 
 #entries .separator {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px dotted #ccc;
-}
+  border-bottom: 1px dotted #ccc; }
 
 #entries_wrapper #sidebar {
   float: right;
-  width: 200px;
-}
+  width: 200px; }
 
 #prev_new_entries div#older {
-  float: left;
-}
+  float: left; }
 
 #prev_new_entries div#newer {
   float: right;
-  text-align: right;
-}
+  text-align: right; }
 
 .entry {
-  margin-bottom: 18px;
-}
+  margin-bottom: 18px; }
 
 .blog-separator {
   border-top: 1px solid #ccc;
   margin-bottom: 27px;
-  width: 460px;
-}
+  width: 460px; }
 
 #plugins-list {
-  margin-bottom: 18px;
-}
+  margin-bottom: 18px; }
 
 /* style forms */
 .form-label label {
   padding-right: 24px;
-  line-height: 2.2em;
-}
+  line-height: 2.2em; }
 
 .form-alert {
-  margin-top: 9px;
-}
+  margin-top: 9px; }
 
 .form-alert .failed {
-  color: red;
-}
+  color: red; }
 
 #form-return {
-  display: block;
-}
+  display: block; }
 
 .form-submit input {
   background-color: #333;
@@ -464,22 +343,18 @@ li.active a:visited, li a.active, li span.active, #index ul.section li.active a:
   line-height: 1;
   margin: 5px 0 0 0;
   padding: 9px 12px;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .form-submit input:hover {
-  background: #0c0;
-}
+  background: #0c0; }
 
 input[type=text], input[type=password], textarea {
   font: normal normal normal 1em/1.4 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0px 0px 0.5em;
-  padding: 0.3em;
-}
+  padding: 0.3em; }
 
 #exhibit #columned p {
-  width: auto;
-}
+  width: auto; }
 
 /* BUTTONS */
 /* http://particletree.com/features/rediscovering-the-button-element/ */
@@ -511,8 +386,7 @@ input[type=text], input[type=password], textarea {
   line-height: 1;
   margin: 5px 0 0 0;
   padding: 9px 12px;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .buttons button {
   width: auto;
@@ -522,17 +396,14 @@ input[type=text], input[type=password], textarea {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  border: 0;
-}
+  border: 0; }
 
 .buttons button {
-  /* -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; */
-}
+  /* -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; */ }
 
 *:first-child + html button[type] {
   padding: 4px 10px 3px 7px;
-  /* IE7 */
-}
+  /* IE7 */ }
 
 /* STANDARD */
 .buttons a:hover {
@@ -542,8 +413,7 @@ input[type=text], input[type=password], textarea {
   line-height: 1;
   margin: 5px 0 0 0;
   padding: 9px 12px;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .buttons a:active {
   background-color: #0c0;
@@ -551,85 +421,73 @@ input[type=text], input[type=password], textarea {
   line-height: 1;
   margin: 5px 0 0 0;
   padding: 9px 12px;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 /* walkthrough */
 .walkthrough {
   position: relative;
   width: 905px;
   height: 655px;
-  background: url(http://www.indexhibit.org/files/gimgs/screenshot1.png) no-repeat;
-}
+  background: url(http://www.indexhibit.org/files/gimgs/screenshot1.png) no-repeat; }
 
 /* dots */
 .walkthrough-dot {
   height: 12px;
   width: 12px;
-  position: absolute;
-}
+  position: absolute; }
 
 .trigger:hover {
   border: 4px solid red;
-  background: red;
-}
+  background: red; }
 
 /* title space */
 #w1-1 {
   left: 94px;
   top: 133px;
-  z-index: 1;
-}
+  z-index: 1; }
 
 /* basic editor */
 #w1-2 {
   left: 148px;
   top: 170px;
-  z-index: 2;
-}
+  z-index: 2; }
 
 /* publish */
 #w1-3 {
   left: 770px;
   top: 140px;
-  z-index: 3;
-}
+  z-index: 3; }
 
 /* options */
 #w1-4 {
   left: 802px;
   top: 219px;
-  z-index: 4;
-}
+  z-index: 4; }
 
 /* uploads */
 #w1-5 {
   left: 792px;
   top: 317px;
-  z-index: 5;
-}
+  z-index: 5; }
 
 /* files */
 #w1-6 {
   left: 272px;
   top: 537px;
-  z-index: 6;
-}
+  z-index: 6; }
 
 /* files options */
 #w1-7 {
   left: 114px;
   top: 621px;
-  z-index: 7;
-}
+  z-index: 7; }
 
 .popup {
   position: absolute;
   display: none;
   /* keeps the popup hidden if no JS available */
   width: 66px;
-  background: #f3f3f3;
-}
+  background: #f3f3f3; }
 
 .trigger {
   display: block;
@@ -637,5 +495,4 @@ input[type=text], input[type=password], textarea {
   background: #0c0;
   -webkit-border-radius: 30px;
   height: 4px;
-  width: 4px;
-}
+  width: 4px; }
