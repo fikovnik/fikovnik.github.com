@@ -1,5 +1,5 @@
 ---
-  title: from prague currently exiling in the north of France doing a research in computer science
+  title: from prague currently exiling in the north of france doing a research in computer science
   layout: default
 ---
 
