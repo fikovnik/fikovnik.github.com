@@ -22,6 +22,7 @@
 					</p>
 				</div>
 					<ul class='section' id='section_root'>
+							<li id='exhibit_about' class='exhibit_title'><a href='/'>ABOUT</a></li>
 						{% for exhibit in site.categories.exhibit %}
 							<li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{exhibit.title | upcase}}</a></li>
 						{%  endfor %}
