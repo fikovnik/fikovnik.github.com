@@ -4,8 +4,8 @@ layout: default
 category: exhibit
 section: projects
 permalink: /projects/the-rickshaw-run/
-title: The Rickshaw Run
-imagedir: images/projects/the-rickshaw-run-2009
+title: the rickshaw run
+imagedir: /images/projects/the-rickshaw-run-2009
 photos:
   - url: TRR-1.jpg
     thumbnail: thumbs/TRR-1.thumbnail.jpg
@@ -236,15 +236,18 @@ more information visit [http://www.cureblindness.org/]().
 
 For ordering contact vystavariksa@gmail.com. The life is not easy in developing
 countries and being blind it is almost hopeless. Thank you.
-[http://www.therickshawredemption.in/]()
 
-## Gallery
+## ROUTE
+
+<img src="/images/projects/the-rickshaw-run-2009/map.png" alt="Map" style="width: 540px;"/>
+
+## GALLERY
 
 {% for photo in page.photos %}
   {% include gallery_item.html %}
 {% endfor %}
 
-## Acknowledgement
+## ACKNOWLEDGEMENT
 
 For received help we would like to thank to:
 
@@ -261,13 +264,13 @@ Durchánek, CZ • Subra Kumaraswamy, IN • Lenaïg Richard, FR • Bob Soete
 Alena Stavinohová, CZ • Karen Kim, USA • Adela Blattná, CZ • Elena Zedginidze,
 GE • Josef Ledvina, CZ • Petr Nový, CZ • Bas Losekoot, NL
 
-## Partners
-<div style="text-align: center;">
-  <br />
-  <img style="margin: .5em;" src="{{ site.baseurl }}{{ page.imagedir }}/logos/theadventurists.png" title="The Adventurists" />
-  <img style="margin: .5em;" src="{{ site.baseurl }}{{ page.imagedir }}/logos/trr.png" title="The Rickshaw Redemption" />
-  <img style="margin: .5em;" src="{{ site.baseurl }}{{ page.imagedir }}/logos/suricata.png" title="Suricata - travel agency" />
-  <img style="margin: .5em;" src="{{ site.baseurl }}{{ page.imagedir }}/logos/terminal8.png" title="Terminal8" />
-  <img style="margin: .5em;" src="{{ site.baseurl }}{{ page.imagedir }}/logos/2810.png" title="2810 - branding company" />
-  <img style="margin: .5em;" src="{{ site.baseurl }}{{ page.imagedir }}/logos/epson.png" title="EPSON" />
+## PARTNERS
+
+<div>
+  <img style="margin: .5em; border: 0px;" src="{{ page.imagedir }}/logos/theadventurists.png" title="The Adventurists" />
+  <img style="margin: .5em; border: 0px;" src="{{ page.imagedir }}/logos/trr.png" title="The Rickshaw Redemption" />
+  <img style="margin: .5em; border: 0px;" src="{{ page.imagedir }}/logos/suricata.png" title="Suricata - travel agency" />
+  <img style="margin: .5em; border: 0px;" src="{{ page.imagedir }}/logos/terminal8.png" title="Terminal8" />
+  <img style="margin: .5em; border: 0px;" src="{{ page.imagedir }}/logos/2810.png" title="2810 - branding company" />
+  <img style="margin: .5em; border: 0px;" src="{{ page.imagedir }}/logos/epson.png" title="EPSON" />
 </div>

@@ -218,11 +218,15 @@ blockquote {
 
 /* headings */
 h1 {
-  font-size: 13px;
   margin-bottom: 1em;
   margin-top: 1em;
   font-weight: bold;
-  width: 550px;
+  /*width: 550px;*/
+  /*font-size: 13px;*/  
+  font-size: 300%;
+  letter-spacing: -3px;
+  line-height: 80%;
+  width: 60%;
 }
 
 h2 {
@@ -257,6 +261,7 @@ h4 {
   width: 450px;
   margin-bottom: 1em;
   /* line-height: 1.3em; */
+  text-align: justify;
 }
 
 /* list styling */
