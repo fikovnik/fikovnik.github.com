@@ -6,6 +6,8 @@ twitter: fikovnik
 
 permalink: pretty
 
+markdown: kramdown
+
 exclude:
 - sass
 - config.rb
