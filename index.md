@@ -1,6 +1,7 @@
 ---
-  title: from prague currently exiling in the north of france doing a research in computer science
-  layout: default
+title: from prague currently exiling in the north of france doing a research in computer science
+layout: default
+published: true
 ---
 
 I am a postdoctoral fellow at University of Lille 1 - LIFL and a member of the INRIA Lille [SPIRALS](https://team.inria.fr/spirals/) team (since November 2013). 
@@ -13,11 +14,11 @@ I also do some climbing, skiing, snowboarding and take [photos](https://www.flic
 
 ## CONTACT
 
-[LinkedIn](http://fr.linkedin.com/in/filipkrikava), [ResearchGate](https://www.researchgate.net/profile/Filip_Krikava/), [CV](https://docs.google.com/document/d/1Pu0v7bOq5B2yUVAR7kzgAyzaye1xNNhzaKZOoCytcFc/edit?hl=en_US&authkey=CILzkOIC)
+[LinkedIn](http://fr.linkedin.com/in/filipkrikava), [ResearchGate](https://www.researchgate.net/profile/Filip_Krikava/), [CV](https://docs.google.com/document/d/1FA3XEc5_d1St-7b3dSBv-bNY8wNrrtZTP9UXusvghn8/edit?usp=sharing)
 
 INRIA Lille Nord Europe  
 Office: #319  
 Parc Scientifique de la Haute Borne  
 40, avenue Halley - Bât. B, Park Plaza  
 59650 Villeneuve d'Ascq  
-FRANCE  
+FRANCE
