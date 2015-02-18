@@ -33,37 +33,19 @@
 					<ul class='section' id='section_root'>
 							<li id='exhibit_about' class='exhibit_title'><a href='/'>About</a></li>
 						{% for exhibit in site.categories.exhibit %}
-							<li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{exhibit.title | }}</a></li>
-						{%  endfor %}
+						  <li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{ exhibit.title }}</a></li>
+    				{%  endfor %}
 					</ul>
 				</div>
 		</div>
-		{% if page.title == 'index' %}
-			{% assign counter = 0 %}
-			{% for exhibit in site.categories.exhibit %}
-				{% if exhibit.home == true and counter == 0 %}
-					{% assign counter = 1 %}
-					<div id='exhibit'>
-						<div class='container'>
-							<div class='top'><!-- --></div>
-							<!-- text and image -->
-							<p><strong>{{ exhibit.title }}</strong></p>
-							{{ exhibit.content }}
-							<!-- end text and image -->
-						</div>
-					</div>
-				{% endif %}
-			{%  endfor %}
-		{% else %}
 		<div id='exhibit'>
 			<div class='container'>
 				<div class='top'><!-- --></div>
 				<!-- text and image -->
-				<!-- <h1>{{ page.title }}</h1> -->
+				<h1>{{ page.title }}</h1>
 				{{ content }}
 				<!-- end text and image -->
 			</div>
 		</div>
-		{% endif %}
 	</body>
 </html>
