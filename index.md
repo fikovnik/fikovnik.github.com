@@ -10,11 +10,12 @@ Concretely, I am looking into how MDE techniques can facilitate a systematic int
 
 ## CONTACT
 
-[github](http://github.com/fikovnik/),
-[flickr](https://www.flickr.com/photos/121532543@N04/),
-[linkedin](http://fr.linkedin.com/in/filipkrikava),
-[researchgate](https://www.researchgate.net/profile/Filip_Krikava),
-cn in [en](https://docs.google.com/document/d/1FA3XEc5_d1St-7b3dSBv-bNY8wNrrtZTP9UXusvghn8/export?format=pdf) or [fr](https://docs.google.com/document/d/1D2y-FenU5tXhkIS5tAK0fu7uz4Hn91FnLMEsTVHxB80/export?format=pdf)
+[github](http://github.com/fikovnik/) |
+[flickr](https://www.flickr.com/photos/121532543@N04/) |
+[linkedin](http://fr.linkedin.com/in/filipkrikava) |
+[researchgate](https://www.researchgate.net/profile/Filip_Krikava) |
+[cv en](https://docs.google.com/document/d/1FA3XEc5_d1St-7b3dSBv-bNY8wNrrtZTP9UXusvghn8/export?format=pdf) |
+[cv fr](https://docs.google.com/document/d/1D2y-FenU5tXhkIS5tAK0fu7uz4Hn91FnLMEsTVHxB80/export?format=pdf)
 
 __INRIA Lille Nord Europe__  
 Office: #319  

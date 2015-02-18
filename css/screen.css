@@ -186,17 +186,17 @@ body {
 /* you can customize links further down the page too */
 a:link {
   text-decoration: none;
-  color: #000;
+  color: #999;
 }
 
 a:active {
   text-decoration: none;
-  color: #00cc00;
+  color: #999;
 }
 
 a:visited {
   text-decoration: none;
-  color: #000;
+  color: #999;
 }
 
 a:hover {
