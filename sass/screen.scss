@@ -5,13 +5,19 @@
 
 @import "compass/reset";
 @import "_base";
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,700,300italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$width: 550px;
 
 body {
-	font-size: 13px;
-	font-family: 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif;
+	font-size: 16px;
+	font-family: 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;
+	text-align: justify;
 	background: #fff;
 	color: #000;
-	line-height: 1.3em;
+	line-height: 1.4em;
 	/* font-weight: 300; */
 }
 
@@ -19,8 +25,8 @@ body {
 /* you can customize links further down the page too */
 a:link { text-decoration: none; color: #000; }
 a:active { text-decoration: none; color: #00cc00; }
-a:visited { text-decoration: none; color: #666; }
-a:hover { text-decoration: underline; }
+a:visited { text-decoration: none; color: #000; }
+a:hover { text-decoration: none; background: #ffff00; }
 a img { border: none; }
 
 /* general styles */
@@ -29,22 +35,29 @@ code { font-family: monospace; }
 blockquote { padding-left: 9px; }
 
 /* headings */
-h1 { font-size: 13px; margin-bottom: 1em; margin-top: 1em; font-weight: bold; width: 550px;}
-h2 { font-size: 13px; margin-bottom: 1em; margin-top: 1em; font-weight: bold; width: 550px;}
-h3 { font-size: 13px; margin-bottom: 1em; margin-top: 1em; font-weight: bold; width: 550px;}
-h4 { font-size: 13px; margin-bottom: 1em; margin-top: 1em; }
+h1 { font-size: 18px; margin-bottom: 1em; margin-top: 1em; font-weight: bold; width: $width; font-family: Inconsolata, monospace; text-transform: uppercase; }
+h2 { font-size: 18px; margin-bottom: 1em; margin-top: 1em; font-weight: bold; width: $width; font-family: Inconsolata, monospace; text-transform: uppercase; }
+h3 { font-size: 16px; margin-bottom: 1em; margin-top: 1em; font-weight: bold; width: $width; font-family: Inconsolata, monospace; }
+h4 { font-size: 16px; margin-bottom: 1em; margin-top: 1em; width: $width; font-family: Inconsolata, monospace; }
+
+#site_title { font-size: 18px; }
+
+/* menu */
+#index { font-family: Inconsolata, monospace; }
 
 /* paragraph width */
 #index p { width: auto; margin-bottom: 1em; }
-#exhibit p, code, blockquote { width: 450px; margin-bottom: 1em; /* line-height: 1.3em; */ }
+#exhibit p, code, blockquote { width: $width; margin-bottom: 1em; }
 
 /* list styling */
-#exhibit ul{ list-style-type: disc; margin-bottom: 1.5em; margin-top: 1em; padding-left: 1em; width: 450px; }
+#exhibit ul{ list-style-type: disc; margin-bottom: 1.5em; margin-top: 1em; padding-left: 1em; width: $width; }
 #exhibit li{ list-style-type: disc; margin-bottom: 0.5em; margin-top: 0.5em;}
 
 /* image styling */
-#exhibit img{ border: 1px solid #ddd; margin-bottom: 1em; margin-top: 1em;}
-#exhibit img.sinBorde{ border: none;}
+#gallery img{ border: 1px solid #ddd; margin-top: 2em;}
+
+.photo a:hover { background: none; } 
+.label { font-size: 14px; }
 
 /* highlighter style - maybe you want to change colors? */
 .highlight { background: #ccff00; color: #000; }

@@ -25,15 +25,15 @@
 			<div class='container'>
 				<div class='top'>
 					<p>
-					  <strong><a href='/' style='color: black;'>{{site.title}}</a></strong>
+					  <strong><a id="site_title" href='/' style='color: black;'>{{site.title}}</a></strong>
 					  <br/>
 				    <a href="http://twitter.com/{{site.twitter}}/">@{{site.twitter}}</a>
 					</p>
 				</div>
 					<ul class='section' id='section_root'>
-							<li id='exhibit_about' class='exhibit_title'><a href='/'>ABOUT</a></li>
+							<li id='exhibit_about' class='exhibit_title'><a href='/'>About</a></li>
 						{% for exhibit in site.categories.exhibit %}
-							<li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{exhibit.title | upcase}}</a></li>
+							<li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{exhibit.title | }}</a></li>
 						{%  endfor %}
 					</ul>
 				</div>
@@ -59,7 +59,7 @@
 			<div class='container'>
 				<div class='top'><!-- --></div>
 				<!-- text and image -->
-				<h1>{{ page.title }}</h1>
+				<!-- <h1>{{ page.title }}</h1> -->
 				{{ content }}
 				<!-- end text and image -->
 			</div>
