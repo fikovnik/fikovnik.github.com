@@ -17,7 +17,7 @@ I'm also a principal member of technical staff at ORACLE working on a next gener
 [cv en](https://docs.google.com/document/d/1FA3XEc5_d1St-7b3dSBv-bNY8wNrrtZTP9UXusvghn8/export?format=pdf) |
 [cv fr](https://docs.google.com/document/d/1D2y-FenU5tXhkIS5tAK0fu7uz4Hn91FnLMEsTVHxB80/export?format=pdf)
 
-__Czech Technical University__  
+__CZECH TECHNICAL UNIVERSITY__  
 Faculty of Information Technology  
 Office: #918  
 Thákurova 8  
