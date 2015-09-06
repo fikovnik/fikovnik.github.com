@@ -18,7 +18,7 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-49653145-1', 'fikovnik.net');
 		  ga('send', 'pageview');
-		</script>		
+		</script>
 	</head>
 	<body class='exhibits format-visual_index'>
 		<div id='index'>
@@ -32,7 +32,8 @@
 				</div>
 					<ul class='section' id='section_root'>
 							<li id='exhibit_about' class='exhibit_title'><a href='/'>About</a></li>
-						{% for exhibit in site.categories.exhibit %}
+						{% assign items = site.categories.exhibit | sort: 'date' %}
+						{% for exhibit in items %}
 						  <li id='exhibit_{{exhibit.id}}' class='exhibit_title'><a href='{{exhibit.url}}'>{{ exhibit.title }}</a></li>
     				{%  endfor %}
 					</ul>

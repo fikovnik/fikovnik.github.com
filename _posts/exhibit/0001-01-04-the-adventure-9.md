@@ -1,5 +1,6 @@
 ---
 published: true
+date: 2015-08-01 14:40:45
 layout: default
 category: exhibit
 section: projects

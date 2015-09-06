@@ -1,6 +1,7 @@
 ---
 published: true
 layout: default
+date: 2009-08-01 14:40:45
 category: exhibit
 section: projects
 permalink: /projects/the-rickshaw-run/
@@ -211,11 +212,11 @@ photos:
 
 In the charity race The Rickshaw Run several dozens of one to four member teams try to cross difficult terrain of Indo-Nepalese continent in motor rickshaw and by that raise money for charity organizations operating in the region.
 It started in 2006 and it is run by The Adventurists.
-In autumn 2009 about 60 teams drove in two weeks over 3000 kilometers from golden beaches of Goa to the majestic foothill of Himalayas in Pokhara, Nepal. 
+In autumn 2009 about 60 teams drove in two weeks over 3000 kilometers from golden beaches of Goa to the majestic foothill of Himalayas in Pokhara, Nepal.
 Our crew (for the first time Czech) Majda, Roman and Filip named The Rickshaw Redemption crossed 3300 kilometers and managed to fund rise £1095.23 for two charities - The Frank Water and Maiti Nepal.
 
 On the exhibited photographs we have tried to capture our experiences from this adventure, from India, Nepal and the most importantly from the people we have met during the trip.
-We had a chance to experience both countries in a non-traditional way and went through places that are not commonly visited by tourists. 
+We had a chance to experience both countries in a non-traditional way and went through places that are not commonly visited by tourists.
 For local people we were even more exotic than they were to us.
 Well, who of them had ever the chance to see white woman driving colorful motor rickshaw before?
 
