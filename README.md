@@ -1,5 +1,13 @@
 # Quick Guide
 
+- Install ruby
+
+  - on Fedora
+  
+    ```sh
+    sudo dnf install ruby ruby-devel rubygem-json
+    ```
+
 - Install bundler
 
   ```sh

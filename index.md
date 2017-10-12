@@ -3,10 +3,13 @@
 ---
 
 <img src="/images/me.jpg" alt="Me" style="width: 40%; float: right; margin-top: 0.2em; margin-left: 1em;"/>
-I am an assistant professor at Faculty of Information Technology at Czech Technical University. Before I was a postdoctoral fellow at University of Lille 1 - LIFL and a member of the INRIA Lille [SPIRALS](https://team.inria.fr/spirals/) team and a PhD candidate at CNRS.
-My main research interest is in model-driven engineering and self-adaptive software systems.
-Concretely, I am looking into how MDE techniques can facilitate a systematic integration of adaptation mechanisms into software with an application to large scale distributed systems.
-I'm also a principal member of technical staff at ORACLE working on a next generation of cloud services.
+I am a researcher in [PRL](http://prl-prg.github.io) group at Czech Technical University.
+Before I was a postdoc at INRIA Lille in the [SPIRALS](https://team.inria.fr/spirals/) team and a PhD candidate at CNRS in the [MODALIS](http://modalis.polytech.unice.fr/) team.
+My research interest is in analyzing programming languages.
+Currently I work on static and dynamic analysis of R and Scala.
+Before I was working on model-driven engineering and self-adaptive software systems, facilitating systematic integration of adaptation mechanisms into software with an application to large scale distributed systems.
+
+I was also working at some tech companies - ORACLE, TomTom, Sun Microsystems, Accenture.
 
 ## CONTACT
 
@@ -19,13 +22,7 @@ I'm also a principal member of technical staff at ORACLE working on a next gener
 
 __CZECH TECHNICAL UNIVERSITY__  
 Faculty of Information Technology  
-Office: #918  
+Office: #1258  
 Thákurova 8  
 16000 Prague  
-CZECH REPUBLIC  
-
-__ORACLE__  
-Office: #3320  
-V Parku 2308/8  
-14900 Prague  
 CZECH REPUBLIC  
