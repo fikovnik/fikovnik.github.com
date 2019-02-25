@@ -171,9 +171,16 @@ In summer 2015 we travelled to Tanzania to be part of a 500 km [race](http://www
 The idea was to retrace the ancient trading route between the cost of Tanzania and the surrounding islands of Mafia, Zanzibar and Pemba.
 It is the best explained in the following video.
 
-## GALLERY
+## ARTICLES
+
+- [Tři muži ve člunu aneb Nečekané vítězství Čechů v neobyčejném závodě](https://www.reflex.cz/clanek/lide-a-zeme/79877/tri-muzi-ve-clunu-aneb-necekane-vitezstvi-cechu-v-neobycejnem-zavode.html), Lidé a Země 1/2017 in Czech
+- [Za dobrodružstvím na vlnách Afriky, Ngalawa Cup](https://www.yacht-magazine.cz/e-shop/casopisy/9-2016/), Yach Magazine 9/2016 in Czech
+- [The Pioneer Ngalawa Cup - Interview with the Champions](https://www.theadventurists.com/the-jibber/2015/11/26/adventure-9-the-winners-interview), The Adventurists 11/2015 in English
+
+## VIDEOS
 
 <iframe width="540" height="404" src="http://www.youtube.com/embed/YSvVQ18_NkQ?color=white&theme=light"></iframe>
+<iframe width="540" height="404" src="http://www.youtube.com/embed/Ft_chmjbfAQ?color=white&theme=light"></iframe>
 
 ## GALLERY
 
