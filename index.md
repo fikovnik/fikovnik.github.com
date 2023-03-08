@@ -20,8 +20,7 @@ I also did work in industry: LaceWork (2022-2023), ORACLE (2015-2016), TomTom (2
 [linkedin](http://fr.linkedin.com/in/filipkrikava) |
 [google scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) |
 [dblp](https://dblp.org/pid/05/10588.html) |
-[cv en](https://docs.google.com/document/d/1bRE4fG5A4RprT3axlnukDKkoPIpth48cAqmhOFjstH0/export?format=pdf) |
-[cv fr](https://docs.google.com/document/d/1D2y-FenU5tXhkIS5tAK0fu7uz4Hn91FnLMEsTVHxB80/export?format=pdf)
+[cv](https://docs.google.com/document/d/1bRE4fG5A4RprT3axlnukDKkoPIpth48cAqmhOFjstH0/export?format=pdf) |
 
 __CZECH TECHNICAL UNIVERSITY__  
 Faculty of Information Technology  
