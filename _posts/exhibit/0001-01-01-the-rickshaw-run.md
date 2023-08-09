@@ -220,17 +220,6 @@ We had a chance to experience both countries in a non-traditional way and went t
 For local people we were even more exotic than they were to us.
 Well, who of them had ever the chance to see white woman driving colorful motor rickshaw before?
 
-All of the exposed photographs are on sale.
-Collected money will be donated to The Himalayan Cataract Project, where they will be used for cataract operation or other eye surgery that help to regain sight to blind people in Himalayan area.
-The price for a photograph is $20 which is the same as the price of the surgery.
-It it possible, of cause, to contribute any other amount.
-For more information visit [http://www.cureblindness.org/]().
-
-For ordering contact me directly.
-The life is not easy in developing countries and being blind it is almost hopeless.
-
-Thank you.
-
 ## ROUTE
 
 <img src="/images/projects/the-rickshaw-run-2009/map.png" alt="Map" style="width: 540px;"/>
