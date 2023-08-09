@@ -15,7 +15,7 @@ I also did work in industry: LaceWork (2022-2023), ORACLE (2015-2016), TomTom (2
 
 ## CONTACT
 
-[github](http://github.com/fikovnik/) | [flickr](https://www.flickr.com/photos/121532543@N04/) | [linkedin](http://fr.linkedin.com/in/filipkrikava) | [google scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) | [dblp](https://dblp.org/pid/05/10588.html) | [cv](https://docs.google.com/document/d/1bRE4fG5A4RprT3axlnukDKkoPIpth48cAqmhOFjstH0/export?format=pdf) |
+[github](http://github.com/fikovnik/) &vert; [flickr](https://www.flickr.com/photos/121532543@N04/) &vert; [linkedin](http://fr.linkedin.com/in/filipkrikava) &vert; [google scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) &vert; [dblp](https://dblp.org/pid/05/10588.html) &vert; [cv](https://docs.google.com/document/d/1bRE4fG5A4RprT3axlnukDKkoPIpth48cAqmhOFjstH0/export?format=pdf)
 
 <br/>
 
