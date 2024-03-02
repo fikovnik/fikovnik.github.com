@@ -2,14 +2,13 @@
   layout: default
 ---
 
-<img src="/images/me.jpg" alt="Me" style="width: 40%; float: right; margin-top: 0.2em; margin-left: 1em;"/>
+<img src="/images/me2.jpg" alt="Me" style="width: 40%; float: right; margin-top: 0.2em; margin-left: 1em;"/>
 
 I am an associate professor at Czech Technical University in the [Faculty of Information Technology](https://fit.cvut.cz/en) doing research at [PRL](http://prl-prg.github.io), a programming language research lab.
-I work on program analysis, compiler and virtual machine implementations.
+I work on program analysis, compilers and virtual machines.
 
 Before I was a postdoc in the [PRL](https://prl.khoury.northeastern.edu/) group at Northeastern University and at INRIA in the [SPIRALS](https://team.inria.fr/spirals/) team.
-I did my PhD at CNRS in the [MODALIS](http://modalis.polytech.unice.fr/) team.
-I used to work on model-driven engineering and self-adaptive software systems, facilitating systematic integration of adaptation mechanisms into software with an application to large scale distributed systems.
+I did my PhD at CNRS in the [MODALIS](http://modalis.polytech.unice.fr/) team where I worked on the integration of control-theoretical models into software systems.
 
 I also did work in industry: LaceWork (2022-2023), ORACLE (2015-2016), TomTom (2007-2009), Sun Microsystems (2005-2007), Accenture (2004).
 
