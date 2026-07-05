@@ -1,0 +1,57 @@
+base_url = "https://fikovnik.net"
+title = "Filip Křikava"
+description = "Personal website of Filip Křikava"
+default_language = "en"
+theme = "serene"
+output_dir = "public"
+compile_sass = true
+minify_html = false
+build_search_index = false
+generate_feeds = false
+feed_filenames = ["feed.xml"]
+taxonomies = [{ name = "tags" }]
+
+[markdown]
+render_emoji = false
+external_links_target_blank = false
+external_links_no_follow = true
+external_links_no_referrer = true
+smart_punctuation = false
+github_alerts = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "github-light"
+dark_theme = "github-dark"
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[link_checker]
+# Old academic/conference links rot and some hosts block bots (LinkedIn 999,
+# Elsevier 400); keep `make check` useful by treating external links as warnings.
+external_level = "warn"
+
+#=========================================================================================
+
+[extra]
+
+sections = [
+  { name = "blog", path = "/posts", is_external = false },
+  { name = "publications", path = "/publications", is_external = false },
+  { name = "teaching", path = "/teaching", is_external = false },
+]
+blog_section_path = "/posts"
+
+back_link_text = "Back"
+force_theme = false
+
+footer_copyright = "© 2026 Filip Křikava"
+footer_credits = true
+
+not_found_error_text = "404 Not Found"
+not_found_recover_text = "« back to home »"
+
+reaction = false

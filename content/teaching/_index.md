@@ -1,11 +1,10 @@
----
-published: true
-layout: default
-category: exhibit
-section: root
-permalink: teaching/
-title: Teaching
----
++++
+title = "Teaching"
+template = "prose.html"
+
+[extra]
+title = "Teaching"
++++
 
 ## Courses
 

@@ -1,0 +1,10 @@
+<div class="gallery">
+{% for photo in page.extra.photos %}
+  <figure>
+    <a href="{{ page.extra.imagedir | safe }}/{{ photo.url }}" target="_blank" rel="noopener">
+      <img class="no-lightense" loading="lazy" src="{{ page.extra.imagedir | safe }}/{{ photo.thumbnail }}" alt="{{ photo.label | default(value='') }}">
+    </a>
+    {% if photo.label %}<figcaption>{{ photo.label }}</figcaption>{% endif %}
+  </figure>
+{% endfor %}
+</div>

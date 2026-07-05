@@ -1,7 +1,4 @@
-deploy
-*.pyc
-deploy_tmp
-site.log
-_site/
-.sass-cache
-Gemfile.lock
+/public
+# highlight stylesheets generated into static/ by `zola build`
+/static/giallo-*.css
+.DS_Store

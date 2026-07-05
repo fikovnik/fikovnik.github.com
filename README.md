@@ -1,49 +1,63 @@
-# Quick Guide
+# fikovnik.net
 
-- Install ruby
+Personal website built with [Zola](https://www.getzola.org/) and the
+[serene](https://github.com/isunjn/serene) theme. All content is Markdown under `content/`.
 
-  - on Fedora
-  
-    ```sh
-    sudo dnf install ruby ruby-devel rubygem-json
-    ```
+## Preview locally
 
-- Install bundler
+Requires Docker only (Zola runs in a container — no local install).
 
-  ```sh
-  gem install bundler
-  ```
+```sh
+git clone --recurse-submodules <repo>   # theme lives in themes/serene as a submodule
+# already cloned without submodules?
+git submodule update --init
 
-- Install dependencies
+make serve     # http://localhost:1111, live reload
+make build     # build into ./public
+make check     # validate content and links
+```
 
-  ```sh
-  bundle install
-  ```
+## Write a new post
 
-- Compile style sheets
+Drop a Markdown file in `content/posts/`:
 
-  ```sh
-  bundle exec compass compile
-  ```
+```md
++++
+title = "My Post"
+date = 2026-01-01
 
-- Watch changes in style sheets
+[taxonomies]
+tags = ["adventures"]     # optional
 
-  ```sh
-  bundle exec compass watch
-  ```
+[extra]
+math = true               # enable LaTeX (KaTeX) for this post
++++
 
-- Watch site changes
+Inline math $a^2 + b^2 = c^2$ and display math:
 
-  ```sh
-  bundle exec jekyll serve -w
-  ```
+$$ \int_0^\infty e^{-x} \, dx = 1 $$
 
-  The site will be available at http://127.0.0.1:4000/
+Fenced code blocks are syntax-highlighted automatically:
 
-- To publish commit and push back to github
+```rust
+fn main() { println!("hi"); }
+```
+```
 
-# References
+Posts are listed on the homepage and on `/posts`. For a photo gallery, add
+`imagedir` and a `photos` list under `[extra]` and put `{{/* gallery() */}}` in the body
+(see the two adventure posts).
 
-- [bundler](http://bundler.io/)
-- [jekyll](http://jekyllrb.com/docs/usage/)
-- [compass](http://compass-style.org/)
+## Pages
+
+- `content/_index.md` — homepage (bio, links, recent posts)
+- `content/publications/_index.md`, `content/teaching/_index.md` — prose pages
+- `content/posts/` — blog
+
+Static files (PDFs, images, `presentations/`, `CNAME`) live in `static/` and keep their URLs.
+
+## Deploy
+
+Push to `master`: the `.github/workflows/deploy.yml` workflow builds with Zola and publishes
+to GitHub Pages. One-time setup: **Settings → Pages → Source = GitHub Actions**. The custom
+domain `fikovnik.net` is served via `static/CNAME`.

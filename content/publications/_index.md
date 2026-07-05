@@ -1,11 +1,11 @@
----
-category: exhibit
-layout: default
-published: true
-section: root
-permalink: research/
-title: Research
----
++++
+title = "Publications"
+template = "prose.html"
+aliases = ["/research/"]
+
+[extra]
+title = "Publications"
++++
 
 Since 2016, I moved to programming languages working on static and dynamic analysis of programming languages (mostly R and Scala) as well as compiler and virtual machine implementations (mostly around R).
 The aim is to understand how certain language features are used in the wild by analyzing large corpora of software projects mostly from GitHub.
@@ -134,17 +134,17 @@ List of publication at [Google Scholar](http://scholar.google.co.kr/citations?hl
 
 - 26/04/2016: F. Křikava, R. Rouvoy, L. Seinturier, __Towards the use of runtime models for infrastructure man-agement and self-adaptation__, [Shonan Seminar 077](https://shonan.nii.ac.jp/seminars/077/), Shonan Village, Japan
 
-- 01/12/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Domain-Specific Modeling Language for Self-Adaptive Software Systems__, [Journée sur les Architectures Logicielles pour la Robotique Autonome, les Systèmes Cyber-Physiques et les Systèmes Auto-Adaptables](http://www.lirmm.fr/gtcar/index.php/autres-workshop/workshop-cps-gdr-gpl-robotique) organized by UPMC-LIP6, Paris, France
+- 01/12/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Domain-Specific Modeling Language for Self-Adaptive Software Systems__, [Journée sur les Architectures Logicielles pour la Robotique Autonome, les Systèmes Cyber-Physiques et les Systèmes Auto-Adaptables](http://www.lirmm.fr/gtcar/index.php/autres-workshop/workshop-cps-gdr-gpl-robotique) organized by UPMC-LIP6, Paris, France
 
 - 25/11/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Domain-Specific Modeling Language for Self-Adaptive Software Systems__, [D3S seminaire](http://d3s.mff.cuni.cz/research/seminar/) organized by the D3S group from the Charles University, Prague, Czech Republic,
 
-- 19/10/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __System-Level Abstractions for Integrating Control Mechanisms into Software Systems__, [Séminaire Dagstuhl #14433](http://www.dagstuhl.de/en/program/calendar/evhp/?semnr=14433) - __Software Engineering for Self-Adaptive Systems__, Dagstuhl, Germany
+- 19/10/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __System-Level Abstractions for Integrating Control Mechanisms into Software Systems__, [Séminaire Dagstuhl #14433](http://www.dagstuhl.de/en/program/calendar/evhp/?semnr=14433) - __Software Engineering for Self-Adaptive Systems__, Dagstuhl, Germany
 
 - 16/10/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Domain-Specific Modeling Language for Self-Adaptive Software Systems__, [Workshop Autonomique](http://projects.laas.fr/autonomique/workshop__16__10__14__.html) organized by the LAAS-CNRS, Toulouse, France
 
-- 15/09/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __System-Level Abstractions for Integrating Control Mechanisms into Software Systems__, [Séminaire Dagstuhl #14382](http://www.dagstuhl.de/en/program/calendar/evhp/?semnr=14382) - __Control Theory meets Software Engineering__, Dagstuhl, Germany
+- 15/09/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __System-Level Abstractions for Integrating Control Mechanisms into Software Systems__, [Séminaire Dagstuhl #14382](http://www.dagstuhl.de/en/program/calendar/evhp/?semnr=14382) - __Control Theory meets Software Engineering__, Dagstuhl, Germany
 
-- 12/06/2014: F. Křikava, P. Collet, R. France, __ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures__ - une presentation invitée dans la session GDR GPL organisée par le groupe de travail COSMAL , [Journées du GDR GPL 2014](http://gdr-gpl2014.cnam.fr/?page=programme), Paris, France
+- 12/06/2014: F. Křikava, P. Collet, R. France, __ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures__ - une presentation invitée dans la session GDR GPL organisée par le groupe de travail COSMAL , [Journées du GDR GPL 2014](http://gdr-gpl2014.cnam.fr/?page=programme), Paris, France
 
 - 27/05/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Integrating Adaptation Mechanisms Using Control Theory Centric Architecture Models__, [Grenoble Workshop on Autonomic Computing and Control](https://team.inria.fr/ctrl-a/members/eric-rutten/autoctrl/), Grenoble, France
 
@@ -152,7 +152,7 @@ List of publication at [Google Scholar](http://scholar.google.co.kr/citations?hl
 
 - 18/09/2012: F. Křikava, Javier Rojas Balderrama, Johan Montagnat, P. Collet, __Using Adaptation Strategies to Improve Grid Operations__, [EGI Technical Forum 2012](http://gpl2012.irisa.fr/), Prague, Czech Republic
 
-- 19/06/2012: F. Křikava, P. Collet, __Using Architecture Models to Rapidly Prototype Feedback Control Systems__, [Journées du GDR GPL 2012](http://tf2012.egi.eu/programme/), Rennes, France
+- 19/06/2012: F. Křikava, P. Collet, __Using Architecture Models to Rapidly Prototype Feedback Control Systems__, [Journées du GDR GPL 2012](http://tf2012.egi.eu/programme/), Rennes, France
 
 - 14/07/2011: F. Křikava. __Introduction to HTC and Condor__, [SC-CAMP'11](http://www.sc-camp.org/2011/), Turrialba, Costa Rica
 
@@ -162,7 +162,7 @@ List of publication at [Google Scholar](http://scholar.google.co.kr/citations?hl
 
 - 30/10/2018: F. Křikava, __Everything you ever wanted to know about Scala implicits, but weren't sure how to ask__, [scala.io](https://scala.io/2018/talks.html#/#AIY-6535), Lyon
 
-- 23/02/2017: F. Křikava, __genthat__, [R meetup - Boston](http://fikovnik.net/presentations/genthat.html#1), Boston
+- 23/02/2017: F. Křikava, __genthat__, [R meetup - Boston](/presentations/genthat.html#1), Boston
 
 - 10/06/2013: F. Křikava, __Domain specific languages and Scala__, [Riviera Scala/Clojure User Group](http://www.slideshare.net/krikava/domain-specific-languages-and-scala), Sophia-Antipolis, France
 
