@@ -7,163 +7,119 @@ aliases = ["/research/"]
 title = "Publications"
 +++
 
-Since 2016, I moved to programming languages working on static and dynamic analysis of programming languages (mostly R and Scala) as well as compiler and virtual machine implementations (mostly around R).
-The aim is to understand how certain language features are used in the wild by analyzing large corpora of software projects mostly from GitHub.
+Since 2016 I work on programming languages: static and dynamic analysis (mostly R and Scala) and compiler and virtual machine implementation (mostly around R). Before 2016 I worked on self-adaptive software systems, integrating feedback control loops into software through domain-specific modeling and models@run.time.
 
-Before, till 2016, I was focused on Self-Adaptive Software Systems. Such systems are characterized by the ability to continuously operate under varying runtime conditions. The heart of their adaptation capability is usually based on the notion of a Feedback Control Loop (FCL) that regulates the characteristics of the system to achieve its goals despite changes that may occur during operation.
-In my research I was looking into the FCL integration challenges---_i.e._ on forming an architecture connection between the underlying adaptive software and the adaptation engine through the use of domain-specific modeling language, model-driven engineering and models@run.time.
+Also on [Google Scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) and [DBLP](https://dblp.org/pid/05/10588.html). Full list as [BibTeX](/publications/publications.bib).
 
-## Publications
+<!-- Generated from publications.bib by scripts/bib2md.py — do not edit by hand. Run `make publications`. -->
 
-List of publication at [Google Scholar](http://scholar.google.co.kr/citations?hl=en&user=r__GmitIAAAAJ), [DBLP](https://dblp.uni-trier.de/pers/hd/k/Krikava:Filip).
+- **Characterizing Type Feedback in Just-in-Time Compilation**, ECOOP, 2026 _(under review)_  
+  S. Krynski, F. Říha, F. Křikava, J. Vitek
 
+- **Leveraging Copy-and-Patch JIT for Low-Overhead Dynamic Program Analysis**, MPLR, 2026 _(under review)_  
+  M. Kocourek, F. Křikava, P. Donat-Bouillud, J. Vitek
 
-- 2022: A. Turcotte, P. Donat-Bouillud, F. Křikava, J. Vitek, **signatr: A Data-Driven Fuzzing Tool for R**, In 15th ACM SIGPLAN International Conference on Software Language Engineering (SLE'22), 2022 [pdf](/publications/SLE22.pdf)
+- **Revisiting Row Polymorphism for Set-Theoretic Types**, OOPSLA, 2026 _(under review)_ · [pdf](/publications/oopsla26.pdf)  
+  M. Laurent, P. Donat-Bouillud, F. Křikava, J. Vitek
 
-- 2021: A. Goel, P. Donat-Bouillud, F. Křikava, C. Kirsch, J. Vitek, What We Eval in the Shadows, In PACMPL Issue OOPSLA 2021 [pdf](http://www.cs.uni-salzburg.at/~ck/content/publications/conferences/OOPSLA21-Eval.pdf) [artifact](https://zenodo.org/record/5415230)
+- **A Typed Intermediate Representation for Dynamic Languages**, TOPLAS, 2026 _(under review)_ · [pdf](/publications/toplas26.pdf) · [doi](https://doi.org/10.1145/3811921)  
+  M. Laurent, J. Hain, F. Křikava, S. Krynski, J. Vitek
 
-- 2020: A. Turcotte, A. Goel, F. Křikava, J. Vitek, **Designing Types for R, Empirically**, In PACMPL Issue OOPSLA 2020 [pdf](http://janvitek.org/pubs/oopsla20-r.pdf) [artifact](https://doi.org/10.5281/zenodo.4037278)
+- **Comparing R Bytecode Compilers Written in R, Java, and Rust**, MoreVMs, 2025 · [pdf](/publications/morevms25.pdf) · [doi](https://doi.org/10.4230/OASIcs.Programming.2025.1)  
+  P. Donat-Bouillud, F. Křikava, J. Hain, A. Plodek, J. Vitek
 
-- 2019: F. Křikava, H. Miller, J. Vitek, __Scala Implicits Are Everywhere__, In PACMPL Issue OOPSLA 2019 [pdf](https://zenodo.org/record/3407292)
- [artifact](https://zenodo.org/record/3369436)
+- **R4R: Reproducibility for R**, REP, 2025 · [doi](https://doi.org/10.1145/3736731.3746156) · [artifact](https://doi.org/10.5281/zenodo.16891362)  
+  P. Donat-Bouillud, F. Křikava, S. Krynski, J. Vitek
 
-- 2018: F. Křikava, J. Vitek, __Tests from Traces: Automated Unit Test Extraction for R__, In ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA'18), 2018 [pdf](/publications/ISSTA18.pdf) [artifact](https://github.com/fikovnik/ISSTA18-artifact) - Distinguished Artifact Award.
+- **Toward a Typed Intermediate Language for R**, VIMPL, 2025 · [pdf](/publications/vimpl25.pdf) · [doi](https://doi.org/10.4230/OASIcs.Programming.2025.24)  
+  M. Laurent, J. Hain, F. Křikava, S. Krynski, J. Vitek
 
-- 2017: B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier, __Hadoop-Benchmark: Rapid Prototyping and Evaluation of Self-Adaptive Behaviors in Hadoop Clusters__, In 12th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS’17), 2017, [pdf](https://hal.inria.fr/hal-01475635)
+- **Copy-and-Patch Just-in-Time Compiler for R**, VMIL, 2025 · [doi](https://doi.org/10.1145/3759548.3763370)  
+  M. Kocourek, F. Křikava, J. Vitek
 
-- 2017: F. Křikava, P. Collet, R. Rouvoy, L. Seinturier, __Contracts-based Control Integration into Software Systems__, In Software Engineering for Self-Adaptive Software Systems - Book 3: Assurances [pdf](/publications/SEFSASb3.pdf)
+- **Reducing Feedback Pollution**, VMIL, 2024 · [doi](https://doi.org/10.1145/3689490.3690404)  
+  S. Krynski, M. Štěpánek, F. Říha, F. Křikava, J. Vitek
 
-- 2015: T. Bures, D. Weyns, C. Berger, S. Biffl, M. Daun, T. Gabor, D. Garlan, I. Gerostathopoulos, C. Julien, F. Křikava, R. Mordinyi, N. Pronios, __Software Engineering for Smart Cyber-Physical Systems – Towards a Research Agenda__, Report on the First International Workshop on Software Engineering for Smart CPS, ACM Sigsoft Software Engineering Notes [pdf](/publications/SSEN15.pdf)
+- **signatr: A Data-Driven Fuzzing Tool for R**, SLE, 2022 · [pdf](/publications/sle22.pdf) · [doi](https://doi.org/10.1145/3567512.3567530) · [artifact](https://doi.org/10.5281/zenodo.7342082)  
+  A. Turcotte, P. Donat-Bouillud, F. Křikava, J. Vitek
 
-- 2016: A. Filieri, M. Maggio, K. Angelopoulos, N. D'Ippolito, I. Gerostathopoulos, A. Hempel, H. Hoffmann, P. Jamshidi, E. Kalyvianaki, C. Klein, F. Křikava, S. Misailovic, A. V. Papadopoulos, S. Ray, A. M. Sharifloo, S. Shevtsov, M. Ujma and T. Vogel, __Control Strategies for Self-Adaptive Software Systems__, In Transactions on Autonomous and Adaptive Systems [pdf](/publications/TAAS16.pdf)
+- **What We Eval in the Shadows: A Large-Scale Study of Eval in R Programs**, OOPSLA, 2021 · [pdf](/publications/oopsla21a.pdf) · [doi](https://doi.org/10.1145/3485502) · [artifact](https://doi.org/10.5281/zenodo.5415230)  
+  A. Goel, P. Donat-Bouillud, F. Křikava, C. Kirsch, J. Vitek
 
-- 2016: B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier, __Self-Balancing Job Parallelism and Throughput in Hadoop__, In Proceedings of the 11th International Federated Conference on Distributed Computing Techniques (DISCOTEC - DAIS ‘16), CORE - B, 2016, [pdf](https://hal.inria.fr/hal-01294834)
-- 2015: F. Křikava, R. Rouvoy, L. Seinturier, __Infrastructure as Runtime Models: Towards Model-Driven Resource Management__, In Proceedings of the 18th International Conference on Model Driven Engineering Languages and Systems (MODELS ‘15), CORE - B, 2015, [pdf](https://hal.inria.fr/hal-01178730)
-- 2015: B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier, __Self-configuration of the Number of Concurrently Running MapReduce Jobs in a Hadoop Cluster__, In Proceedings of the 12th International Conference on Autonomic Computing (ICAC ‘15), _poster_, 2015, [pdf](https://hal.inria.fr/hal-01143157)
+- **Designing Types for R, Empirically**, OOPSLA, 2020 · [pdf](/publications/oopsla20.pdf) · [doi](https://doi.org/10.1145/3428249) · [artifact](https://doi.org/10.5281/zenodo.4037278)  
+  A. Turcotte, A. Goel, F. Křikava, J. Vitek
 
-- 2015: S. Götz, I. Gerostathopoulos, F. Křikava, A. Shahzada and R. Spalazzese, __Adaptive Exchange of Distributed Partial Models@run.time for Highly Dynamic Systems__, In Proceedings of the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS ‘15), 2015 [pdf](https://hal.inria.fr/hal-01119490)
+- **Scala Implicits Are Everywhere: A Large-Scale Study of the Use of Scala Implicits in the Wild**, OOPSLA, 2019 · [pdf](/publications/oopsla19.pdf) · [doi](https://doi.org/10.1145/3360589) · [artifact](https://zenodo.org/record/3369436)  
+  F. Křikava, H. Miller, J. Vitek
 
-- 2015: A. Filieri, M. Maggio, K. Angelopoulos, N. D'Ippolito, I. Gerostathopoulos, A. Hempel, H. Hoffmann, P. Jamshidi, E. Kalyvianaki, C. Klein, F. Křikava, S. Misailovic, A. V. Papadopoulos, S. Ray, A. M. Sharifloo, S. Shevtsov, M. Ujma and T. Vogel, __Software Engineering Meets Control Theory__, In Proceedings of the 10th International Symposium on Software Engineering for Adaptive and Self-Managing Systems (SEAMS ‘15), 2015 [pdf](https://hal.inria.fr/hal-01119461)
+- **RDT: A Dynamic Tracing Framework for R**, RIOT, 2019 · [pdf](https://riotworkshop.github.io/abstracts/riot-2019-dynamic-tracing.pdf)  
+  A. Goel, F. Křikava, J. Vitek
 
-- 2014: F. Křikava, P. Collet, R. France, __SIGMA: Scala Internal Domain-Specific Languages for Model Manipulations__, In Proceedings of the 17th International Conference on Model Driven Engineering Languages and Systems (MODELS ‘14), CORE - B, 2014, [pdf](https://hal.inria.fr/hal-01010339)
+- **Tests from Traces: Automated Unit Test Extraction for R**, ISSTA, 2018 · [pdf](/publications/issta18.pdf) · [doi](https://doi.org/10.1145/3213846.3213863) · [artifact](https://doi.org/10.5281/zenodo.1306437)  
+  F. Křikava, J. Vitek
 
-- 2014: F. Křikava, P. Collet, R. Rouvoy, __Integrating Adaptation Mechanisms Using Control Theory Centric Architecture Models: A Case Study__, In Proceedings of the 11th International Conference on Autonomic Computing (ICAC ’14), CORE - B, 2014, [pdf](https://hal.inria.fr/hal-00991114)
+- **Hadoop-Benchmark: Rapid Prototyping and Evaluation of Self-Adaptive Behaviors in Hadoop Clusters**, SEAMS, 2017 · [pdf](https://hal.inria.fr/hal-01475635/document) · [doi](https://doi.org/10.1109/SEAMS.2017.15)  
+  B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier
 
-- 2014: F. Křikava, P. Collet, R. France, __ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures__, In Proceedings of the 29th Symposium On Applied Computing (SAC ‘14) - Dependable and Adaptive Distributed Systems track (DADS ‘14), CORE - B, 2014, [pdf](https://hal.inria.fr/hal-00951798)
+- **Contracts-Based Control Integration into Software Systems**, SEfSAS III, 2017 · [pdf](/publications/sefsas17.pdf) · [doi](https://doi.org/10.1007/978-3-319-74183-3_9)  
+  F. Křikava, P. Collet, R. Rouvoy, L. Seinturier
 
-- 2014: F. Křikava, P. Collet, R. France, __Manipulating Models Using Internal Domain-Specific Languages__, In Proceedings of the 29th Symposium On Applied Computing (SAC ‘14) - Programming Language track (PL ‘14), CORE - B, _short paper_, 2014, [pdf](https://hal.inria.fr/hal-00951803)
+- **Control Strategies for Self-Adaptive Software Systems**, TAAS, 2017 · [pdf](/publications/taas17.pdf) · [doi](https://doi.org/10.1145/3024188)  
+  A. Filieri, M. Maggio, K. Angelopoulos, N. D'Ippolito, I. Gerostathopoulos, A. Hempel, H. Hoffmann, P. Jamshidi, E. Kalyvianaki, C. Klein, F. Křikava, S. Misailovic, A. Papadopoulos, S. Ray, A. Sharifloo, S. Shevtsov, M. Ujma, T. Vogel
 
-- 2011: F. Křikava, P. Collet, __A Reflective Model for Architecting Feedback Control Systems__, In Proceedings of the 23rd International Conference on Software Engineering and Knowledge Engineering (SEKE ’11), CORE - B, 2011, [pdf](https://hal.inria.fr/hal-01117775)
+- **Self-Balancing Job Parallelism and Throughput in Hadoop**, DAIS, 2016 · [pdf](https://hal.inria.fr/hal-01294834/document) · [doi](https://doi.org/10.1007/978-3-319-39577-7_11)  
+  B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier
 
-- 2011: F. Křikava, P. Collet, M. Blay-Fornarino, __Uniform and Model-Driven Engineering of Feedback Control Systems__, In Proceedings of the 8th IEEE/ACM International Conference on Autonomic Computing (ICAC ’11), CORE - B, _short paper_, 2011, [pdf](https://hal.inria.fr/hal-01117776)
-### International Workshops
+- **Solving the TTC'16 Class Responsibility Assignment Case Study with SIGMA and Multi-Objective Genetic Algorithms**, TTC, 2016 · [pdf](https://ceur-ws.org/Vol-1758/paper9.pdf)  
+  F. Křikava
 
-- 2019: A. Goel, F. Křikava, J. Vitek, __RDT: A Dynamic Tracing Framework for R__, 4rd Workshop on R Implementation, Optimization and Tooling
-[RIOT](https://riotworkshop.github.io/) 2019, co-located with [useR! 2019](https://riotworkshop.github.io/) [asbtract](https://riotworkshop.github.io/abstracts/riot-2019-dynamic-tracing.pdf)
+- **Self-Configuration of the Number of Concurrently Running MapReduce Jobs in a Hadoop Cluster**, ICAC, 2015 · [pdf](https://hal.inria.fr/hal-01143157/document) · [doi](https://doi.org/10.1109/ICAC.2015.54)  
+  B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier
 
-- 2016: F. Křikava, __Solving the TTC’16 Class Responsibility Assignment Case Study with SIGMA and Multi-Objective Genetic Algorithms__, Proceedings of the 9th Transformation Tool Contest (TTC'16) part of the Software Technologies: Applications and Foundations (STAF 2016) federation of conferences, 2016 [pdf](https://hal.inria.fr/hal-01615255)
+- **Infrastructure as Runtime Models: Towards Model-Driven Resource Management**, MODELS, 2015 · [pdf](https://hal.inria.fr/hal-01178730/document) · [doi](https://doi.org/10.1109/MODELS.2015.7338240)  
+  F. Křikava, R. Rouvoy, L. Seinturier
 
-- 2015: F. Křikava, M. Monperrus, __TTC’15 Live Contest Case Study: Transformation of Java Annotations__, Proceedings of the 8th Transformation Tool Contest (TTC’15) part of the Software Technologies: Applications and Foundations (STAF 2015) federation of conferences, 2015 [pdf](https://hal.inria.fr/hal-01242942)
+- **Software Engineering Meets Control Theory**, SEAMS, 2015 · [pdf](https://hal.inria.fr/hal-01119461/document) · [doi](https://doi.org/10.1109/SEAMS.2015.12)  
+  A. Filieri, M. Maggio, K. Angelopoulos, N. D'Ippolito, I. Gerostathopoulos, A. Hempel, H. Hoffmann, P. Jamshidi, E. Kalyvianaki, C. Klein, F. Křikava, S. Misailovic, A. Papadopoulos, S. Ray, A. Sharifloo, S. Shevtsov, M. Ujma, T. Vogel
 
-- 2015: F. Křikava, __Solving the TTC’15 Train Benchmark Case Study with SIGMA__, Proceedings of the 8th Transformation Tool Contest (TTC'15) part of the Software Technologies: Applications and Foundations (STAF 2015) federation of conferences, 2015 [pdf](https://hal.inria.fr/hal-01217005)
+- **Adaptive Exchange of Distributed Partial Models@run.time for Highly Dynamic Systems**, SEAMS, 2015 · [pdf](https://hal.inria.fr/hal-01119490/document) · [doi](https://doi.org/10.1109/SEAMS.2015.25)  
+  S. Götz, I. Gerostathopoulos, F. Křikava, A. Shahzada, R. Spalazzese
 
-- 2014: F. Křikava, P. Collet, __Solving the TTC'14 FIXML Case Study with SIGMA__, Proceedings of the 7th Transformation Tool Contest (TTC'14) part of the Software Technologies: Applications and Foundations (STAF 2014) federation of conferences, 2014 [pdf](https://hal.inria.fr/hal-01015149)
+- **Software Engineering for Smart Cyber-Physical Systems -- Towards a Research Agenda**, SIGSOFT SEN, 2015 · [pdf](/publications/ssen15.pdf) · [doi](https://doi.org/10.1145/2830719.2830736)  
+  T. Bureš, D. Weyns, C. Berger, S. Biffl, M. Daun, T. Gabor, D. Garlan, I. Gerostathopoulos, C. Julien, F. Křikava, R. Mordinyi, N. Pronios
 
-- 2012: F. Křikava, P. Collet, __On the Use of an Internal DSL for Enriching EMF Models__, In Proceedings of the 2012 International Workshop on OCL and Textual Modelling (OCL ’12) - MODELS’12, 2012, [pdf](https://hal.inria.fr/hal-01117778)
+- **Solving the TTC'15 Train Benchmark Case Study with SIGMA**, TTC, 2015 · [pdf](https://ceur-ws.org/Vol-1524/paper22.pdf)  
+  F. Křikava
 
-- 2012: F. Křikava, P. Collet, R. France, __Actor-based Runtime Model of Adaptable Feedback Control Loops__, In Proceedings of the 7th International Workshop on models@run.time (MRT ‘12) - MODELS’12, 2012, [pdf](https://hal.inria.fr/hal-01117779)
+- **TTC'15 Live Contest Case Study: Transformation of Java Annotations**, TTC, 2015 · [pdf](https://hal.inria.fr/hal-01242942/document)  
+  F. Křikava, M. Monperrus
 
-- 2010: P. Collet, F. Křikava, J. Montagnat, M. Blay-Fornarino, D. Manset, __Issues and Scenarios for Self-Managing Grid Middleware__, In Proceeding of the 2nd Workshop on Grids Meets Autonomic Computing (GMAC '10) - ICAC’10, 2010, [pdf](https://hal.inria.fr/hal-01117780)
-### Thesis
+- **Integrating Adaptation Mechanisms Using Control Theory Centric Architecture Models: A Case Study**, ICAC, 2014 · [pdf](https://hal.inria.fr/hal-00991114/document)  
+  F. Křikava, P. Collet, R. Rouvoy
 
-- 2020: F. Křikava, __Large-scale Program Analysis for Language Evolution, Habilitation Thesis__, defended on 11.11.2021 at Czech Technical University, Czech Republic, [pdf](/publications/habilitation.pdf)
+- **SIGMA: Scala Internal Domain-Specific Languages for Model Manipulations**, MODELS, 2014 · [pdf](https://hal.inria.fr/hal-01010339/document) · [doi](https://doi.org/10.1007/978-3-319-11653-2_35)  
+  F. Křikava, P. Collet, R. France
 
-- 2013: F. Křikava, __Domain-Specific Modeling Language for Self-Adaptive Software System Architectures__, Phd Thesis, defended on 22.11.2013 at University of Nice-Sophia Antipolis, France, [pdf](/publications/phd.pdf)
+- **ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures**, SAC, 2014 · [pdf](https://hal.inria.fr/hal-00951798/document) · [doi](https://doi.org/10.1145/2554850.2555020)  
+  F. Křikava, P. Collet, R. France
 
-- 2009: F. Křikava, __Complex Analysis of Traffic Information__, Master Thesis, defended on 27.01.2009 at Czech Technical University, Czech Republic, [pdf](/publications/master.pdf)
+- **Manipulating Models Using Internal Domain-Specific Languages**, SAC, 2014 · [pdf](https://hal.inria.fr/hal-00951803/document) · [doi](https://doi.org/10.1145/2554850.2555127)  
+  F. Křikava, P. Collet, R. France
 
-## Committee Member
+- **Solving the TTC'14 FIXML Case Study with SIGMA**, TTC, 2014 · [pdf](https://ceur-ws.org/Vol-1305/paper19.pdf)  
+  F. Křikava, P. Collet
 
-* 2021: PC member of __ISSTA artifact evaluation__ ([ISSTA'21](https://conf.researchr.org/committee/issta-2021/issta-2021-artifact-evaluation-artifact-evaluation-committee))
-* 2021: PC member of __Latin America High Performance Computing Conference__ ([CARLA'21](http://www.ccarla.org/))
-* 2020: PC member of __Latin America High Performance Computing Conference__ ([CARLA'20](http://www.ccarla.org/))
-* 2019: PC member of __Latin America High Performance Computing Conference__ ([CARLA'19](http://www.ccarla.org/))
-* 2018: PC member of __Latin America High Performance Computing Conference__ ([CARLA'18](http://www.ccarla.org/))
-* 2018: PC member of __SEAMS Artifact Evaluation__ ([SEAMS'18](https://conf.researchr.org/committee/seams-2018/seams-2018-papers-artifact-evaluation-committee))
-* 2017: PC member of __ECOOP Artifact Evaluation__ ([ECOOP'17](https://2017.ecoop.org/committee/ecoop-2017-artifacts-artifact-evaluation-committee))
-* 2017: PC member of __ICSE Demonstration Track__ ([ICSE'17](http://icse2017.gatech.edu/?q=program_committee))
-* 2017: PC member of __MODELS Tools and Demos__ ([MODELS'17](https://www.cs.colostate.edu/~ghosh/models17_td/home_models17_td.html))
-* 2017: PC member of __International Workshop on Software Engineering for Smart Cyber-Physical Systems__ ([SEsCPS'17](http://d3s.mff.cuni.cz/conferences/sescps2017/)), co-located with [ICSE'17](http://2017.icse-conferences.org/)
-* from 2020: Member of organization committee for the __RebaseConf conference__ ([RebaseConf](https://rebase-conf.org/))
-* 2018: Web co-chair for **SPLASH conference** ([SPLASH'18](https://2018.splashcon.org/committee/splash-2018-organizing-committee))
-* 2017-2019: Member of organization committee for the __CurryOn conference__ ([CurryOn](https://www.curry-on.org/2019/))
-* 2016: PC member of __International Workshop on Software Engineering for Smart Cyber-Physical Systems__ ([SEsCPS'16](http://d3s.mff.cuni.cz/conferences/sescps2016/)), co-located with [ICSE'16](http://2016.icse-conferences.org/)
-* 2015: PC member of __International Workshop on Control Theory for Software Engineering__ (CTSE'15), co-located with [ESEC/FSE'15](http://esec-fse15.dei.polimi.it/)
-* 2015: PC member of __International Workshop on Software Engineering for Smart Cyber-Physical Systems__ ([SEsCPS'15](http://d3s.mff.cuni.cz/conferences/sescps2015/)), co-located with [ICSE'15](http://2015.icse-conferences.org/)
-* 2015: PC member of Modularity conference - Demonstrations and Posters ([Modularity'15](http://aosd.net/2015/DemosPosters))
-* 2015-2019: Member of organization committee of the __Transformation Tool Contest__ ([TTC](http://www.transformation-tool-contest.eu/))
-* 2012: PC member of __Latin American Conference on High Performance Computing__ ([CLCAR'12](http://www.clcar.org/))
-* from 2011: Member of the steering committee of the __Super and Distributed Computing Summer Camp__ ([SC-CAMP](http://www.sc-camp.org/))
+- **Actor-Based Runtime Model of Adaptable Feedback Control Loops**, MRT, 2012 · [pdf](https://hal.inria.fr/hal-01117779/document) · [doi](https://doi.org/10.1145/2422518.2422525)  
+  F. Křikava, P. Collet, R. France
 
-## Other
+- **On the Use of an Internal DSL for Enriching EMF Models**, OCL, 2012 · [pdf](https://hal.inria.fr/hal-01117778/document) · [doi](https://doi.org/10.1145/2428516.2428521)  
+  F. Křikava, P. Collet
 
-* 2020: Reviews for 
-  - [Future Generation Computing Systems](https://www.journals.elsevier.com/future-generation-computer-systems)
+- **Uniform and Model-Driven Engineering of Feedback Control Systems**, ICAC, 2011 · [pdf](https://hal.inria.fr/hal-01117776/document) · [doi](https://doi.org/10.1145/1998582.1998616)  
+  F. Křikava, P. Collet, M. Blay-Fornarino
 
-* 2018: Reviews for
-  - [Journal of Visual Languages and Computing](https://www.journals.elsevier.com/journal-of-visual-languages-and-computing)
-  - [Future Generation Computing Systems](https://www.journals.elsevier.com/future-generation-computer-systems)
+- **A Reflective Model for Architecting Feedback Control Systems**, SEKE, 2011 · [pdf](https://hal.inria.fr/hal-01117775/document)  
+  F. Křikava, P. Collet
 
-* 2017: Reviews for
-  - [Future Generation Compture Systems](https://www.journals.elsevier.com/future-generation-computer-systems)
-  
-* 2015: Reviews for
-  - [ECSA'15](http://ecsa-conference.org/2015/)
-  - [CBSE'15](http://cbse-conferences.org/2015/)
-  - [SCRAMBL'15](http://volga.usc.edu/scrambl/)
-  - [MIDDLEWARE'15](http://2015.middleware-conference.org/)
-  - Software Engineering for Self-Adaptive Software Systems - Book 3: Assurances
-
-* 2014: Reviews for
-  - [SEAMS'14](http://seams2014.uni-paderborn.de/)
-  - [ECMFA'14](http://ecmfa2014.lcc.uma.es/)
-  - [DAIS'14](http://www.ics.forth.gr/dais14/)
-  - [IEEE Transactions on Network and Service Management](http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=4275028)
-
-## Presentations
-
-- 26/04/2016: F. Křikava, R. Rouvoy, L. Seinturier, __Towards the use of runtime models for infrastructure man-agement and self-adaptation__, [Shonan Seminar 077](https://shonan.nii.ac.jp/seminars/077/), Shonan Village, Japan
-
-- 01/12/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Domain-Specific Modeling Language for Self-Adaptive Software Systems__, [Journée sur les Architectures Logicielles pour la Robotique Autonome, les Systèmes Cyber-Physiques et les Systèmes Auto-Adaptables](http://www.lirmm.fr/gtcar/index.php/autres-workshop/workshop-cps-gdr-gpl-robotique) organized by UPMC-LIP6, Paris, France
-
-- 25/11/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Domain-Specific Modeling Language for Self-Adaptive Software Systems__, [D3S seminaire](http://d3s.mff.cuni.cz/research/seminar/) organized by the D3S group from the Charles University, Prague, Czech Republic,
-
-- 19/10/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __System-Level Abstractions for Integrating Control Mechanisms into Software Systems__, [Séminaire Dagstuhl #14433](http://www.dagstuhl.de/en/program/calendar/evhp/?semnr=14433) - __Software Engineering for Self-Adaptive Systems__, Dagstuhl, Germany
-
-- 16/10/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Domain-Specific Modeling Language for Self-Adaptive Software Systems__, [Workshop Autonomique](http://projects.laas.fr/autonomique/workshop__16__10__14__.html) organized by the LAAS-CNRS, Toulouse, France
-
-- 15/09/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __System-Level Abstractions for Integrating Control Mechanisms into Software Systems__, [Séminaire Dagstuhl #14382](http://www.dagstuhl.de/en/program/calendar/evhp/?semnr=14382) - __Control Theory meets Software Engineering__, Dagstuhl, Germany
-
-- 12/06/2014: F. Křikava, P. Collet, R. France, __ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures__ - une presentation invitée dans la session GDR GPL organisée par le groupe de travail COSMAL , [Journées du GDR GPL 2014](http://gdr-gpl2014.cnam.fr/?page=programme), Paris, France
-
-- 27/05/2014: F. Křikava, P. Collet, R. France, R. Rouvoy, L. Seinturier, __Integrating Adaptation Mechanisms Using Control Theory Centric Architecture Models__, [Grenoble Workshop on Autonomic Computing and Control](https://team.inria.fr/ctrl-a/members/eric-rutten/autoctrl/), Grenoble, France
-
-- 02/07/2013: F. Křikava, __Model Manipulation Using Embedded DSLs in Scala__, [Scala Workshop 2013](http://lampwww.epfl.ch/~hmiller/scala2013/) - student talks, Montpellier, France
-
-- 18/09/2012: F. Křikava, Javier Rojas Balderrama, Johan Montagnat, P. Collet, __Using Adaptation Strategies to Improve Grid Operations__, [EGI Technical Forum 2012](http://gpl2012.irisa.fr/), Prague, Czech Republic
-
-- 19/06/2012: F. Křikava, P. Collet, __Using Architecture Models to Rapidly Prototype Feedback Control Systems__, [Journées du GDR GPL 2012](http://tf2012.egi.eu/programme/), Rennes, France
-
-- 14/07/2011: F. Křikava. __Introduction to HTC and Condor__, [SC-CAMP'11](http://www.sc-camp.org/2011/), Turrialba, Costa Rica
-
-- 27/05/2010: F. Křikava. __Self Adaptive Very Large Distributed System__, [SC-CAMP'10](http://www.sc-camp.org/2010/), Catay, Colombia
-
-### In Industry:
-
-- 30/10/2018: F. Křikava, __Everything you ever wanted to know about Scala implicits, but weren't sure how to ask__, [scala.io](https://scala.io/2018/talks.html#/#AIY-6535), Lyon
-
-- 23/02/2017: F. Křikava, __genthat__, [R meetup - Boston](/presentations/genthat.html#1), Boston
-
-- 10/06/2013: F. Křikava, __Domain specific languages and Scala__, [Riviera Scala/Clojure User Group](http://www.slideshare.net/krikava/domain-specific-languages-and-scala), Sophia-Antipolis, France
-
-- 23/10/2012: F. Křikava, __Enriching EMF Models with Scala__, [EclipseCON’12 Europe - Modeling Symposium](http://www.slideshare.net/krikava/enriching-emf-models-with-scala), Ludwigsburg, Germany
+- **Issues and Scenarios for Self-Managing Grid Middleware**, GMAC, 2010 · [pdf](https://hal.inria.fr/hal-01117780/document)  
+  P. Collet, F. Křikava, J. Montagnat, M. Blay-Fornarino, D. Manset

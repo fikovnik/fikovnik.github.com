@@ -94,4 +94,20 @@
     border-radius: 4px;
   }
 
+  /* homepage intro photo — floats beside the bio, like the old site */
+  .prose img.home-photo {
+    float: right;
+    width: 38%;
+    margin: 0.3rem 0 1rem 1.5rem;
+    border-radius: var(--img-border-radius);
+  }
+  @media (max-width: 640px) {
+    .prose img.home-photo {
+      float: none;
+      display: block;
+      width: 70%;
+      margin: 0 auto 1.25rem;
+    }
+  }
+
 </style>

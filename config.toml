@@ -39,9 +39,10 @@ external_level = "warn"
 [extra]
 
 sections = [
-  { name = "blog", path = "/posts", is_external = false },
+  { name = "posts", path = "/posts", is_external = false },
   { name = "publications", path = "/publications", is_external = false },
   { name = "teaching", path = "/teaching", is_external = false },
+  { name = "cv", path = "/cv", is_external = false },
 ]
 blog_section_path = "/posts"
 
