@@ -1,49 +1,13 @@
-% Publications of Filip Křikava.
-% Source of truth for the /publications page.
-% After editing, run `make publications` to regenerate content/publications/_index.md.
-%
-% Required fields: title, author (all authors), year, venue (display abbreviation).
-% Optional: doi (published papers); status (e.g. "under review"); artifact/url
-% (external artifact link); pdf (external free PDF, used only when no locally
-% hosted copy exists). A [pdf] link to a locally hosted copy is added
-% automatically when static/publications/<key>.pdf exists and takes precedence.
-
 % ===========================================================================
 % In submission
 % ===========================================================================
 
 @article{oopsla26,
-  title  = {Revisiting Row Polymorphism for Set-Theoretic Types},
-  author = {Laurent, Mickaël and Donat-Bouillud, Pierre and Křikava, Filip and Vitek, Jan},
-  year   = {2026},
-  venue  = {OOPSLA},
-  status = {under review},
-  pdf    = {https://mlaurent.ovh/publications/row_poly.pdf},
-}
-
-@article{toplas26,
-  title  = {A Typed Intermediate Representation for Dynamic Languages},
-  author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski, Sebastián and Vitek, Jan},
-  year   = {2026},
-  venue  = {TOPLAS},
-  doi    = {10.1145/3811921},
-  status = {under review},
-  pdf    = {https://mlaurent.ovh/publications/typed_ir.pdf},
-}
-
-@inproceedings{ecoop26,
-  title  = {Characterizing Type Feedback in Just-in-Time Compilation},
-  author = {Krynski, Sebastián and Říha, Filip and Křikava, Filip and Vitek, Jan},
-  year   = {2026},
-  venue  = {ECOOP},
-  status = {under review},
-}
-
-@inproceedings{mplr26,
-  title  = {Leveraging Copy-and-Patch JIT for Low-Overhead Dynamic Program Analysis},
-  author = {Kocourek, Matěj and Křikava, Filip and Donat-Bouillud, Pierre and Vitek, Jan},
-  year   = {2026},
-  venue  = {MPLR},
+  title = {Revisiting Row Polymorphism for Set-Theoretic Types},
+  author = {Laurent, Mickaël and Donat-Bouillud, Pierre and Křikava, Filip and
+            Vitek, Jan},
+  year = {2026},
+  venue = {OOPSLA},
   status = {under review},
 }
 
@@ -51,291 +15,327 @@
 % Published
 % ===========================================================================
 
+@article{toplas26,
+  title = {A Typed Intermediate Representation for Dynamic Languages},
+  author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski,
+            Sebastián and Vitek, Jan},
+  year = {2026},
+  venue = {TOPLAS},
+  doi = {10.1145/3811921},
+}
+
+@inproceedings{ecoop26,
+  title = {Characterizing Type Feedback in Just-in-Time Compilation},
+  author = {Krynski, Sebastián and Říha, Filip and Křikava, Filip and Vitek, Jan
+            },
+  year = {2026},
+  venue = {ECOOP},
+  doi = {10.4230/LIPIcs.ECOOP.2026.16},
+}
+
+@inproceedings{mplr26,
+  title = {Leveraging Copy-and-Patch JIT for Low-Overhead Dynamic Program
+           Analysis},
+  author = {Kocourek, Matěj and Křikava, Filip and Donat-Bouillud, Pierre and
+            Vitek, Jan},
+  year = {2026},
+  venue = {MPLR},
+}
+
 @inproceedings{vmil25,
-  title  = {Copy-and-Patch Just-in-Time Compiler for {R}},
+  title = {Copy-and-Patch Just-in-Time Compiler for {R}},
   author = {Kocourek, Matěj and Křikava, Filip and Vitek, Jan},
-  year   = {2025},
-  venue  = {VMIL},
-  doi    = {10.1145/3759548.3763370},
+  year = {2025},
+  venue = {VMIL},
+  doi = {10.1145/3759548.3763370},
 }
 
 @inproceedings{rep25,
-  title    = {R4R: Reproducibility for {R}},
-  author   = {Donat-Bouillud, Pierre and Křikava, Filip and Krynski, Sebastián and Vitek, Jan},
-  year     = {2025},
-  venue    = {REP},
-  doi      = {10.1145/3736731.3746156},
+  title = {R4R: Reproducibility for {R}},
+  author = {Donat-Bouillud, Pierre and Křikava, Filip and Krynski, Sebastián and
+            Vitek, Jan},
+  year = {2025},
+  venue = {REP},
+  doi = {10.1145/3736731.3746156},
   artifact = {https://doi.org/10.5281/zenodo.16891362},
 }
 
 @inproceedings{morevms25,
-  title  = {Comparing {R} Bytecode Compilers Written in {R}, {Java}, and {Rust}},
-  author = {Donat-Bouillud, Pierre and Křikava, Filip and Hain, Jakob and Plodek, Adam and Vitek, Jan},
-  year   = {2025},
-  venue  = {MoreVMs},
-  doi    = {10.4230/OASIcs.Programming.2025.1},
-  pdf    = {https://drops.dagstuhl.de/storage/01oasics/oasics-vol134-programming2025/OASIcs.Programming.2025.1/OASIcs.Programming.2025.1.pdf},
+  title = {Comparing {R} Bytecode Compilers Written in {R}, {Java}, and {Rust}},
+  author = {Donat-Bouillud, Pierre and Křikava, Filip and Hain, Jakob and Plodek
+            , Adam and Vitek, Jan},
+  year = {2025},
+  venue = {MoreVMs},
+  doi = {10.4230/OASIcs.Programming.2025.1},
 }
 
 @inproceedings{vimpl25,
-  title  = {Toward a Typed Intermediate Language for {R}},
-  author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski, Sebastián and Vitek, Jan},
-  year   = {2025},
-  venue  = {VIMPL},
-  doi    = {10.4230/OASIcs.Programming.2025.24},
-  pdf    = {https://drops.dagstuhl.de/storage/01oasics/oasics-vol134-programming2025/OASIcs.Programming.2025.24/OASIcs.Programming.2025.24.pdf},
+  title = {Toward a Typed Intermediate Language for {R}},
+  author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski,
+            Sebastián and Vitek, Jan},
+  year = {2025},
+  venue = {VIMPL},
+  doi = {10.4230/OASIcs.Programming.2025.24},
 }
 
 @inproceedings{vmil24,
-  title  = {Reducing Feedback Pollution},
-  author = {Krynski, Sebastián and Štěpánek, Michal and Říha, Filip and Křikava, Filip and Vitek, Jan},
-  year   = {2024},
-  venue  = {VMIL},
-  doi    = {10.1145/3689490.3690404},
+  title = {Reducing Feedback Pollution},
+  author = {Krynski, Sebastián and Štěpánek, Michal and Říha, Filip and Křikava,
+            Filip and Vitek, Jan},
+  year = {2024},
+  venue = {VMIL},
+  doi = {10.1145/3689490.3690404},
 }
 
 @inproceedings{sle22,
-  title    = {signatr: A Data-Driven Fuzzing Tool for {R}},
-  author   = {Turcotte, Alexi and Donat-Bouillud, Pierre and Křikava, Filip and Vitek, Jan},
-  year     = {2022},
-  venue    = {SLE},
-  doi      = {10.1145/3567512.3567530},
+  title = {signatr: A Data-Driven Fuzzing Tool for {R}},
+  author = {Turcotte, Alexi and Donat-Bouillud, Pierre and Křikava, Filip and
+            Vitek, Jan},
+  year = {2022},
+  venue = {SLE},
+  doi = {10.1145/3567512.3567530},
   artifact = {https://doi.org/10.5281/zenodo.7342082},
-  pdf      = {http://janvitek.org/pubs/sle22.pdf},
 }
 
 @article{oopsla21a,
-  title    = {What We Eval in the Shadows: A Large-Scale Study of Eval in {R} Programs},
-  author   = {Goel, Aviral and Donat-Bouillud, Pierre and Křikava, Filip and Kirsch, Christoph M. and Vitek, Jan},
-  year     = {2021},
-  venue    = {OOPSLA},
-  doi      = {10.1145/3485502},
+  title = {What We Eval in the Shadows: A Large-Scale Study of Eval in {R}
+           Programs},
+  author = {Goel, Aviral and Donat-Bouillud, Pierre and Křikava, Filip and
+            Kirsch, Christoph M. and Vitek, Jan},
+  year = {2021},
+  venue = {OOPSLA},
+  doi = {10.1145/3485502},
   artifact = {https://doi.org/10.5281/zenodo.5415230},
-  pdf      = {http://janvitek.org/pubs/oopsla21a.pdf},
 }
 
 @article{oopsla20,
-  title    = {Designing Types for {R}, Empirically},
-  author   = {Turcotte, Alexi and Goel, Aviral and Křikava, Filip and Vitek, Jan},
-  year     = {2020},
-  venue    = {OOPSLA},
-  doi      = {10.1145/3428249},
+  title = {Designing Types for {R}, Empirically},
+  author = {Turcotte, Alexi and Goel, Aviral and Křikava, Filip and Vitek, Jan},
+  year = {2020},
+  venue = {OOPSLA},
+  doi = {10.1145/3428249},
   artifact = {https://doi.org/10.5281/zenodo.4037278},
-  pdf      = {http://janvitek.org/pubs/oopsla20-r.pdf},
 }
 
 @article{oopsla19,
-  title    = {Scala Implicits Are Everywhere: A Large-Scale Study of the Use of Scala Implicits in the Wild},
-  author   = {Křikava, Filip and Miller, Heather and Vitek, Jan},
-  year     = {2019},
-  venue    = {OOPSLA},
-  doi      = {10.1145/3360589},
+  title = {Scala Implicits Are Everywhere: A Large-Scale Study of the Use of
+           Scala Implicits in the Wild},
+  author = {Křikava, Filip and Miller, Heather and Vitek, Jan},
+  year = {2019},
+  venue = {OOPSLA},
+  doi = {10.1145/3360589},
   artifact = {https://zenodo.org/record/3369436},
-  pdf      = {http://janvitek.org/pubs/oopsla19b.pdf},
 }
 
 @inproceedings{riot19,
-  title  = {RDT: A Dynamic Tracing Framework for {R}},
+  title = {RDT: A Dynamic Tracing Framework for {R}},
   author = {Goel, Aviral and Křikava, Filip and Vitek, Jan},
-  year   = {2019},
-  venue  = {RIOT},
-  pdf    = {https://riotworkshop.github.io/abstracts/riot-2019-dynamic-tracing.pdf},
+  year = {2019},
+  venue = {RIOT},
 }
 
 @inproceedings{issta18,
-  title    = {Tests from Traces: Automated Unit Test Extraction for {R}},
-  author   = {Křikava, Filip and Vitek, Jan},
-  year     = {2018},
-  venue    = {ISSTA},
-  doi      = {10.1145/3213846.3213863},
+  title = {Tests from Traces: Automated Unit Test Extraction for {R}},
+  author = {Křikava, Filip and Vitek, Jan},
+  year = {2018},
+  venue = {ISSTA},
+  doi = {10.1145/3213846.3213863},
   artifact = {https://doi.org/10.5281/zenodo.1306437},
-  pdf      = {http://janvitek.org/pubs/issta18.pdf},
 }
 
 @article{taas17,
-  title  = {Control Strategies for Self-Adaptive Software Systems},
-  author = {Filieri, Antonio and Maggio, Martina and Angelopoulos, Konstantinos and D'Ippolito, Nicolás and Gerostathopoulos, Ilias and Hempel, Andreas and Hoffmann, Henry and Jamshidi, Pooyan and Kalyvianaki, Evangelia and Klein, Cristian and Křikava, Filip and Misailovic, Sasa and Papadopoulos, Alessandro V. and Ray, Suprio and Sharifloo, Amir M. and Shevtsov, Stepan and Ujma, Mateusz and Vogel, Thomas},
-  year   = {2017},
-  venue  = {TAAS},
-  doi    = {10.1145/3024188},
+  title = {Control Strategies for Self-Adaptive Software Systems},
+  author = {Filieri, Antonio and Maggio, Martina and Angelopoulos, Konstantinos
+            and D'Ippolito, Nicolás and Gerostathopoulos, Ilias and Hempel,
+            Andreas and Hoffmann, Henry and Jamshidi, Pooyan and Kalyvianaki,
+            Evangelia and Klein, Cristian and Křikava, Filip and Misailovic, Sasa
+            and Papadopoulos, Alessandro V. and Ray, Suprio and Sharifloo, Amir
+            M. and Shevtsov, Stepan and Ujma, Mateusz and Vogel, Thomas},
+  year = {2017},
+  venue = {TAAS},
+  doi = {10.1145/3024188},
 }
 
 @inproceedings{seams17,
-  title  = {Hadoop-Benchmark: Rapid Prototyping and Evaluation of Self-Adaptive Behaviors in Hadoop Clusters},
-  author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier, Lionel},
-  year   = {2017},
-  venue  = {SEAMS},
-  doi    = {10.1109/SEAMS.2017.15},
-  pdf    = {https://hal.inria.fr/hal-01475635/document},
+  title = {Hadoop-Benchmark: Rapid Prototyping and Evaluation of Self-Adaptive
+           Behaviors in Hadoop Clusters},
+  author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier,
+            Lionel},
+  year = {2017},
+  venue = {SEAMS},
+  doi = {10.1109/SEAMS.2017.15},
 }
 
 @incollection{sefsas17,
-  title  = {Contracts-Based Control Integration into Software Systems},
-  author = {Křikava, Filip and Collet, Philippe and Rouvoy, Romain and Seinturier, Lionel},
-  year   = {2017},
-  venue  = {SEfSAS III},
-  doi    = {10.1007/978-3-319-74183-3_9},
+  title = {Contracts-Based Control Integration into Software Systems},
+  author = {Křikava, Filip and Collet, Philippe and Rouvoy, Romain and
+            Seinturier, Lionel},
+  year = {2017},
+  venue = {SEfSAS III},
+  doi = {10.1007/978-3-319-74183-3_9},
 }
 
 @inproceedings{dais16,
-  title  = {Self-Balancing Job Parallelism and Throughput in Hadoop},
-  author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier, Lionel},
-  year   = {2016},
-  venue  = {DAIS},
-  doi    = {10.1007/978-3-319-39577-7_11},
-  pdf    = {https://hal.inria.fr/hal-01294834/document},
+  title = {Self-Balancing Job Parallelism and Throughput in Hadoop},
+  author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier,
+            Lionel},
+  year = {2016},
+  venue = {DAIS},
+  doi = {10.1007/978-3-319-39577-7_11},
 }
 
 @inproceedings{ttc16,
-  title  = {Solving the TTC'16 Class Responsibility Assignment Case Study with SIGMA and Multi-Objective Genetic Algorithms},
+  title = {Solving the TTC'16 Class Responsibility Assignment Case Study with
+           SIGMA and Multi-Objective Genetic Algorithms},
   author = {Křikava, Filip},
-  year   = {2016},
-  venue  = {TTC},
-  pdf    = {https://ceur-ws.org/Vol-1758/paper9.pdf},
+  year = {2016},
+  venue = {TTC},
 }
 
 @article{ssen15,
-  title  = {Software Engineering for Smart Cyber-Physical Systems -- Towards a Research Agenda},
-  author = {Bureš, Tomáš and Weyns, Danny and Berger, Christian and Biffl, Stefan and Daun, Marian and Gabor, Thomas and Garlan, David and Gerostathopoulos, Ilias and Julien, Christine and Křikava, Filip and Mordinyi, Richard and Pronios, Nikos},
-  year   = {2015},
-  venue  = {SIGSOFT SEN},
-  doi    = {10.1145/2830719.2830736},
+  title = {Software Engineering for Smart Cyber-Physical Systems -- Towards a
+           Research Agenda},
+  author = {Bureš, Tomáš and Weyns, Danny and Berger, Christian and Biffl,
+            Stefan and Daun, Marian and Gabor, Thomas and Garlan, David and
+            Gerostathopoulos, Ilias and Julien, Christine and Křikava, Filip and
+            Mordinyi, Richard and Pronios, Nikos},
+  year = {2015},
+  venue = {SIGSOFT SEN},
+  doi = {10.1145/2830719.2830736},
 }
 
 @inproceedings{icac15,
-  title  = {Self-Configuration of the Number of Concurrently Running MapReduce Jobs in a Hadoop Cluster},
-  author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier, Lionel},
-  year   = {2015},
-  venue  = {ICAC},
-  doi    = {10.1109/ICAC.2015.54},
-  pdf    = {https://hal.inria.fr/hal-01143157/document},
+  title = {Self-Configuration of the Number of Concurrently Running MapReduce
+           Jobs in a Hadoop Cluster},
+  author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier,
+            Lionel},
+  year = {2015},
+  venue = {ICAC},
+  doi = {10.1109/ICAC.2015.54},
 }
 
 @inproceedings{seams15b,
-  title  = {Adaptive Exchange of Distributed Partial Models@run.time for Highly Dynamic Systems},
-  author = {Götz, Sebastian and Gerostathopoulos, Ilias and Křikava, Filip and Shahzada, Adnan and Spalazzese, Romina},
-  year   = {2015},
-  venue  = {SEAMS},
-  doi    = {10.1109/SEAMS.2015.25},
-  pdf    = {https://hal.inria.fr/hal-01119490/document},
+  title = {Adaptive Exchange of Distributed Partial Models@run.time for Highly
+           Dynamic Systems},
+  author = {Götz, Sebastian and Gerostathopoulos, Ilias and Křikava, Filip and
+            Shahzada, Adnan and Spalazzese, Romina},
+  year = {2015},
+  venue = {SEAMS},
+  doi = {10.1109/SEAMS.2015.25},
 }
 
 @inproceedings{seams15a,
-  title  = {Software Engineering Meets Control Theory},
-  author = {Filieri, Antonio and Maggio, Martina and Angelopoulos, Konstantinos and D'Ippolito, Nicolás and Gerostathopoulos, Ilias and Hempel, Andreas and Hoffmann, Henry and Jamshidi, Pooyan and Kalyvianaki, Evangelia and Klein, Cristian and Křikava, Filip and Misailovic, Sasa and Papadopoulos, Alessandro V. and Ray, Suprio and Sharifloo, Amir M. and Shevtsov, Stepan and Ujma, Mateusz and Vogel, Thomas},
-  year   = {2015},
-  venue  = {SEAMS},
-  doi    = {10.1109/SEAMS.2015.12},
-  pdf    = {https://hal.inria.fr/hal-01119461/document},
+  title = {Software Engineering Meets Control Theory},
+  author = {Filieri, Antonio and Maggio, Martina and Angelopoulos, Konstantinos
+            and D'Ippolito, Nicolás and Gerostathopoulos, Ilias and Hempel,
+            Andreas and Hoffmann, Henry and Jamshidi, Pooyan and Kalyvianaki,
+            Evangelia and Klein, Cristian and Křikava, Filip and Misailovic, Sasa
+            and Papadopoulos, Alessandro V. and Ray, Suprio and Sharifloo, Amir
+            M. and Shevtsov, Stepan and Ujma, Mateusz and Vogel, Thomas},
+  year = {2015},
+  venue = {SEAMS},
+  doi = {10.1109/SEAMS.2015.12},
 }
 
 @inproceedings{models15,
-  title  = {Infrastructure as Runtime Models: Towards Model-Driven Resource Management},
+  title = {Infrastructure as Runtime Models: Towards Model-Driven Resource
+           Management},
   author = {Křikava, Filip and Rouvoy, Romain and Seinturier, Lionel},
-  year   = {2015},
-  venue  = {MODELS},
-  doi    = {10.1109/MODELS.2015.7338240},
-  pdf    = {https://hal.inria.fr/hal-01178730/document},
+  year = {2015},
+  venue = {MODELS},
+  doi = {10.1109/MODELS.2015.7338240},
 }
 
 @inproceedings{ttc15,
-  title  = {Solving the TTC'15 Train Benchmark Case Study with SIGMA},
+  title = {Solving the TTC'15 Train Benchmark Case Study with SIGMA},
   author = {Křikava, Filip},
-  year   = {2015},
-  venue  = {TTC},
-  pdf    = {https://ceur-ws.org/Vol-1524/paper22.pdf},
+  year = {2015},
+  venue = {TTC},
 }
 
 @inproceedings{ttc15j,
-  title  = {TTC'15 Live Contest Case Study: Transformation of Java Annotations},
+  title = {TTC'15 Live Contest Case Study: Transformation of Java Annotations},
   author = {Křikava, Filip and Monperrus, Martin},
-  year   = {2015},
-  venue  = {TTC},
-  pdf    = {https://hal.inria.fr/hal-01242942/document},
+  year = {2015},
+  venue = {TTC},
 }
 
 @inproceedings{models14,
-  title  = {SIGMA: Scala Internal Domain-Specific Languages for Model Manipulations},
+  title = {SIGMA: Scala Internal Domain-Specific Languages for Model
+           Manipulations},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
-  year   = {2014},
-  venue  = {MODELS},
-  doi    = {10.1007/978-3-319-11653-2_35},
-  pdf    = {https://hal.inria.fr/hal-01010339/document},
+  year = {2014},
+  venue = {MODELS},
+  doi = {10.1007/978-3-319-11653-2_35},
 }
 
 @inproceedings{icac14,
-  title  = {Integrating Adaptation Mechanisms Using Control Theory Centric Architecture Models: A Case Study},
+  title = {Integrating Adaptation Mechanisms Using Control Theory Centric
+           Architecture Models: A Case Study},
   author = {Křikava, Filip and Collet, Philippe and Rouvoy, Romain},
-  year   = {2014},
-  venue  = {ICAC},
-  pdf    = {https://hal.inria.fr/hal-00991114/document},
+  year = {2014},
+  venue = {ICAC},
 }
 
 @inproceedings{sac14a,
-  title  = {ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures},
+  title = {ACTRESS: Domain-Specific Modeling of Self-Adaptive Software
+           Architectures},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
-  year   = {2014},
-  venue  = {SAC},
-  doi    = {10.1145/2554850.2555020},
-  pdf    = {https://hal.inria.fr/hal-00951798/document},
+  year = {2014},
+  venue = {SAC},
+  doi = {10.1145/2554850.2555020},
 }
 
 @inproceedings{sac14b,
-  title  = {Manipulating Models Using Internal Domain-Specific Languages},
+  title = {Manipulating Models Using Internal Domain-Specific Languages},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
-  year   = {2014},
-  venue  = {SAC},
-  doi    = {10.1145/2554850.2555127},
-  pdf    = {https://hal.inria.fr/hal-00951803/document},
+  year = {2014},
+  venue = {SAC},
+  doi = {10.1145/2554850.2555127},
 }
 
 @inproceedings{ttc14,
-  title  = {Solving the TTC'14 FIXML Case Study with SIGMA},
+  title = {Solving the TTC'14 FIXML Case Study with SIGMA},
   author = {Křikava, Filip and Collet, Philippe},
-  year   = {2014},
-  venue  = {TTC},
-  pdf    = {https://ceur-ws.org/Vol-1305/paper19.pdf},
+  year = {2014},
+  venue = {TTC},
 }
 
 @inproceedings{ocl12,
-  title  = {On the Use of an Internal DSL for Enriching EMF Models},
+  title = {On the Use of an Internal DSL for Enriching EMF Models},
   author = {Křikava, Filip and Collet, Philippe},
-  year   = {2012},
-  venue  = {OCL},
-  doi    = {10.1145/2428516.2428521},
-  pdf    = {https://hal.inria.fr/hal-01117778/document},
+  year = {2012},
+  venue = {OCL},
+  doi = {10.1145/2428516.2428521},
 }
 
 @inproceedings{mrt12,
-  title  = {Actor-Based Runtime Model of Adaptable Feedback Control Loops},
+  title = {Actor-Based Runtime Model of Adaptable Feedback Control Loops},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
-  year   = {2012},
-  venue  = {MRT},
-  doi    = {10.1145/2422518.2422525},
-  pdf    = {https://hal.inria.fr/hal-01117779/document},
+  year = {2012},
+  venue = {MRT},
+  doi = {10.1145/2422518.2422525},
 }
 
 @inproceedings{icac11,
-  title  = {Uniform and Model-Driven Engineering of Feedback Control Systems},
+  title = {Uniform and Model-Driven Engineering of Feedback Control Systems},
   author = {Křikava, Filip and Collet, Philippe and Blay-Fornarino, Mireille},
-  year   = {2011},
-  venue  = {ICAC},
-  doi    = {10.1145/1998582.1998616},
-  pdf    = {https://hal.inria.fr/hal-01117776/document},
+  year = {2011},
+  venue = {ICAC},
+  doi = {10.1145/1998582.1998616},
 }
 
 @inproceedings{seke11,
-  title  = {A Reflective Model for Architecting Feedback Control Systems},
+  title = {A Reflective Model for Architecting Feedback Control Systems},
   author = {Křikava, Filip and Collet, Philippe},
-  year   = {2011},
-  venue  = {SEKE},
-  pdf    = {https://hal.inria.fr/hal-01117775/document},
+  year = {2011},
+  venue = {SEKE},
 }
 
 @inproceedings{gmac10,
-  title  = {Issues and Scenarios for Self-Managing Grid Middleware},
-  author = {Collet, Philippe and Křikava, Filip and Montagnat, Johan and Blay-Fornarino, Mireille and Manset, David},
-  year   = {2010},
-  venue  = {GMAC},
-  pdf    = {https://hal.inria.fr/hal-01117780/document},
+  title = {Issues and Scenarios for Self-Managing Grid Middleware},
+  author = {Collet, Philippe and Křikava, Filip and Montagnat, Johan and
+            Blay-Fornarino, Mireille and Manset, David},
+  year = {2010},
+  venue = {GMAC},
 }
