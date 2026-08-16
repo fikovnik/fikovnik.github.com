@@ -2,10 +2,8 @@
 template = "home.html"
 
 [extra]
-recent = true
-recent_max = 10
-recent_more_text = "all posts »"
-date_format = "%b %-d, %Y"
+name = ""
+recent = false
 links = []
 +++
 
@@ -13,11 +11,21 @@ links = []
 
 # Filip Křikava
 
-I am an associate professor at Czech Technical University in the [Faculty of Information Technology](https://fit.cvut.cz/en) doing research at [PRL](http://prl-prg.github.io), a programming language research lab. I work on program analysis, compilers and virtual machines.
+I am an associate professor at Czech Technical University in the [Faculty of
+Information Technology](https://fit.cvut.cz/en), doing research at a
+[programming language lab](http://prl-prg.github.io): static and dynamic
+program analysis, compiler and virtual machine implementation (mostly around
+R). I started PL since postdoc at Northeastern University in
+[PRL](https://prl.khoury.northeastern.edu/) lab.
 
-Before I was a postdoc in the [PRL](https://prl.khoury.northeastern.edu/) group at Northeastern University and at INRIA in the [SPIRALS](https://team.inria.fr/spirals/) team. I did my PhD at CNRS in the [MODALIS](http://modalis.polytech.unice.fr/) team where I worked on the integration of control-theoretical models into software systems.
+Before that I worked on self-adaptive software systems, integrating feedback
+control loops into software through domain-specific modeling and
+<models@run.time> as posdoc at INRIA in
+[SPIRALS](https://team.inria.fr/spirals/), and during my PhD at CNRS in
+[MODALIS](http://modalis.polytech.unice.fr/).
 
-I also did work in industry: LaceWork (2022–2023), ORACLE (2015–2016), TomTom (2007–2009), Sun Microsystems (2005–2007), Accenture (2004).
+I was also in industry: LaceWork (2022–2023), ORACLE (2015–2016), TomTom
+(2007–2009), Sun Microsystems (2005–2007), Accenture (2004).
 
 ## Contact
 
@@ -25,7 +33,7 @@ I also did work in industry: LaceWork (2022–2023), ORACLE (2015–2016), TomTo
 
 **Czech Technical University**  
 Faculty of Information Technology  
-Office: #1258  
-Thákurova 8  
+Office: #1254  
+Thákurova 9  
 16000 Prague  
 Czech Republic

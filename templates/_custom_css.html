@@ -78,6 +78,101 @@
     margin-top: 0.35rem;
   }
 
+  /* NOTE: the theme includes this file *before* main.css, so any rule that fights
+     a theme rule needs to out-specify it — hence the `html` prefixes below. */
+
+  /* homepage: no avatar/name/bio band above the menu — the name is an h1 in the text */
+  html body.homepage #info { display: none; }
+
+  /* the theme centres the homepage vertically (min-height 100vh/75vh + 4em padding),
+     which assumes a three-line bio — with this much text it only pushes the menu
+     far down the page. Start at the top instead. */
+  html body.homepage #wrapper {
+    min-height: 0;
+    justify-content: flex-start;
+  }
+  html body.homepage main {
+    min-height: 0;
+    padding: 2em 0 3em;
+  }
+
+  html body.homepage #links {
+    margin: 1em 0 2.5em;
+  }
+
+  /* "::" between the site sections and the posts. The 4th entry is the first
+     post — see config.extra.sections. Absolutely positioned on the homepage so
+     the link's underline does not run under it. */
+  #links #left a:nth-of-type(4) {
+    position: relative;
+    margin-left: 1.5em;
+  }
+  #links #left a:nth-of-type(4)::before {
+    content: "::";
+    position: absolute;
+    left: -1.55em;
+    color: var(--text-pale-color);
+  }
+
+  /* inner-page nav: back link on the left, menu on the right (see macros/prose.html) */
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0 1em;
+  }
+  header nav .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* the 1em gap left of the separator comes from the previous link's padding, so
+     match it on the right to keep "::" centred between "cv" and "adventure 9" */
+  header nav .nav-menu a:nth-of-type(4)::before {
+    content: "::";
+    margin-right: 1em;
+    color: var(--text-decoration-color);
+  }
+  header nav .nav-menu a:last-child {
+    padding-right: 0;
+  }
+
+  #brief h1 {
+    font-size: 1.9em;
+    margin: 0 0 0.75em;
+  }
+
+  /* the theme's heading rhythm (3em above an h2, 2.5em above an h3) is meant for
+     long prose; on heading-heavy pages like /teaching it is mostly empty screen */
+  html .prose h2 {
+    margin: 2em 0 0.75em;
+  }
+  html .prose h3,
+  html .prose h4,
+  html .prose h5,
+  html .prose h6 {
+    margin: 1.5em 0 0.5em;
+  }
+  html .prose h2 + h3 {
+    margin-top: 0.75em;
+  }
+
+  /* homepage intro photo — floats beside the name and bio, like the old site */
+  .prose img.home-photo {
+    float: right;
+    width: 38%;
+    margin: 0.3rem 0 1rem 1.5rem;
+    border-radius: var(--img-border-radius);
+  }
+  @media (max-width: 640px) {
+    .prose img.home-photo {
+      float: none;
+      display: block;
+      width: 70%;
+      margin: 0 auto 1.25rem;
+    }
+  }
+
   /* partner logos row */
   .prose .partners {
     display: flex;
@@ -92,22 +187,6 @@
     background: #fff;
     padding: 8px 12px;
     border-radius: 4px;
-  }
-
-  /* homepage intro photo — floats beside the bio, like the old site */
-  .prose img.home-photo {
-    float: right;
-    width: 38%;
-    margin: 0.3rem 0 1rem 1.5rem;
-    border-radius: var(--img-border-radius);
-  }
-  @media (max-width: 640px) {
-    .prose img.home-photo {
-      float: none;
-      display: block;
-      width: 70%;
-      margin: 0 auto 1.25rem;
-    }
   }
 
 </style>

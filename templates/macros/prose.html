@@ -1,0 +1,41 @@
+{# Overrides the theme macro so inner pages carry the homepage menu, right-aligned
+   opposite the untouched back link. Tera macros only see their arguments and
+   `config`, so there is no way to tell which entry is the current page — all of
+   them are listed. `callout` below is copied from the theme unchanged. #}
+{% macro back_link(path) %}
+<header>
+  <nav>
+    <a id="back-link" href="{{ path }}">← {{ config.extra.back_link_text }}</a>
+    <div class="nav-menu">
+      {% for section in config.extra.sections %}
+      <a {% if section.is_external %}href="{{ section.path }}" target="_blank" rel='noreferrer noopener'{% else %}href="{{ get_url(path=section.path) }}" class="instant"{% endif %}>{{ section.name }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+</header>
+{% endmacro %}
+
+
+{% macro callout(name) %}
+<blockquote class="callout {{ name }} {% if title %}has-title{% else %}no-title{% endif %}">
+  {% set icon = load_data(path="icon/" ~ name ~ ".svg") %}
+  {% if title %}
+  <p class="title">
+    <span class="icon">
+      {{ icon | safe }}
+    </span>
+    <strong>{{ title }}</strong>
+  </p>
+  <div class="content">
+    {{ body | markdown | safe }}
+  </div>
+  {% else %}
+  <div class="icon">
+    {{ icon | safe }}
+  </div>
+  <div class="content">
+    {{ body | markdown | safe }}
+  </div>
+  {% endif %}
+</blockquote>
+{% endmacro %}

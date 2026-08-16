@@ -38,15 +38,18 @@ external_level = "warn"
 
 [extra]
 
+# NOTE: _custom_css.html draws a "::" separator before the 4th entry — keep the
+# site sections first and the posts last.
 sections = [
-  { name = "posts", path = "/posts", is_external = false },
   { name = "publications", path = "/publications", is_external = false },
   { name = "teaching", path = "/teaching", is_external = false },
   { name = "cv", path = "/cv", is_external = false },
+  { name = "adventure 9", path = "/posts/the-adventure-9", is_external = false },
+  { name = "rickshaw run", path = "/posts/the-rickshaw-run", is_external = false },
 ]
 blog_section_path = "/posts"
 
-back_link_text = "Back"
+back_link_text = "back"
 force_theme = false
 
 footer_copyright = "© 2026 Filip Křikava"

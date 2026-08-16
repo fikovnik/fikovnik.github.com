@@ -3,7 +3,10 @@ title = "Blog"
 sort_by = "date"
 template = "blog.html"
 page_template = "post.html"
-generate_feeds = true
+# no blog for now: the two posts are linked directly from the homepage menu, so
+# the listing sends visitors home instead (the "← Back" link on a post points here)
+redirect_to = "/"
+generate_feeds = false
 
 [extra]
 title = "Blog"

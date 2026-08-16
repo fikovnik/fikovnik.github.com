@@ -7,37 +7,35 @@ aliases = ["/research/"]
 title = "Publications"
 +++
 
-Since 2016 I work on programming languages: static and dynamic analysis (mostly R and Scala) and compiler and virtual machine implementation (mostly around R). Before 2016 I worked on self-adaptive software systems, integrating feedback control loops into software through domain-specific modeling and models@run.time.
-
-Also on [Google Scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) and [DBLP](https://dblp.org/pid/05/10588.html). Full list as [BibTeX](/publications/publications.bib).
+[BibTeX](/publications/publications.bib) :: [Google Scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) :: [DBLP](https://dblp.org/pid/05/10588.html).
 
 <!-- Generated from publications.bib by scripts/bib2md.py — do not edit by hand. Run `make publications`. -->
 
-- **Characterizing Type Feedback in Just-in-Time Compilation**, ECOOP, 2026 _(under review)_  
+- **Characterizing Type Feedback in Just-in-Time Compilation**, ECOOP, 2026 · [pdf](/publications/ecoop26.pdf) · [doi](https://doi.org/10.4230/LIPIcs.ECOOP.2026.16)  
   S. Krynski, F. Říha, F. Křikava, J. Vitek
 
-- **Leveraging Copy-and-Patch JIT for Low-Overhead Dynamic Program Analysis**, MPLR, 2026 _(under review)_  
+- **Leveraging Copy-and-Patch JIT for Low-Overhead Dynamic Program Analysis**, MPLR, 2026 · [pdf](/publications/mplr26.pdf) · [doi](https://doi.org/10.1145/3828170.3828176)  
   M. Kocourek, F. Křikava, P. Donat-Bouillud, J. Vitek
 
-- **Revisiting Row Polymorphism for Set-Theoretic Types**, OOPSLA, 2026 _(under review)_ · [pdf](/publications/oopsla26.pdf)  
+- **Revisiting Row Polymorphism for Set-Theoretic Types**, OOPSLA, 2026 · [pdf](/publications/oopsla26.pdf)  
   M. Laurent, P. Donat-Bouillud, F. Křikava, J. Vitek
 
-- **A Typed Intermediate Representation for Dynamic Languages**, TOPLAS, 2026 _(under review)_ · [pdf](/publications/toplas26.pdf) · [doi](https://doi.org/10.1145/3811921)  
+- **A Typed Intermediate Representation for Dynamic Languages**, TOPLAS, 2026 · [pdf](/publications/toplas26.pdf) · [doi](https://doi.org/10.1145/3811921)  
   M. Laurent, J. Hain, F. Křikava, S. Krynski, J. Vitek
 
 - **Comparing R Bytecode Compilers Written in R, Java, and Rust**, MoreVMs, 2025 · [pdf](/publications/morevms25.pdf) · [doi](https://doi.org/10.4230/OASIcs.Programming.2025.1)  
   P. Donat-Bouillud, F. Křikava, J. Hain, A. Plodek, J. Vitek
 
-- **R4R: Reproducibility for R**, REP, 2025 · [doi](https://doi.org/10.1145/3736731.3746156) · [artifact](https://doi.org/10.5281/zenodo.16891362)  
+- **R4R: Reproducibility for R**, REP, 2025 · [pdf](/publications/rep25.pdf) · [doi](https://doi.org/10.1145/3736731.3746156) · [artifact](https://doi.org/10.5281/zenodo.16891362)  
   P. Donat-Bouillud, F. Křikava, S. Krynski, J. Vitek
 
 - **Toward a Typed Intermediate Language for R**, VIMPL, 2025 · [pdf](/publications/vimpl25.pdf) · [doi](https://doi.org/10.4230/OASIcs.Programming.2025.24)  
   M. Laurent, J. Hain, F. Křikava, S. Krynski, J. Vitek
 
-- **Copy-and-Patch Just-in-Time Compiler for R**, VMIL, 2025 · [doi](https://doi.org/10.1145/3759548.3763370)  
+- **Copy-and-Patch Just-in-Time Compiler for R**, VMIL, 2025 · [pdf](/publications/vmil25.pdf) · [doi](https://doi.org/10.1145/3759548.3763370)  
   M. Kocourek, F. Křikava, J. Vitek
 
-- **Reducing Feedback Pollution**, VMIL, 2024 · [doi](https://doi.org/10.1145/3689490.3690404)  
+- **Reducing Feedback Pollution**, VMIL, 2024 · [pdf](/publications/vmil24.pdf) · [doi](https://doi.org/10.1145/3689490.3690404)  
   S. Krynski, M. Štěpánek, F. Říha, F. Křikava, J. Vitek
 
 - **signatr: A Data-Driven Fuzzing Tool for R**, SLE, 2022 · [pdf](/publications/sle22.pdf) · [doi](https://doi.org/10.1145/3567512.3567530) · [artifact](https://doi.org/10.5281/zenodo.7342082)  
@@ -52,13 +50,13 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&
 - **Scala Implicits Are Everywhere: A Large-Scale Study of the Use of Scala Implicits in the Wild**, OOPSLA, 2019 · [pdf](/publications/oopsla19.pdf) · [doi](https://doi.org/10.1145/3360589) · [artifact](https://zenodo.org/record/3369436)  
   F. Křikava, H. Miller, J. Vitek
 
-- **RDT: A Dynamic Tracing Framework for R**, RIOT, 2019 · [pdf](https://riotworkshop.github.io/abstracts/riot-2019-dynamic-tracing.pdf)  
+- **RDT: A Dynamic Tracing Framework for R**, RIOT, 2019 · [pdf](/publications/riot19.pdf)  
   A. Goel, F. Křikava, J. Vitek
 
 - **Tests from Traces: Automated Unit Test Extraction for R**, ISSTA, 2018 · [pdf](/publications/issta18.pdf) · [doi](https://doi.org/10.1145/3213846.3213863) · [artifact](https://doi.org/10.5281/zenodo.1306437)  
   F. Křikava, J. Vitek
 
-- **Hadoop-Benchmark: Rapid Prototyping and Evaluation of Self-Adaptive Behaviors in Hadoop Clusters**, SEAMS, 2017 · [pdf](https://hal.inria.fr/hal-01475635/document) · [doi](https://doi.org/10.1109/SEAMS.2017.15)  
+- **Hadoop-Benchmark: Rapid Prototyping and Evaluation of Self-Adaptive Behaviors in Hadoop Clusters**, SEAMS, 2017 · [pdf](/publications/seams17.pdf) · [doi](https://doi.org/10.1109/SEAMS.2017.15)  
   B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier
 
 - **Contracts-Based Control Integration into Software Systems**, SEfSAS III, 2017 · [pdf](/publications/sefsas17.pdf) · [doi](https://doi.org/10.1007/978-3-319-74183-3_9)  
@@ -67,59 +65,59 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&
 - **Control Strategies for Self-Adaptive Software Systems**, TAAS, 2017 · [pdf](/publications/taas17.pdf) · [doi](https://doi.org/10.1145/3024188)  
   A. Filieri, M. Maggio, K. Angelopoulos, N. D'Ippolito, I. Gerostathopoulos, A. Hempel, H. Hoffmann, P. Jamshidi, E. Kalyvianaki, C. Klein, F. Křikava, S. Misailovic, A. Papadopoulos, S. Ray, A. Sharifloo, S. Shevtsov, M. Ujma, T. Vogel
 
-- **Self-Balancing Job Parallelism and Throughput in Hadoop**, DAIS, 2016 · [pdf](https://hal.inria.fr/hal-01294834/document) · [doi](https://doi.org/10.1007/978-3-319-39577-7_11)  
+- **Self-Balancing Job Parallelism and Throughput in Hadoop**, DAIS, 2016 · [pdf](/publications/dais16.pdf) · [doi](https://doi.org/10.1007/978-3-319-39577-7_11)  
   B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier
 
-- **Solving the TTC'16 Class Responsibility Assignment Case Study with SIGMA and Multi-Objective Genetic Algorithms**, TTC, 2016 · [pdf](https://ceur-ws.org/Vol-1758/paper9.pdf)  
+- **Solving the TTC'16 Class Responsibility Assignment Case Study with SIGMA and Multi-Objective Genetic Algorithms**, TTC, 2016 · [pdf](/publications/ttc16.pdf)  
   F. Křikava
 
-- **Self-Configuration of the Number of Concurrently Running MapReduce Jobs in a Hadoop Cluster**, ICAC, 2015 · [pdf](https://hal.inria.fr/hal-01143157/document) · [doi](https://doi.org/10.1109/ICAC.2015.54)  
+- **Self-Configuration of the Number of Concurrently Running MapReduce Jobs in a Hadoop Cluster**, ICAC, 2015 · [pdf](/publications/icac15.pdf) · [doi](https://doi.org/10.1109/ICAC.2015.54)  
   B. Zhang, F. Křikava, R. Rouvoy, L. Seinturier
 
-- **Infrastructure as Runtime Models: Towards Model-Driven Resource Management**, MODELS, 2015 · [pdf](https://hal.inria.fr/hal-01178730/document) · [doi](https://doi.org/10.1109/MODELS.2015.7338240)  
+- **Infrastructure as Runtime Models: Towards Model-Driven Resource Management**, MODELS, 2015 · [pdf](/publications/models15.pdf) · [doi](https://doi.org/10.1109/MODELS.2015.7338240)  
   F. Křikava, R. Rouvoy, L. Seinturier
 
-- **Software Engineering Meets Control Theory**, SEAMS, 2015 · [pdf](https://hal.inria.fr/hal-01119461/document) · [doi](https://doi.org/10.1109/SEAMS.2015.12)  
+- **Software Engineering Meets Control Theory**, SEAMS, 2015 · [pdf](/publications/seams15a.pdf) · [doi](https://doi.org/10.1109/SEAMS.2015.12)  
   A. Filieri, M. Maggio, K. Angelopoulos, N. D'Ippolito, I. Gerostathopoulos, A. Hempel, H. Hoffmann, P. Jamshidi, E. Kalyvianaki, C. Klein, F. Křikava, S. Misailovic, A. Papadopoulos, S. Ray, A. Sharifloo, S. Shevtsov, M. Ujma, T. Vogel
 
-- **Adaptive Exchange of Distributed Partial Models@run.time for Highly Dynamic Systems**, SEAMS, 2015 · [pdf](https://hal.inria.fr/hal-01119490/document) · [doi](https://doi.org/10.1109/SEAMS.2015.25)  
+- **Adaptive Exchange of Distributed Partial Models@run.time for Highly Dynamic Systems**, SEAMS, 2015 · [pdf](/publications/seams15b.pdf) · [doi](https://doi.org/10.1109/SEAMS.2015.25)  
   S. Götz, I. Gerostathopoulos, F. Křikava, A. Shahzada, R. Spalazzese
 
 - **Software Engineering for Smart Cyber-Physical Systems -- Towards a Research Agenda**, SIGSOFT SEN, 2015 · [pdf](/publications/ssen15.pdf) · [doi](https://doi.org/10.1145/2830719.2830736)  
   T. Bureš, D. Weyns, C. Berger, S. Biffl, M. Daun, T. Gabor, D. Garlan, I. Gerostathopoulos, C. Julien, F. Křikava, R. Mordinyi, N. Pronios
 
-- **Solving the TTC'15 Train Benchmark Case Study with SIGMA**, TTC, 2015 · [pdf](https://ceur-ws.org/Vol-1524/paper22.pdf)  
+- **Solving the TTC'15 Train Benchmark Case Study with SIGMA**, TTC, 2015 · [pdf](/publications/ttc15.pdf)  
   F. Křikava
 
-- **TTC'15 Live Contest Case Study: Transformation of Java Annotations**, TTC, 2015 · [pdf](https://hal.inria.fr/hal-01242942/document)  
+- **TTC'15 Live Contest Case Study: Transformation of Java Annotations**, TTC, 2015 · [pdf](/publications/ttc15j.pdf)  
   F. Křikava, M. Monperrus
 
-- **Integrating Adaptation Mechanisms Using Control Theory Centric Architecture Models: A Case Study**, ICAC, 2014 · [pdf](https://hal.inria.fr/hal-00991114/document)  
+- **Integrating Adaptation Mechanisms Using Control Theory Centric Architecture Models: A Case Study**, ICAC, 2014 · [pdf](/publications/icac14.pdf)  
   F. Křikava, P. Collet, R. Rouvoy
 
-- **SIGMA: Scala Internal Domain-Specific Languages for Model Manipulations**, MODELS, 2014 · [pdf](https://hal.inria.fr/hal-01010339/document) · [doi](https://doi.org/10.1007/978-3-319-11653-2_35)  
+- **SIGMA: Scala Internal Domain-Specific Languages for Model Manipulations**, MODELS, 2014 · [pdf](/publications/models14.pdf) · [doi](https://doi.org/10.1007/978-3-319-11653-2_35)  
   F. Křikava, P. Collet, R. France
 
-- **ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures**, SAC, 2014 · [pdf](https://hal.inria.fr/hal-00951798/document) · [doi](https://doi.org/10.1145/2554850.2555020)  
+- **ACTRESS: Domain-Specific Modeling of Self-Adaptive Software Architectures**, SAC, 2014 · [pdf](/publications/sac14a.pdf) · [doi](https://doi.org/10.1145/2554850.2555020)  
   F. Křikava, P. Collet, R. France
 
-- **Manipulating Models Using Internal Domain-Specific Languages**, SAC, 2014 · [pdf](https://hal.inria.fr/hal-00951803/document) · [doi](https://doi.org/10.1145/2554850.2555127)  
+- **Manipulating Models Using Internal Domain-Specific Languages**, SAC, 2014 · [pdf](/publications/sac14b.pdf) · [doi](https://doi.org/10.1145/2554850.2555127)  
   F. Křikava, P. Collet, R. France
 
-- **Solving the TTC'14 FIXML Case Study with SIGMA**, TTC, 2014 · [pdf](https://ceur-ws.org/Vol-1305/paper19.pdf)  
+- **Solving the TTC'14 FIXML Case Study with SIGMA**, TTC, 2014 · [pdf](/publications/ttc14.pdf)  
   F. Křikava, P. Collet
 
-- **Actor-Based Runtime Model of Adaptable Feedback Control Loops**, MRT, 2012 · [pdf](https://hal.inria.fr/hal-01117779/document) · [doi](https://doi.org/10.1145/2422518.2422525)  
+- **Actor-Based Runtime Model of Adaptable Feedback Control Loops**, MRT, 2012 · [pdf](/publications/mrt12.pdf) · [doi](https://doi.org/10.1145/2422518.2422525)  
   F. Křikava, P. Collet, R. France
 
-- **On the Use of an Internal DSL for Enriching EMF Models**, OCL, 2012 · [pdf](https://hal.inria.fr/hal-01117778/document) · [doi](https://doi.org/10.1145/2428516.2428521)  
+- **On the Use of an Internal DSL for Enriching EMF Models**, OCL, 2012 · [pdf](/publications/ocl12.pdf) · [doi](https://doi.org/10.1145/2428516.2428521)  
   F. Křikava, P. Collet
 
-- **Uniform and Model-Driven Engineering of Feedback Control Systems**, ICAC, 2011 · [pdf](https://hal.inria.fr/hal-01117776/document) · [doi](https://doi.org/10.1145/1998582.1998616)  
+- **Uniform and Model-Driven Engineering of Feedback Control Systems**, ICAC, 2011 · [pdf](/publications/icac11.pdf) · [doi](https://doi.org/10.1145/1998582.1998616)  
   F. Křikava, P. Collet, M. Blay-Fornarino
 
-- **A Reflective Model for Architecting Feedback Control Systems**, SEKE, 2011 · [pdf](https://hal.inria.fr/hal-01117775/document)  
+- **A Reflective Model for Architecting Feedback Control Systems**, SEKE, 2011 · [pdf](/publications/seke11.pdf)  
   F. Křikava, P. Collet
 
-- **Issues and Scenarios for Self-Managing Grid Middleware**, GMAC, 2010 · [pdf](https://hal.inria.fr/hal-01117780/document)  
+- **Issues and Scenarios for Self-Managing Grid Middleware**, GMAC, 2010 · [pdf](/publications/gmac10.pdf)  
   P. Collet, F. Křikava, J. Montagnat, M. Blay-Fornarino, D. Manset

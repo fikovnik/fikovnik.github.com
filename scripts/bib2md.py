@@ -28,9 +28,7 @@ aliases = ["/research/"]
 title = "Publications"
 +++
 
-Since 2016 I work on programming languages: static and dynamic analysis (mostly R and Scala) and compiler and virtual machine implementation (mostly around R). Before 2016 I worked on self-adaptive software systems, integrating feedback control loops into software through domain-specific modeling and models@run.time.
-
-Also on [Google Scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) and [DBLP](https://dblp.org/pid/05/10588.html). Full list as [BibTeX](/publications/publications.bib).
+[BibTeX](/publications/publications.bib) :: [Google Scholar](https://scholar.google.com/citations?user=r_GmitIAAAAJ&hl=en) :: [DBLP](https://dblp.org/pid/05/10588.html).
 
 <!-- Generated from publications.bib by scripts/bib2md.py — do not edit by hand. Run `make publications`. -->
 """
