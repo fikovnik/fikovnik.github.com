@@ -1,13 +1,68 @@
 % ===========================================================================
+% Venues
+% ===========================================================================
+
+@string{PACMPL = {Proc. ACM Program. Lang.}}
+@string{TOPLAS = {ACM Transactions on Programming Languages and Systems
+                   (TOPLAS)}}
+@string{TAAS = {ACM Transactions on Autonomous and Adaptive Systems (TAAS)}}
+@string{SIGSOFTSEN = {ACM SIGSOFT Software Engineering Notes (SIGSOFT SEN)}}
+
+@string{ECOOP = {European Conference on Object-Oriented Programming (ECOOP)}}
+@string{POPL = {Symposium on Principles of Programming Languages (POPL)}}
+@string{PLDI = {Programming Language Design and Implementation Conference
+                 (PLDI)}}
+@string{ISSTA = {International Symposium on Software Testing and Analysis
+                  (ISSTA)}}
+@string{MPLR = {International Conference on Managed Programming Languages and
+                 Runtimes (MPLR)}}
+@string{SLE = {International Conference on Software Language Engineering (SLE)}}
+@string{REP = {ACM Conference on Reproducibility and Replicability (REP)}}
+@string{SEAMS = {International Symposium on Software Engineering for Adaptive
+                  and Self-Managing Systems (SEAMS)}}
+@string{ICAC = {International Conference on Autonomic Computing (ICAC)}}
+@string{MODELS = {International Conference on Model Driven Engineering
+                   Languages and Systems (MODELS)}}
+@string{DAIS = {International Conference on Distributed Applications and
+                 Interoperable Systems (DAIS)}}
+@string{SAC = {ACM Symposium on Applied Computing (SAC)}}
+@string{SEKE = {International Conference on Software Engineering and Knowledge
+                 Engineering (SEKE)}}
+
+@string{VMIL = {Workshop on Virtual Machines and Intermediate Languages (VMIL)}}
+@string{MOREVMS = {Workshop on Modern Language Runtimes, Ecosystems, and VMs
+                    (MoreVMs)}}
+@string{RIOT = {Workshop on R Implementation, Optimization and Tooling (RIOT)}}
+@string{OCL = {Workshop on OCL and Textual Modelling (OCL)}}
+@string{MRT = {Workshop on Models@run.time (MRT)}}
+@string{GMAC = {Workshop on Grids Meet Autonomic Computing (GMAC)}}
+@string{VIMPL = {Workshop on Value Independence in Modern Programming Languages
+                  (VIMPL)}}
+
+@string{TTC = {Transformation Tool Contest (TTC)}}
+@string{SEFSAS3 = {Software Engineering for Self-Adaptive Systems III:
+                    Assurances (SEfSAS III)}}
+
+% ===========================================================================
 % Published
 % ===========================================================================
+
+@inproceedings{oopsla26bench,
+  title = {bench: A Programmable Command-Line Framework for Complex Benchmarking
+           Workflows},
+  author = {Říha, Filip and Křikava, Filip},
+  year = {2026},
+  booktitle = {SPLASH/ISSTA tool demonstration},
+  doi = {10.1145/3837729.3840502},
+}
 
 @article{oopsla26,
   title = {Revisiting Row Polymorphism for Set-Theoretic Types},
   author = {Laurent, Mickaël and Donat-Bouillud, Pierre and Křikava, Filip and
             Vitek, Jan},
   year = {2026},
-  venue = {OOPSLA},
+  journal = PACMPL,
+  number = {OOPSLA},
 }
 
 @article{toplas26,
@@ -15,7 +70,7 @@
   author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski,
             Sebastián and Vitek, Jan},
   year = {2026},
-  venue = {TOPLAS},
+  journal = TOPLAS,
   doi = {10.1145/3811921},
 }
 
@@ -24,7 +79,7 @@
   author = {Krynski, Sebastián and Říha, Filip and Křikava, Filip and Vitek, Jan
             },
   year = {2026},
-  venue = {ECOOP},
+  booktitle = ECOOP,
   doi = {10.4230/LIPIcs.ECOOP.2026.16},
 }
 
@@ -34,15 +89,25 @@
   author = {Kocourek, Matěj and Křikava, Filip and Donat-Bouillud, Pierre and
             Vitek, Jan},
   year = {2026},
-  venue = {MPLR},
+  booktitle = MPLR,
   doi = {10.1145/3828170.3828176},
+}
+
+@inproceedings{vmil26,
+  title = {What Do {R} Benchmarks Measure? Toward a Performance-Characterized
+           Benchmark Suite for {R}},
+  author = {Kocourek, Matěj and Říha, Filip and Tušla, Oliver and
+            Donat-Bouillud, Pierre and Křikava, Filip and Vitek, Jan},
+  year = {2026},
+  booktitle = VMIL,
+  doi = {10.1145/3840562.3844972},
 }
 
 @inproceedings{vmil25,
   title = {Copy-and-Patch Just-in-Time Compiler for {R}},
   author = {Kocourek, Matěj and Křikava, Filip and Vitek, Jan},
   year = {2025},
-  venue = {VMIL},
+  booktitle = VMIL,
   doi = {10.1145/3759548.3763370},
 }
 
@@ -51,7 +116,7 @@
   author = {Donat-Bouillud, Pierre and Křikava, Filip and Krynski, Sebastián and
             Vitek, Jan},
   year = {2025},
-  venue = {REP},
+  booktitle = REP,
   doi = {10.1145/3736731.3746156},
   artifact = {https://doi.org/10.5281/zenodo.16891362},
 }
@@ -61,7 +126,7 @@
   author = {Donat-Bouillud, Pierre and Křikava, Filip and Hain, Jakob and Plodek
             , Adam and Vitek, Jan},
   year = {2025},
-  venue = {MoreVMs},
+  booktitle = MOREVMS,
   doi = {10.4230/OASIcs.Programming.2025.1},
 }
 
@@ -70,7 +135,7 @@
   author = {Laurent, Mickaël and Hain, Jakob and Křikava, Filip and Krynski,
             Sebastián and Vitek, Jan},
   year = {2025},
-  venue = {VIMPL},
+  booktitle = VIMPL,
   doi = {10.4230/OASIcs.Programming.2025.24},
 }
 
@@ -79,7 +144,7 @@
   author = {Krynski, Sebastián and Štěpánek, Michal and Říha, Filip and Křikava,
             Filip and Vitek, Jan},
   year = {2024},
-  venue = {VMIL},
+  booktitle = VMIL,
   doi = {10.1145/3689490.3690404},
 }
 
@@ -88,7 +153,7 @@
   author = {Turcotte, Alexi and Donat-Bouillud, Pierre and Křikava, Filip and
             Vitek, Jan},
   year = {2022},
-  venue = {SLE},
+  booktitle = SLE,
   doi = {10.1145/3567512.3567530},
   artifact = {https://doi.org/10.5281/zenodo.7342082},
 }
@@ -99,7 +164,8 @@
   author = {Goel, Aviral and Donat-Bouillud, Pierre and Křikava, Filip and
             Kirsch, Christoph M. and Vitek, Jan},
   year = {2021},
-  venue = {OOPSLA},
+  journal = PACMPL,
+  number = {OOPSLA},
   doi = {10.1145/3485502},
   artifact = {https://doi.org/10.5281/zenodo.5415230},
 }
@@ -108,7 +174,8 @@
   title = {Designing Types for {R}, Empirically},
   author = {Turcotte, Alexi and Goel, Aviral and Křikava, Filip and Vitek, Jan},
   year = {2020},
-  venue = {OOPSLA},
+  journal = PACMPL,
+  number = {OOPSLA},
   doi = {10.1145/3428249},
   artifact = {https://doi.org/10.5281/zenodo.4037278},
 }
@@ -118,7 +185,8 @@
            Scala Implicits in the Wild},
   author = {Křikava, Filip and Miller, Heather and Vitek, Jan},
   year = {2019},
-  venue = {OOPSLA},
+  journal = PACMPL,
+  number = {OOPSLA},
   doi = {10.1145/3360589},
   artifact = {https://zenodo.org/record/3369436},
 }
@@ -127,16 +195,17 @@
   title = {RDT: A Dynamic Tracing Framework for {R}},
   author = {Goel, Aviral and Křikava, Filip and Vitek, Jan},
   year = {2019},
-  venue = {RIOT},
+  booktitle = RIOT,
 }
 
 @inproceedings{issta18,
   title = {Tests from Traces: Automated Unit Test Extraction for {R}},
   author = {Křikava, Filip and Vitek, Jan},
   year = {2018},
-  venue = {ISSTA},
+  booktitle = ISSTA,
   doi = {10.1145/3213846.3213863},
   artifact = {https://doi.org/10.5281/zenodo.1306437},
+  award = {Best Artifact Award},
 }
 
 @article{taas17,
@@ -148,7 +217,7 @@
             and Papadopoulos, Alessandro V. and Ray, Suprio and Sharifloo, Amir
             M. and Shevtsov, Stepan and Ujma, Mateusz and Vogel, Thomas},
   year = {2017},
-  venue = {TAAS},
+  journal = TAAS,
   doi = {10.1145/3024188},
 }
 
@@ -158,7 +227,7 @@
   author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier,
             Lionel},
   year = {2017},
-  venue = {SEAMS},
+  booktitle = SEAMS,
   doi = {10.1109/SEAMS.2017.15},
 }
 
@@ -167,7 +236,7 @@
   author = {Křikava, Filip and Collet, Philippe and Rouvoy, Romain and
             Seinturier, Lionel},
   year = {2017},
-  venue = {SEfSAS III},
+  booktitle = SEFSAS3,
   doi = {10.1007/978-3-319-74183-3_9},
 }
 
@@ -176,7 +245,7 @@
   author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier,
             Lionel},
   year = {2016},
-  venue = {DAIS},
+  booktitle = DAIS,
   doi = {10.1007/978-3-319-39577-7_11},
 }
 
@@ -185,7 +254,7 @@
            SIGMA and Multi-Objective Genetic Algorithms},
   author = {Křikava, Filip},
   year = {2016},
-  venue = {TTC},
+  booktitle = TTC,
 }
 
 @article{ssen15,
@@ -196,7 +265,7 @@
             Gerostathopoulos, Ilias and Julien, Christine and Křikava, Filip and
             Mordinyi, Richard and Pronios, Nikos},
   year = {2015},
-  venue = {SIGSOFT SEN},
+  journal = SIGSOFTSEN,
   doi = {10.1145/2830719.2830736},
 }
 
@@ -206,7 +275,7 @@
   author = {Zhang, Bo and Křikava, Filip and Rouvoy, Romain and Seinturier,
             Lionel},
   year = {2015},
-  venue = {ICAC},
+  booktitle = ICAC,
   doi = {10.1109/ICAC.2015.54},
 }
 
@@ -216,7 +285,7 @@
   author = {Götz, Sebastian and Gerostathopoulos, Ilias and Křikava, Filip and
             Shahzada, Adnan and Spalazzese, Romina},
   year = {2015},
-  venue = {SEAMS},
+  booktitle = SEAMS,
   doi = {10.1109/SEAMS.2015.25},
 }
 
@@ -229,7 +298,7 @@
             and Papadopoulos, Alessandro V. and Ray, Suprio and Sharifloo, Amir
             M. and Shevtsov, Stepan and Ujma, Mateusz and Vogel, Thomas},
   year = {2015},
-  venue = {SEAMS},
+  booktitle = SEAMS,
   doi = {10.1109/SEAMS.2015.12},
 }
 
@@ -238,7 +307,7 @@
            Management},
   author = {Křikava, Filip and Rouvoy, Romain and Seinturier, Lionel},
   year = {2015},
-  venue = {MODELS},
+  booktitle = MODELS,
   doi = {10.1109/MODELS.2015.7338240},
 }
 
@@ -246,14 +315,14 @@
   title = {Solving the TTC'15 Train Benchmark Case Study with SIGMA},
   author = {Křikava, Filip},
   year = {2015},
-  venue = {TTC},
+  booktitle = TTC,
 }
 
 @inproceedings{ttc15j,
   title = {TTC'15 Live Contest Case Study: Transformation of Java Annotations},
   author = {Křikava, Filip and Monperrus, Martin},
   year = {2015},
-  venue = {TTC},
+  booktitle = TTC,
 }
 
 @inproceedings{models14,
@@ -261,7 +330,7 @@
            Manipulations},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
   year = {2014},
-  venue = {MODELS},
+  booktitle = MODELS,
   doi = {10.1007/978-3-319-11653-2_35},
 }
 
@@ -270,7 +339,7 @@
            Architecture Models: A Case Study},
   author = {Křikava, Filip and Collet, Philippe and Rouvoy, Romain},
   year = {2014},
-  venue = {ICAC},
+  booktitle = ICAC,
 }
 
 @inproceedings{sac14a,
@@ -278,7 +347,7 @@
            Architectures},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
   year = {2014},
-  venue = {SAC},
+  booktitle = SAC,
   doi = {10.1145/2554850.2555020},
 }
 
@@ -286,7 +355,7 @@
   title = {Manipulating Models Using Internal Domain-Specific Languages},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
   year = {2014},
-  venue = {SAC},
+  booktitle = SAC,
   doi = {10.1145/2554850.2555127},
 }
 
@@ -294,14 +363,14 @@
   title = {Solving the TTC'14 FIXML Case Study with SIGMA},
   author = {Křikava, Filip and Collet, Philippe},
   year = {2014},
-  venue = {TTC},
+  booktitle = TTC,
 }
 
 @inproceedings{ocl12,
   title = {On the Use of an Internal DSL for Enriching EMF Models},
   author = {Křikava, Filip and Collet, Philippe},
   year = {2012},
-  venue = {OCL},
+  booktitle = OCL,
   doi = {10.1145/2428516.2428521},
 }
 
@@ -309,7 +378,7 @@
   title = {Actor-Based Runtime Model of Adaptable Feedback Control Loops},
   author = {Křikava, Filip and Collet, Philippe and France, Robert B.},
   year = {2012},
-  venue = {MRT},
+  booktitle = MRT,
   doi = {10.1145/2422518.2422525},
 }
 
@@ -317,7 +386,7 @@
   title = {Uniform and Model-Driven Engineering of Feedback Control Systems},
   author = {Křikava, Filip and Collet, Philippe and Blay-Fornarino, Mireille},
   year = {2011},
-  venue = {ICAC},
+  booktitle = ICAC,
   doi = {10.1145/1998582.1998616},
 }
 
@@ -325,7 +394,7 @@
   title = {A Reflective Model for Architecting Feedback Control Systems},
   author = {Křikava, Filip and Collet, Philippe},
   year = {2011},
-  venue = {SEKE},
+  booktitle = SEKE,
 }
 
 @inproceedings{gmac10,
@@ -333,5 +402,5 @@
   author = {Collet, Philippe and Křikava, Filip and Montagnat, Johan and
             Blay-Fornarino, Mireille and Manset, David},
   year = {2010},
-  venue = {GMAC},
+  booktitle = GMAC,
 }

@@ -6,11 +6,15 @@
 
 Usage: uv run scripts/bib2md.py <input.bib> <output.md>
 
-Each entry needs: title, author, year, venue. Optional: doi, status
-(e.g. "under review"), artifact/url. A `[pdf]` link is emitted automatically
-when `<bibdir>/<key>.pdf` exists (PDFs are named after the BibTeX key).
+Each entry needs: title, author, year, and booktitle/journal (use the
+`@string` venue constants defined at the top of the .bib). Optional: doi,
+number (a journal issue such as PACMPL's "OOPSLA"), status (e.g. "under
+review"), award (e.g. "Best Artifact Award"), artifact/url. A `[pdf]` link is
+emitted automatically when `<bibdir>/<key>.pdf` exists (PDFs are named after
+the BibTeX key).
 """
 
+import re
 import sys
 from pathlib import Path
 
@@ -59,13 +63,23 @@ def sort_key(entry):
     return (-year, in_submission, entry.get("ID", ""))
 
 
+def venue(entry) -> str:
+    """Short venue label: the issue for journals like PACMPL, else the
+    parenthesised abbreviation of the booktitle/journal, else its full name."""
+    if number := entry.get("number"):
+        return clean(number)
+    full = clean(entry.get("booktitle") or entry.get("journal") or "")
+    if m := re.search(r"\(([^()]+)\)$", full):
+        return m.group(1)
+    return full
+
+
 def render_entry(entry, bibdir: Path) -> str:
     key = entry["ID"]
     title = clean(entry.get("title", ""))
-    venue = clean(entry.get("venue", ""))
     year = entry.get("year", "")
 
-    head = f"**{title}**, {venue}, {year}"
+    head = f"**{title}**, {venue(entry)}, {year}"
     if status := entry.get("status"):
         head += f" _({clean(status)})_"
 
@@ -82,7 +96,10 @@ def render_entry(entry, bibdir: Path) -> str:
         head += " · " + " · ".join(links)
 
     authors = format_authors(entry.get("author", ""))
-    return f"- {head}  \n  {authors}"
+    out = f"- {head}  \n  {authors}"
+    if award := entry.get("award"):
+        out += f"  \n  _{clean(award)}_"
+    return out
 
 
 def main() -> None:
@@ -95,10 +112,9 @@ def main() -> None:
     parser.ignore_nonstandard_types = False
     db = bibtexparser.loads(bib_path.read_text(encoding="utf-8"), parser=parser)
 
-    entries = sorted(db.entries, key=sort_key)
-    body = "\n\n".join(render_entry(e, bibdir) for e in entries)
+    body = "\n\n".join(render_entry(e, bibdir) for e in db.entries)
     out_path.write_text(f"{HEADER}\n{body}\n", encoding="utf-8")
-    print(f"wrote {out_path} ({len(entries)} publications)")
+    print(f"wrote {out_path} ({len(db.entries)} publications)")
 
 
 if __name__ == "__main__":
