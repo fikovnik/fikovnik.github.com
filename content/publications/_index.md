@@ -14,7 +14,7 @@ title = "Publications"
 - **bench: A Programmable Command-Line Framework for Complex Benchmarking Workflows**, SPLASH/ISSTA tool demonstration, 2026 · [pdf](/publications/oopsla26bench.pdf) · [doi](https://doi.org/10.1145/3837729.3840502)  
   F. Říha, F. Křikava
 
-- **Revisiting Row Polymorphism for Set-Theoretic Types**, OOPSLA, 2026 · [pdf](/publications/oopsla26.pdf)  
+- **Revisiting Row Polymorphism for Set-Theoretic Types**, OOPSLA, 2026 · [pdf](/publications/oopsla26.pdf) · [doi](https://doi.org/10.1145/3839505)  
   M. Laurent, P. Donat-Bouillud, F. Křikava, J. Vitek
 
 - **A Typed Intermediate Representation for Dynamic Languages**, TOPLAS, 2026 · [pdf](/publications/toplas26.pdf) · [doi](https://doi.org/10.1145/3811921)  
